@@ -342,8 +342,8 @@ function owl_function($atts, $content = null) {
                 $slide_title = get_the_title();
                 $slide_content = get_the_content();
                 $img_overlay = '<div class="owl-carousel-item-imgoverlay container">';
-                    $img_overlay .= '<div class="owl-carousel-item-imgtitle">' . $slide_title . '</div>';
-                    $img_overlay .= '<div class="owl-carousel-item-imgcontent">' . $slide_content . '</div>';
+                    $img_overlay .= '<div class="owl-carousel-item-imgtitle"><span>' . $slide_title . '</span></div>';
+                    $img_overlay .= '<div class="owl-carousel-item-imgcontent"><span>' . $slide_content . '</span></div>';
                 $img_overlay .= '</div>';
                 $result .= apply_filters( 'owlcarousel_img_overlay', $img_overlay, $slide_title, $slide_content, $meta_link );
 

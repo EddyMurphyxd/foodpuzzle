@@ -5874,10 +5874,26 @@ header {
   color: #fff;
   left: 50%;
   top: 50%;
+  overflow: hidden;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+  .owl-carousel-item-imgoverlay span {
+    display: inline-block; }
+  .owl-carousel-item-imgoverlay .animated {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s; }
+
+.owl-carousel-item-imgcontent {
+  font-size: 22px; }
+  .owl-carousel-item-imgcontent span {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s; }
+
+.owl-carousel-item-imgtitle {
+  font-size: 36px;
+  margin-bottom: 15px; }
 
 .owl-theme .owl-controls {
   position: absolute;
