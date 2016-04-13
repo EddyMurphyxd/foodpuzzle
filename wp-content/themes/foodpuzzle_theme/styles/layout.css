@@ -5849,6 +5849,46 @@ header {
 .main-navigation {
   background: rgba(255, 255, 255, 0.9); }
 
+footer {
+  padding: 0 15px;
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  width: 100%; }
+  footer .footer-wrapper {
+    background: rgba(255, 255, 255, 0.9);
+    position: relative; }
+  footer .copyright {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%); }
+    footer .copyright p {
+      margin: 0; }
+  footer .social-links {
+    float: right;
+    padding-right: 40px; }
+    footer .social-links a {
+      font-size: 26px;
+      background: none !important;
+      padding: 10px 0;
+      height: auto !important;
+      width: 46px !important;
+      display: block;
+      float: left;
+      text-align: center;
+      border-left: 1px solid #4c5b52; }
+      footer .social-links a:last-child {
+        border-right: 1px solid #4c5b52; }
+      footer .social-links a i {
+        color: #4c5b52 !important;
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        -ms-transition: color 0.3s;
+        transition: color 0.3s; }
+      footer .social-links a:hover i {
+        color: #27DC94 !important; }
+
 .owl-carousel .item img {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);

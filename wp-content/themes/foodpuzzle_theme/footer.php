@@ -1,9 +1,15 @@
   </main><!-- main -->
 
   <footer class="main-footer">
-    <div id="site-info">
-
-    </div><!-- #site-info -->
+    <div class="footer-wrapper clearfix">
+      <div class="copyright">
+        <p>© 2016 Foodpuzzle LLC. All rights reserved.</p>
+      </div>
+      
+      <div class="social-links">
+        <?php the_social_links();?>
+      </div>
+    </div>
   </footer><!-- .main-footer -->
 </div><!-- #wrapper -->
 <?php wp_footer(); ?>
