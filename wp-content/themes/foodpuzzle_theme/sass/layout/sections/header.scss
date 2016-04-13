@@ -1,0 +1,48 @@
+header {
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+
+  a {
+    color: $light-gray;
+
+    &:hover {
+      color: $base-green;
+    }
+  }
+}
+
+#logo-wrapper,
+.menu-header {
+  display: inline-block;
+}
+
+#logo-wrapper {
+  a {
+    padding: 0 20px;
+  }
+}
+
+.menu-header {
+  .menu {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      font-size: 18px;
+
+      > a {
+        padding: 15px 20px;
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.main-navigation {
+  background: rgba(255, 255, 255, .9);
+}

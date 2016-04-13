@@ -15,7 +15,9 @@
   <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
-  <link rel="stylesheet" type="text/css" href="/wp-content/themes/custom_theme/styles/layout.css" />
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/foodpuzzle_theme/styles/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/foodpuzzle_theme/styles/animate.css" />
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/foodpuzzle_theme/styles/layout.css" />
 
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
@@ -26,10 +28,13 @@
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 </head>
 <body>
-<div id="wrapper" class="hfeed">
+<div id="wrapper">
   <header class="main-header">
     <nav class="main-navigation">
       <?php #wp_page_menu( 'sort_column=menu_order' ); ?>
+      <div id="logo-wrapper">
+        <a href="http://foodpuzzle.local">Foodpuzzle</a>
+      </div>
       <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
     </nav><!-- .main-navigation -->
   </header><!-- .main-header -->

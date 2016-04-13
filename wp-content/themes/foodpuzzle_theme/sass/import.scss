@@ -1,3 +1,11 @@
 @import "bootstrap";
+@import "variables";
+
+// Sections
+@import "layout/sections/header";
+
+// Elements
+@import "layout/elements/home-carousel.scss";
+
 
 @import "layout/general";

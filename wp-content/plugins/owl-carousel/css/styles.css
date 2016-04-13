@@ -1,0 +1,11 @@
+.owl-carousel .item img {
+    width: 100%;
+}
+
+.owl-carousel-item-text {
+    text-align: center;
+}
+
+.owl-carousel-item-imgtitle {
+    font-size: 22px;
+}

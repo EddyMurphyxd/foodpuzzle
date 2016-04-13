@@ -1,0 +1,13 @@
+body {
+  background-color: #ccc;
+}
+a {
+  color: $base-green;
+
+  @include transition(all 0.3s);
+
+  &:hover {
+    color: $light-gray;
+    text-decoration: none;
+  }
+}

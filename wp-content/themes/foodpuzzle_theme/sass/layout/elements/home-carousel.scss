@@ -1,0 +1,83 @@
+.owl-carousel {
+  .item {
+    img {
+      @include scale(1);
+      @include transition(all 4s);
+    }
+  }
+
+  .owl-item {
+    z-index: 0;
+
+    &.scale {
+      z-index: 6;
+
+      img {
+        @include scale(1.1);
+      }
+    }
+  }
+}
+
+.owl-carousel-item-imgoverlay {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+
+  @include translate(-50%, -50%);
+}
+
+.owl-theme .owl-controls {
+  position: absolute;
+  top: 47%;
+  width: 100%;
+  margin-top: 0;
+
+  @include translate(0, -50%);
+}
+
+.owl-nav {
+  & > div {
+    position: absolute;
+    margin: 0 !important;
+    background: none !important;
+    font-size: 44px !important;
+    border-radius: 50% !important;
+    border: 2px solid #fff;
+
+    @include transition(all 0.3s);
+
+    &:hover {
+      border-color: $base-green;
+      
+      &:before {
+        color: $base-green;
+      }
+    }
+
+    &:before {
+      color: #fff;
+      @include fa;
+      @include transition(all 0.3s);
+    }
+  }
+}
+
+.owl-prev {
+  left: 40px;
+  padding: 0px 17px 5px 14px !important;
+
+  &:before {
+    content: "\f104";
+  }
+}
+
+.owl-next {
+  right: 40px;
+  padding: 0px 14px 5px 17px !important;
+
+  &:before {
+    content: "\f105";
+  }
+}
