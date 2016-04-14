@@ -7,6 +7,12 @@
     setCarouselHeight();
     customizeCarousel();
 
+    _win.load(function() {
+      $('.filter-wrapper').pandaFilter({
+        sorting: false
+      });
+    });
+
     function setCarouselHeight() {
       $('.owl-carousel, .owl-carousel .item img').height(_winHeight);
     }

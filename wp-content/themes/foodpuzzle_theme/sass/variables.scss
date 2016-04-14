@@ -1,6 +1,16 @@
 $base-green: #27DC94;
 $light-gray: #4c5b52;
 
+@mixin img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@mixin img-center {
+  margin: 0 auto;
+}
+
 @mixin scale($scale) {
   -webkit-transform: scale($scale);
   -moz-transform: scale($scale);

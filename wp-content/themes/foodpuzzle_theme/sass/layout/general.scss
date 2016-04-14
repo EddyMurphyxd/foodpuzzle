@@ -1,6 +1,11 @@
 body {
-  background-color: #ccc;
+  &:not(.home-page) {
+    main {
+      padding-top: 100px;
+    }
+  }
 }
+
 a {
   color: $base-green;
 

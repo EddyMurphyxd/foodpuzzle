@@ -16,6 +16,7 @@
 
 <!-- <script src="/wp-content/themes/foodpuzzle_theme/lib/jquery.min.js"></script> -->
 <script src="/wp-content/themes/foodpuzzle_theme/js/lib/bootstrap.min.js"></script>
+<script src="/wp-content/themes/foodpuzzle_theme/js/lib/pandaFilter.js"></script>
 <script src="/wp-content/themes/foodpuzzle_theme/js/main.js"></script>
 </body>
 </html>

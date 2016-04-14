@@ -1,12 +1,35 @@
+.home-page {
+  footer {
+    position: absolute;
+    bottom: 0;
+    padding: 0 15px;
+    background: none;
+    color: inherit;
+
+    .footer-wrapper {
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+
+    .social-links {
+      a {
+        border-color: $light-gray;
+
+        i {
+          color: $light-gray !important;
+        }
+      }
+    }
+  }
+}
+
 footer {
-  padding: 0 15px;
-  position: absolute;
-  bottom: 0;
+  background: rgba(0,0,0, .85);
   z-index: 999;
   width: 100%;
+  color: #fff;
 
   .footer-wrapper {
-    background: rgba(255, 255, 255, 0.9);
     position: relative;
   }
 
@@ -34,14 +57,14 @@ footer {
       display: block;
       float: left;
       text-align: center;
-      border-left: 1px solid $light-gray;
+      border-left: 1px solid #fff;
   
       &:last-child {
-        border-right: 1px solid $light-gray;
+        border-right: 1px solid #fff;
       }
 
       i {
-        color: $light-gray !important;
+        color: #fff !important;
 
         @include transition(color 0.3s);
       }

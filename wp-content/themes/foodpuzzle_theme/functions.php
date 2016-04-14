@@ -162,6 +162,13 @@
 	add_action('woocommerce_before_main_content', 'foodpuzzle_theme_wrapper_start', 10);
 	add_action('woocommerce_after_main_content', 'foodpuzzle_theme_wrapper_end', 10);
 
+	// Remove breadcrumbs
+	add_action( 'init', 'jk_remove_wc_breadcrumbs' );
+	
+	function jk_remove_wc_breadcrumbs() {
+	    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+	}
+
 	function foodpuzzle_theme_wrapper_start() {
 	  echo '<section id="main-section">';
 	}
@@ -173,5 +180,10 @@
 	add_action( 'after_setup_theme', 'woocommerce_support' );
 	function woocommerce_support() {
 	    add_theme_support( 'woocommerce' );
+	}
+
+	add_action( 'woocommerce_after_shop_loop_item_title', 'my_add_short_description', 9 );
+	function my_add_short_description() {
+		  echo '<span class="title-description">' . the_excerpt() . '</span><br />';
 	}
 ?>

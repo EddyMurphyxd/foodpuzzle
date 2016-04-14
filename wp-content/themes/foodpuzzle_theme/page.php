@@ -1,3 +1,5 @@
+<?php /* Template Name: Default custom template*/ ?>
+<div class="default-page">
 <?php get_header(); ?>
  
 <?php the_post(); ?>
