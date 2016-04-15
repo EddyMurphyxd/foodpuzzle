@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   &:not(.home-page) {
     main {
@@ -14,5 +18,100 @@ a {
   &:hover {
     color: $light-gray;
     text-decoration: none;
+  }
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 86px;
+
+  .woocommerce #respond input#submit,
+  .woocommerce a.button,
+  .woocommerce button.button,
+  .woocommerce input.button {
+    @include btn-active;
+
+    &[name="update_cart"] {
+      font-size: 14px;
+    }
+
+    &.checkout-button {
+      font-size: 20px;
+    }
+  }
+}
+
+.wc-proceed-to-checkout {
+  text-align: right;
+}
+
+.woocommerce {
+  .cart_totals {
+    table.shop_table {
+      font-size: 22px;
+      margin-top: 20px !important;
+
+      tr {
+        th {
+          background: #ccc;
+        }
+
+        td {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .quantity {
+    .qty {
+      width: 65px !important;
+      height: 34px;
+      float: left;
+      margin: 0 5px;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
+    .minus {
+      &:before {
+        content: '-';
+      }
+    }
+
+    .plus {
+      &:before {
+        content: '+';
+        top: 50%;
+      }
+    }
+
+    > div {
+      float: left;
+      width: 30px;
+      height: 34px;
+      cursor: pointer;
+      position: relative;
+
+      @include btn-active;
+
+      padding: 0;
+
+      &:before {
+        font-size: 34px;
+        text-align: center;
+        left: 50%;
+        top: 40%;
+        position: absolute;
+
+        @include translate(-50%, -50%);
+      }
+    }
   }
 }

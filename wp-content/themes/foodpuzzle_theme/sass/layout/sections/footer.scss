@@ -1,7 +1,5 @@
 .home-page {
   footer {
-    position: absolute;
-    bottom: 0;
     padding: 0 15px;
     background: none;
     color: inherit;
@@ -28,6 +26,9 @@ footer {
   z-index: 999;
   width: 100%;
   color: #fff;
+  position: absolute;
+  bottom: 0;
+  height: 46px;
 
   .footer-wrapper {
     position: relative;

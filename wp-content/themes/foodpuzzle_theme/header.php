@@ -40,6 +40,8 @@
     $pageClass = 'default';
   } else if (is_shop()) {
     $pageClass = 'shop';
+  } else if (wc_get_page_id( 'cart' ) == get_the_ID()) {
+    $pageClass = 'cart';
   }
 ?>
 <body class="<?php echo $pageClass;?>">

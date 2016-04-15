@@ -33,3 +33,48 @@ $light-gray: #4c5b52;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@mixin btn-default {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 15px;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 3px;
+
+  @include transition(all 0.3s);
+  
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background: $base-green;
+    border-color: $base-green;
+  }
+}
+
+@mixin btn-active {
+  background: transparent;
+  border: 2px solid $base-green;
+  color: $base-green;
+  padding: 10px 15px;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 3px;
+
+  @include transition(all 0.3s);
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background: $base-green;
+    border-color: $base-green;
+    color: #fff;
+  }
+}

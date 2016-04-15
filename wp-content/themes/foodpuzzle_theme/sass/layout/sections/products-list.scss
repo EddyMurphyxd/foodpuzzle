@@ -36,27 +36,13 @@ article.product {
     position: absolute;
     bottom: 25px;
     right: 25px;
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 10px 15px;
-    z-index: 1;
-    text-transform: uppercase;
-    font-weight: 600;
 
-    &:focus {
-      text-decoration: none;
-    }
+    @include btn-default;
   }
 
   .add_to_cart_button,
   .product_type_simple {
     z-index: 2;
-
-    &:hover {
-      background: $base-green;
-      border-color: $base-green;
-    }
   }
 
   .added_to_cart {
