@@ -27,8 +27,8 @@
   position: relative;
   transition: height 0.6s; }
 
-.filter-up-item,
-.panda-filter-item {
+.items-wrapper .filter-up-item,
+.items-wrapper .panda-filter-item {
   transition: all 0.6s;
   transform: scale(1);
   opacity: 1;

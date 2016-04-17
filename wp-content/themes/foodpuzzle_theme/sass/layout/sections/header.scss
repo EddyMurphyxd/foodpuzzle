@@ -2,14 +2,43 @@ header {
   padding: 0 15px;
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 999;
   width: 100%;
+  background-color: transparent;
+
+  @include transition(all 0.3s);
 
   a {
     color: $light-gray;
 
     &:hover {
       color: $base-green;
+    }
+  }
+
+  &.hidden-header {
+    position: fixed;
+    background-color: rgba(0,0,0, .85);
+
+    .main-navigation {
+      background: none;
+    }
+
+    .menu li > a {
+      color: #fff;
+
+      &:hover {
+        color: $base-green;
+      }
+    }
+
+    .mmenu-button {
+      color: #fff;
+
+      &:hover {
+        color: $base-green;
+      }
     }
   }
 }

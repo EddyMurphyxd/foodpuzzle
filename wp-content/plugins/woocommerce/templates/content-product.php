@@ -36,6 +36,9 @@ if ( ! $product || ! $product->is_visible() ) {
 	return;
 }
 
+$product_cats = wp_get_post_terms( get_the_ID(), 'product_cat' );
+$single_cat = array_shift( $product_cats );
+
 // Increase loop count
 $woocommerce_loop['loop']++;
 
@@ -49,7 +52,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 }
 ?>
 
-<article <?php post_class( 'panda-filter-item ' . $classes ); ?>>
+<article data-filter-category="<?php echo $single_cat->name; ?>" <?php array_push($classes, 'panda-filter-item'); post_class( $classes ); ?>>
 
 	<?php
 	/**

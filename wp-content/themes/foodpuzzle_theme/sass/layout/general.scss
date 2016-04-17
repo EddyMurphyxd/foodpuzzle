@@ -7,6 +7,12 @@ body {
     main {
       padding-top: 100px;
     }
+
+    #wrapper {
+      min-height: 100%;
+      position: relative;
+      padding-bottom: 86px;
+    }
   }
 }
 
@@ -15,6 +21,11 @@ a {
 
   @include transition(all 0.3s);
 
+  &:focus {
+    color: $light-gray;
+    outline: none;
+  }
+
   &:hover {
     color: $light-gray;
     text-decoration: none;
@@ -22,10 +33,6 @@ a {
 }
 
 #wrapper {
-  min-height: 100%;
-  position: relative;
-  padding-bottom: 86px;
-
   .woocommerce #respond input#submit,
   .woocommerce a.button,
   .woocommerce button.button,
@@ -63,55 +70,132 @@ a {
       }
     }
   }
+}
 
-  .quantity {
-    .qty {
-      width: 65px !important;
-      height: 34px;
-      float: left;
-      margin: 0 5px;
-    }
 
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-      /* display: none; <- Crashes Chrome on hover */
-      -webkit-appearance: none;
-      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-    }
+.quantity {
+  .qty {
+    width: 65px !important;
+    height: 34px;
+    float: left;
+    margin: 0 5px;
+    text-align: center;
+  }
 
-    .minus {
-      &:before {
-        content: '-';
-      }
-    }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
 
-    .plus {
-      &:before {
-        content: '+';
-        top: 50%;
-      }
-    }
-
-    > div {
-      float: left;
-      width: 30px;
-      height: 34px;
-      cursor: pointer;
-      position: relative;
-
-      @include btn-active;
-
-      padding: 0;
-
-      &:before {
-        font-size: 34px;
-        text-align: center;
-        left: 50%;
-        top: 40%;
-        position: absolute;
-
-        @include translate(-50%, -50%);
-      }
+  .minus {
+    &:before {
+      content: '-';
     }
   }
+
+  .plus {
+    &:before {
+      content: '+';
+      top: 50%;
+    }
+  }
+
+  > div {
+    float: left;
+    width: 30px;
+    height: 34px;
+    cursor: pointer;
+    position: relative;
+
+    @include btn-active;
+
+    padding: 0;
+
+    &:before {
+      font-size: 34px;
+      text-align: center;
+      left: 50%;
+      top: 40%;
+      position: absolute;
+
+      @include translate(-50%, -50%);
+    }
+  }
+}
+
+.woocommerce-main-image {
+  img {
+    @include img-responsive;
+
+    margin-bottom: 25px;
+  }
+}
+
+.thumbnails.columns-3 {
+  img {
+    width: 33.333333%;
+    margin-bottom: 10px;
+  }
+}
+
+figure {
+  img {
+    @include img-responsive;
+  }
+}
+
+.related.products {
+  article {
+    width: 33.33333%;
+
+  }
+}
+
+.button {
+  @include btn-active;
+}
+
+.single-product {
+  .cart {
+    padding: 15px 0;
+
+    @include clearfix();
+
+    .button {
+      margin-left: 20px;
+      margin-top: -5px;
+      float: left;
+    }
+  }
+
+  .quantity{
+    float: left;
+  }
+}
+
+.comment-form {
+  input.submit {
+    @include btn-active;
+  }
+
+  .comment-form-comment {
+    label {
+      display: block;
+    }
+  }
+}
+
+#tab-description {
+  display: block;
+}
+
+.mmenu-button {
+  color: #ddd;
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+  float: left;
 }

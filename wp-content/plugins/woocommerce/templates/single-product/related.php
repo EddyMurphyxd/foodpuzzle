@@ -44,21 +44,27 @@ $products = new WP_Query( $args );
 $woocommerce_loop['columns'] = $columns;
 
 if ( $products->have_posts() ) : ?>
+	</div> <!-- close parent .column -->
+	</div> <!-- close parent .row -->
 
-	<div class="related products">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="related products">
 
-		<h2><?php _e( 'Related Products', 'woocommerce' ); ?></h2>
+				<h2><?php _e( 'Related Products', 'woocommerce' ); ?></h2>
 
-		<?php woocommerce_product_loop_start(); ?>
+				<?php woocommerce_product_loop_start(); ?>
 
-			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
+					<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
-				<?php wc_get_template_part( 'content', 'product' ); ?>
+						<?php wc_get_template_part( 'content', 'product' ); ?>
 
-			<?php endwhile; // end of the loop. ?>
+					<?php endwhile; // end of the loop. ?>
 
-		<?php woocommerce_product_loop_end(); ?>
+				<?php woocommerce_product_loop_end(); ?>
 
+			</div>
+		</div>
 	</div>
 
 <?php endif;

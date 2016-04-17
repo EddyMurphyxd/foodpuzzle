@@ -43,6 +43,7 @@ $light-gray: #4c5b52;
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 3px;
+  display: inline-block;
 
   @include transition(all 0.3s);
   
@@ -65,6 +66,7 @@ $light-gray: #4c5b52;
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 3px;
+  display: inline-block;
 
   @include transition(all 0.3s);
 
@@ -77,4 +79,8 @@ $light-gray: #4c5b52;
     border-color: $base-green;
     color: #fff;
   }
+}
+
+.woocommerce-message {
+  padding-bottom: 15px;
 }

@@ -606,8 +606,6 @@
         left: lastgridItemOffset.left
       });
 
-      console.log(itemHeight);
-
       lastgridItemOffset.left += itemWidth;
 
       if (that.options.rowItems) itemsHeights.push(itemHeight);

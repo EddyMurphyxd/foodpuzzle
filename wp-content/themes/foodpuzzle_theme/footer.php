@@ -1,6 +1,10 @@
   </main><!-- main -->
 
   <footer class="main-footer">
+    <?php if (is_shop()): ?>
+      <div class="container">
+    <?php endif; ?>
+    
     <div class="footer-wrapper clearfix">
       <div class="copyright">
         <p>© 2016 Foodpuzzle LLC. All rights reserved.</p>
@@ -10,6 +14,10 @@
         <?php the_social_links();?>
       </div>
     </div>
+
+    <?php if (is_shop()): ?>
+      </div> <!-- close container -->
+    <?php endif; ?>
   </footer><!-- .main-footer -->
 </div><!-- #wrapper -->
 <?php wp_footer(); ?>
