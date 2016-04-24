@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-04-12 18:07:09+0000\n"
+"PO-Revision-Date: 2016-04-14 23:32:23+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/2.0.0\n"
+"X-Generator: GlotPress/2.1.0-alpha\n"
 "Project-Id-Version: Administration\n"
 
 #. translators: default start of the week. 0 = Sunday, 1 = Monday
@@ -7611,10 +7611,6 @@ msgstr "Сезонна"
 msgid "Find Themes"
 msgstr "Шукати теми"
 
-#: wp-admin/includes/theme-install.php:143
-msgid "If you have a theme in a .zip format, you may install it by uploading it here."
-msgstr "Якщо у Вас є тема у .zip форматі, Ви можете легко завантажити її тут."
-
 #: wp-admin/includes/class-wp-theme-install-list-table.php:316
 #: wp-admin/includes/class-wp-themes-list-table.php:227
 msgid "Details"
@@ -8864,6 +8860,10 @@ msgstr "<strong>ПОМИЛКА</strong>: Будь ласка, введіть п�
 #: wp-admin/includes/update.php:203
 msgid "You are using a development version (%1$s). Cool! Please <a href=\"%2$s\">stay updated</a>."
 msgstr "Ви використовуєте розробницьку версію (%1$s). Чудово! Будь-ласка, <a href=\"%2$s\">використовуйте останню версію</a>."
+
+#: wp-admin/includes/theme-install.php:143
+msgid "If you have a theme in a .zip format, you may install it by uploading it here."
+msgstr "Якщо ви маєте тему у форматі .zip, ви можете встановити її, завантаживши її тут."
 
 #: wp-admin/comment.php:329
 msgid "Unknown action."
@@ -10202,10 +10202,6 @@ msgstr "zip-файл плагіну"
 msgid "Plugin Install"
 msgstr "Встановлення плагіну"
 
-#: wp-admin/includes/plugin-install.php:286
-msgid "If you have a plugin in a .zip format, you may install it by uploading it here."
-msgstr "Якщо У Вас є плагін у .zip форматі, Ви можете завантажити його тут."
-
 #. translators: %s: number of comments restored from the spam
 #: wp-admin/edit-comments.php:243
 msgid "%s comment restored from the spam"
@@ -10745,6 +10741,10 @@ msgstr "Перемістити цей коментар до кошика"
 #: wp-admin/includes/dashboard.php:717 wp-admin/includes/dashboard.php:724
 msgid "[Pending]"
 msgstr "[В очікуванні]"
+
+#: wp-admin/includes/plugin-install.php:286
+msgid "If you have a plugin in a .zip format, you may install it by uploading it here."
+msgstr "Якщо ви маєте плагін у форматі .zip, ви можете встановити його, завантаживши його тут."
 
 #: wp-admin/includes/media.php:2440 wp-admin/includes/nav-menu.php:342
 #: wp-admin/includes/nav-menu.php:617
