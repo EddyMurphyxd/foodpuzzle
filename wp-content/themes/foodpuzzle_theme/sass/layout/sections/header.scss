@@ -75,3 +75,84 @@ header {
 .main-navigation {
   background: rgba(255, 255, 255, .9);
 }
+
+.shop {
+  .main-header {
+    background-color: $base-green;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: $light-gray;
+      }
+    }
+
+    li.current-menu-item {
+      a {
+        color: $light-gray;
+      }
+    }
+
+    &.hidden-header {
+      position: fixed;
+      background-color: rgba(255, 255, 255, .85);
+
+      .menu li > a {
+        color: #000;
+
+        &:hover {
+          color: $base-green;
+        }
+      }
+
+      li.current-menu-item {
+        a {
+          color: $base-green;
+        }
+      }
+
+      .mmenu-button {
+        color: #000;
+
+        &:hover {
+          color: $base-green;
+        }
+      }
+    }
+  }
+
+  .main-navigation {
+    background-color: transparent;
+  }
+}
+
+.main-cart {
+  display: block;
+  float: right;
+  font-size: 30px;
+  margin-top: 15px;
+  position: relative;
+
+  &:hover {
+    color: inherit;
+  }
+
+  &:before {
+    @include fa;
+
+    content: "\f07a";
+  }
+
+  .qty {
+    position: absolute;
+    font-size: 15px;
+    background: red;
+    border-radius: 50%;
+    display: block;
+    padding: 0 4px;
+    text-align: center;
+    left: -15px;
+    top: -10px;
+  }
+}

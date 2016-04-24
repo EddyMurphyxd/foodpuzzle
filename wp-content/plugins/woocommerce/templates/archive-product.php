@@ -64,6 +64,14 @@ get_header( 'shop' ); ?>
 				<?php woocommerce_product_subcategories(); ?>
 
 				<div class="container">
+
+					<a href="#mmenu" class="mmenu-button"><i class="fa fa-navicon"></i></a>
+					<nav class="categories-list" id="mmenu">
+					  <ul>
+					    <?php include_once('categories-list.php');?>
+					  </ul>
+					</nav>
+					
 					<div class="items-wrapper">
 						<div class="items-list clearfix">
 							<?php while ( have_posts() ) : the_post(); ?>

@@ -60,22 +60,29 @@
     
     <nav class="main-navigation">
       <?php #wp_page_menu( 'sort_column=menu_order' ); ?>
-      <div id="logo-wrapper">
-        <a href="http://foodpuzzle.local">Foodpuzzle</a>
+      <div class="container">
+        <div id="logo-wrapper">
+          <a href="http://foodpuzzle.local">Foodpuzzle</a>
+        </div>
+        <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
+
+        <?php
+          global $woocommerce;
+
+          // get cart quantity
+          $qty = $woocommerce->cart->get_cart_contents_count();
+
+          // get cart total
+          $total = $woocommerce->cart->get_cart_total();
+
+          // get cart url
+          $cart_url = $woocommerce->cart->get_cart_url();
+
+          echo '<a class="main-cart" href="'.$cart_url.'"><span class="qty">'.$qty.'</span></a>';
+
+        ?>
       </div>
-      <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
     </nav><!-- .main-navigation -->
-
-    <?php if ($pageClass == 'shop'): ?>
-      <a href="#mmenu" class="mmenu-button"><i class="fa fa-navicon"></i></a>
-      <nav class="categories-list" id="mmenu">
-        <ul>
-          <?php include_once('categories-list.php');?>
-        </ul>
-      </nav>
-
-      </div> <!-- close .container -->
-    <?php endif; ?>
   </header><!-- .main-header -->
  
   <main>

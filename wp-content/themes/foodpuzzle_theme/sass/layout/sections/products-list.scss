@@ -79,6 +79,7 @@ article.product {
   position: absolute;
   top: 50%;
   left: 50%;
+  text-align: left;
   @include translate(-50%, -50%);
 }
 
@@ -95,6 +96,6 @@ article.product {
   }
 }
 
-.products-list {
-  margin-top: 50px;
+.items-wrapper {
+  margin-left: 50px;
 }

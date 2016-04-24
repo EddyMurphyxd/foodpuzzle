@@ -5871,6 +5871,58 @@ header {
 .main-navigation {
   background: rgba(255, 255, 255, 0.9); }
 
+.shop .main-header {
+  background-color: #27DC94; }
+  .shop .main-header a {
+    color: #fff; }
+    .shop .main-header a:hover {
+      color: #4c5b52; }
+  .shop .main-header li.current-menu-item a {
+    color: #4c5b52; }
+  .shop .main-header.hidden-header {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.85); }
+    .shop .main-header.hidden-header .menu li > a {
+      color: #000; }
+      .shop .main-header.hidden-header .menu li > a:hover {
+        color: #27DC94; }
+    .shop .main-header.hidden-header li.current-menu-item a {
+      color: #27DC94; }
+    .shop .main-header.hidden-header .mmenu-button {
+      color: #000; }
+      .shop .main-header.hidden-header .mmenu-button:hover {
+        color: #27DC94; }
+
+.shop .main-navigation {
+  background-color: transparent; }
+
+.main-cart {
+  display: block;
+  float: right;
+  font-size: 30px;
+  margin-top: 15px;
+  position: relative; }
+  .main-cart:hover {
+    color: inherit; }
+  .main-cart:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f07a"; }
+  .main-cart .qty {
+    position: absolute;
+    font-size: 15px;
+    background: red;
+    border-radius: 50%;
+    display: block;
+    padding: 0 4px;
+    text-align: center;
+    left: -15px;
+    top: -10px; }
+
 .home-page footer {
   padding: 0 15px;
   background: none;
@@ -6004,6 +6056,7 @@ article.product {
   position: absolute;
   top: 50%;
   left: 50%;
+  text-align: left;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
@@ -6019,8 +6072,8 @@ article.product {
     padding-right: 15px;
     padding-bottom: 15px; }
 
-.products-list {
-  margin-top: 50px; }
+.items-wrapper {
+  margin-left: 50px; }
 
 .owl-carousel .item img {
   -webkit-transform: scale(1);
