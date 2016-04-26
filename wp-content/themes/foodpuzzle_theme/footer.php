@@ -6,8 +6,14 @@
     <?php endif; ?>
     
     <div class="footer-wrapper clearfix">
-      <div class="copyright">
+      <!-- <div class="copyright">
         <p>© 2016 Foodpuzzle LLC. All rights reserved.</p>
+      </div> -->
+
+      <div class="footer-menu">
+        <?php
+          wp_nav_menu( array( 'theme_location' => 'footer-menu' ) );
+        ?>
       </div>
       
       <div class="social-links">

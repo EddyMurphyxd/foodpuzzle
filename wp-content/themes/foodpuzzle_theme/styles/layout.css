@@ -5935,7 +5935,7 @@ header {
       color: #4c5b52 !important; }
 
 footer {
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   z-index: 999;
   width: 100%;
   color: #fff;
@@ -5944,6 +5944,22 @@ footer {
   height: 46px; }
   footer .footer-wrapper {
     position: relative; }
+  footer .menu-footer-menu-container {
+    float: left; }
+  footer .menu {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0; }
+    footer .menu li {
+      float: left;
+      display: block;
+      border-right: 1px solid #4c5b52; }
+      footer .menu li a {
+        color: #4c5b52;
+        padding: 13px 15px;
+        display: block; }
+        footer .menu li a:hover {
+          color: #27DC94; }
   footer .copyright {
     position: absolute;
     left: 20px;
@@ -5980,6 +5996,9 @@ article.product {
   article.product:hover .product-info-overlay {
     opacity: 1;
     visibility: visible; }
+  article.product:hover .add_to_cart_button {
+    visibility: visible;
+    opacity: 1; }
   article.product figure .onsale {
     display: none; }
   article.product a {
@@ -5991,34 +6010,21 @@ article.product {
       display: block;
       width: 100%;
       border-radius: 3px; }
+  article.product .add_to_cart_button {
+    visibility: hidden;
+    opacity: 0; }
   article.product .add_to_cart_button,
   article.product .added_to_cart,
   article.product .product_type_simple {
     position: absolute;
     bottom: 25px;
     right: 25px;
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    padding: 10px 15px;
-    z-index: 1;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-radius: 3px;
-    display: inline-block;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    transition: all 0.3s; }
-    article.product .add_to_cart_button:focus,
-    article.product .added_to_cart:focus,
-    article.product .product_type_simple:focus {
-      text-decoration: none; }
+    border: none; }
     article.product .add_to_cart_button:hover,
     article.product .added_to_cart:hover,
     article.product .product_type_simple:hover {
-      background: #27DC94;
-      border-color: #27DC94; }
+      background: none;
+      color: #fff; }
   article.product .add_to_cart_button,
   article.product .product_type_simple {
     z-index: 2; }

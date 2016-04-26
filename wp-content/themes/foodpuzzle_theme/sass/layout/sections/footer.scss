@@ -22,7 +22,7 @@
 }
 
 footer {
-  background: rgba(0,0,0, .85);
+  background: rgba(255, 255, 255, 0.9);
   z-index: 999;
   width: 100%;
   color: #fff;
@@ -32,6 +32,32 @@ footer {
 
   .footer-wrapper {
     position: relative;
+  }
+
+  .menu-footer-menu-container {
+    float: left;
+  }
+
+  .menu {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li {
+      float: left;
+      display: block;
+      border-right: 1px solid $light-gray;
+
+      a {
+        color: $light-gray;
+        padding: 13px 15px;
+        display: block;
+
+        &:hover {
+          color: $base-green;
+        }
+      }
+    }
   }
 
   .copyright {

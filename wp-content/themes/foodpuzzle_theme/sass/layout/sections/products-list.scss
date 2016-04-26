@@ -6,6 +6,11 @@ article.product {
       opacity: 1;
       visibility: visible;
     }
+
+    .add_to_cart_button {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
   figure {
@@ -25,6 +30,11 @@ article.product {
     }
   }
 
+  .add_to_cart_button {
+    visibility: hidden;
+    opacity: 0;
+  }
+
   .add_to_cart_button,
   .added_to_cart,
   .product_type_simple {
@@ -32,7 +42,12 @@ article.product {
     bottom: 25px;
     right: 25px;
 
-    @include btn-default;
+    border: none;
+
+    &:hover {
+      background: none;
+      color: #fff;
+    }
   }
 
   .add_to_cart_button,

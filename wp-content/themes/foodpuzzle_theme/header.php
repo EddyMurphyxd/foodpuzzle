@@ -64,7 +64,9 @@
         <div id="logo-wrapper">
           <a href="http://foodpuzzle.local">Foodpuzzle</a>
         </div>
-        <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
+        <?php  
+          wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'menu-header' ) );
+        ?>
 
         <?php
           global $woocommerce;
