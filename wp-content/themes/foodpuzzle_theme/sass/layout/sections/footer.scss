@@ -7,17 +7,6 @@
     .footer-wrapper {
       background: rgba(255, 255, 255, 0.9);
     }
-
-
-    .social-links {
-      a {
-        border-color: $light-gray;
-
-        i {
-          color: $light-gray !important;
-        }
-      }
-    }
   }
 }
 
@@ -29,6 +18,16 @@ footer {
   position: absolute;
   bottom: 0;
   height: 46px;
+
+  &.main-footer .social-links {
+    a {
+      border-color: $light-gray;
+
+      i {
+        color: $light-gray !important;
+      }
+    }
+  }
 
   .footer-wrapper {
     position: relative;

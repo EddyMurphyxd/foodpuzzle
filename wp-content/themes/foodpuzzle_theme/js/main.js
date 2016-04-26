@@ -18,7 +18,9 @@
 
     _win.load(function() {
       $('body.shop').pandaFilter({
-        sorting: false
+        sorting: false,
+        rowItems: false,
+        fancyRowItems: true
       });
     });
 

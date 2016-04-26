@@ -5882,9 +5882,13 @@ header {
   .shop .main-header.hidden-header {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.85); }
-    .shop .main-header.hidden-header .menu li > a {
+    .shop .main-header.hidden-header .menu li > a,
+    .shop .main-header.hidden-header .main-cart,
+    .shop .main-header.hidden-header #logo-wrapper a {
       color: #000; }
-      .shop .main-header.hidden-header .menu li > a:hover {
+      .shop .main-header.hidden-header .menu li > a:hover,
+      .shop .main-header.hidden-header .main-cart:hover,
+      .shop .main-header.hidden-header #logo-wrapper a:hover {
         color: #27DC94; }
     .shop .main-header.hidden-header li.current-menu-item a {
       color: #27DC94; }
@@ -5929,10 +5933,6 @@ header {
   color: inherit; }
   .home-page footer .footer-wrapper {
     background: rgba(255, 255, 255, 0.9); }
-  .home-page footer .social-links a {
-    border-color: #4c5b52; }
-    .home-page footer .social-links a i {
-      color: #4c5b52 !important; }
 
 footer {
   background: rgba(255, 255, 255, 0.9);
@@ -5942,6 +5942,10 @@ footer {
   position: absolute;
   bottom: 0;
   height: 46px; }
+  footer.main-footer .social-links a {
+    border-color: #4c5b52; }
+    footer.main-footer .social-links a i {
+      color: #4c5b52 !important; }
   footer .footer-wrapper {
     position: relative; }
   footer .menu-footer-menu-container {
@@ -5996,7 +6000,8 @@ article.product {
   article.product:hover .product-info-overlay {
     opacity: 1;
     visibility: visible; }
-  article.product:hover .add_to_cart_button {
+  article.product:hover .add_to_cart_button,
+  article.product:hover .added_to_cart {
     visibility: visible;
     opacity: 1; }
   article.product figure .onsale {
@@ -6029,11 +6034,11 @@ article.product {
   article.product .product_type_simple {
     z-index: 2; }
   article.product .added_to_cart {
-    bottom: 75px;
-    right: 25px;
-    background: #27DC94;
-    border-color: #27DC94;
-    z-index: 1; }
+    bottom: 65px;
+    right: 40px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0; }
   article.product .price {
     font-size: 26px; }
     article.product .price del {

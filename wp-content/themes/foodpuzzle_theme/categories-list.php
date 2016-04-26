@@ -22,7 +22,7 @@
   foreach ($all_categories as $cat) {
     if ($cat->category_parent == 0) {
       $category_id = $cat->term_id;       
-      echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'" class="panda-filter-category-button" data-filter-category="' . $cat->name . '">'. $cat->name .'</a></li>';
+      echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'" class="panda-filter-category-button" data-filter-category="' . $cat->slug . '">'. $cat->name .'</a></li>';
 
       $args2 = array(
               'taxonomy'     => $taxonomy,
