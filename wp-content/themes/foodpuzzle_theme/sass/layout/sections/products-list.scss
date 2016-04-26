@@ -7,7 +7,8 @@ article.product {
       visibility: visible;
     }
 
-    .add_to_cart_button {
+    .add_to_cart_button,
+    .added_to_cart {
       visibility: visible;
       opacity: 1;
     }
@@ -56,11 +57,11 @@ article.product {
   }
 
   .added_to_cart {
-    bottom: 75px;
-    right: 25px;
-    background: $base-green;
-    border-color: $base-green;
+    bottom: 65px;
+    right: 40px;
     z-index: 1;
+    visibility: hidden;
+    opacity: 0;
   }
 
   .price {

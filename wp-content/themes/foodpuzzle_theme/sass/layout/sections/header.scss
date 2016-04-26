@@ -98,7 +98,9 @@ header {
       position: fixed;
       background-color: rgba(255, 255, 255, .85);
 
-      .menu li > a {
+      .menu li > a,
+      .main-cart,
+      #logo-wrapper a {
         color: #000;
 
         &:hover {

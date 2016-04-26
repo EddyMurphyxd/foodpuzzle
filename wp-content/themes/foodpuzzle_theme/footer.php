@@ -1,9 +1,6 @@
   </main><!-- main -->
 
   <footer class="main-footer">
-    <?php if (is_shop()): ?>
-      <div class="container">
-    <?php endif; ?>
     
     <div class="footer-wrapper clearfix">
       <!-- <div class="copyright">
@@ -20,10 +17,6 @@
         <?php the_social_links();?>
       </div>
     </div>
-
-    <?php if (is_shop()): ?>
-      </div> <!-- close container -->
-    <?php endif; ?>
   </footer><!-- .main-footer -->
 </div><!-- #wrapper -->
 <?php wp_footer(); ?>

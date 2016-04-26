@@ -613,6 +613,8 @@
       if (itemCounter == maxItemsPerRow) {
         maxItemHeight = (that.options.rowItems) ? Math.max.apply(null, itemsHeights) : itemHeight;
 
+        if (that.options.fancyRowItems) maxItemHeight = self.prev().outerHeight();
+
         lastgridItemOffset.top += maxItemHeight;
         lastgridItemOffset.left = 0;
         totalGridHeight += maxItemHeight;
@@ -625,7 +627,15 @@
         if (rowCounter == maxRows && gridItems.index(self) == gridItems.length - 1) { 
           maxItemHeight = (that.options.rowItems) ? Math.max.apply(null, itemsHeights) : itemHeight;
 
+          if (that.options.fancyRowItems) maxItemHeight = self.prev().outerHeight();
+
           totalGridHeight += maxItemHeight;
+        }
+
+        if (that.options.fancyRowItems) {
+          maxItemHeight = self.prev().outerHeight();
+
+          lastgridItemOffset.top = maxItemHeight;
         }
 
         itemCounter++;
