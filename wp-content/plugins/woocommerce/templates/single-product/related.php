@@ -44,8 +44,6 @@ $products = new WP_Query( $args );
 $woocommerce_loop['columns'] = $columns;
 
 if ( $products->have_posts() ) : ?>
-	</div> <!-- close parent .column -->
-	</div> <!-- close parent .row -->
 
 	<div class="row">
 		<div class="col-sm-12">

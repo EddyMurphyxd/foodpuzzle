@@ -4,7 +4,7 @@
         _winHeight = _win.innerHeight(),
         _winWidth = _win.width();
 
-    setCarouselHeight();
+    setItemsHeight();
     customizeCarousel();
     preventNegative();
     inputNumberArrows();
@@ -25,8 +25,10 @@
       });
     });
 
-    function setCarouselHeight() {
+    function setItemsHeight() {
       $('.owl-carousel, .owl-carousel .item img').height(_winHeight);
+      $('.single-product .images').height(_winHeight);
+      $('.single-product .summary').css('margin-top',  _winHeight);
     }
 
     function customizeCarousel() {
