@@ -98,6 +98,7 @@
     function stickyHeader() {
       var lastScrollTop = 0,
           header        = $('.main-header'),
+          main          = $('main'),
           navigation    = $('.main-navigation'),
           headerHeight  = navigation.outerHeight();
 
@@ -105,10 +106,14 @@
         var scrollTop = $(this).scrollTop();
         
         if (scrollTop > lastScrollTop) {
-          if (scrollTop > headerHeight) header.addClass('hidden-header');
+          if (scrollTop > headerHeight) {
+            header.addClass('hidden-header');
+            main.addClass('hidden-header');
+          }
         } else {
           if (scrollTop <= headerHeight) {
             header.removeClass('hidden-header');
+            main.removeClass('hidden-header');
           }
         }
 

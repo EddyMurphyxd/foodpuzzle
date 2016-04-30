@@ -198,4 +198,11 @@ figure {
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
   float: left;
+  position: fixed;
+}
+
+main.hidden-header {
+  .mmenu-button {
+    color: #000;
+  }
 }
