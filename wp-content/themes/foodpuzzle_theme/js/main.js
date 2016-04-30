@@ -8,12 +8,14 @@
     customizeCarousel();
     preventNegative();
     inputNumberArrows();
-    setFullWidth();
+    setFullWidth($('.ingridients-image-wrapper'));
 
     if (!$('body').hasClass('home-page')) stickyHeader();
 
     $('.wc-tab#tab-description').show();
     $('.description_tab').addClass('active');
+
+    $('.concept-image-teaser .text *').addClass('animated fadeInLeft');
 
     $('nav.categories-list').mmenu();
 
@@ -29,7 +31,8 @@
     function setItemsHeight() {
       $('.owl-carousel, .owl-carousel .item img').height(_winHeight);
       $('.single-product .images').height(_winHeight);
-      $('.single-product .summary').css('margin-top',  _winHeight - 40);
+      $('.concept-image-teaser').height(_winHeight);
+      $('.concept-image-teaser + .additional-content').css('margin-top',  _winHeight - 40);
     }
 
     function customizeCarousel() {
@@ -124,12 +127,12 @@
       });
     }
 
-    function setFullWidth() {
+    function setFullWidth(element) {
       var _winWidth = _win.width(),
           containerWidth = $('.container').width(),
           marg  = (_winWidth - containerWidth) / 2;
 
-      $('.ingridients-image-wrapper').css({
+      element.css({
         "margin-left": -marg,
         "margin-right": -marg
       });

@@ -19,48 +19,62 @@
       <div class="entry-content">
         <div class="concept-image-teaser">
           <img src="<?php echo the_field('concept_image'); ?>" alt="">
-        </div>
 
-        <?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'hbd-theme' )  ); ?>
-        <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'hbd-theme' ) . '&after=</div>') ?>
-
-        <div class="row columns-center">
-          <div class="col-sm-3">
-            <p class="title">ШВИДКО</p>
-            <?php echo the_field('quick_teaser_text'); ?>
-          </div>
-
-          <div class="col-sm-3 col-sm-offset-1">
-            <p class="title">Зручно</p>
-            <?php echo the_field('easy_teaser_text'); ?>
-          </div>
-
-          <div class="col-sm-3 col-sm-offset-1">
-            <p class="title">Корисно</p>
-            <?php echo the_field('healthy_teaser_text'); ?>
+          <div class="text">
+            <?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'hbd-theme' )  ); ?>
+            <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'hbd-theme' ) . '&after=</div>') ?>
           </div>
         </div>
 
-        <div class="profits">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <h2>ЦЕ ДІЙСНО ТАК ЗРУЧНО, ЯК ЗДАЄТЬСЯ?</h2>
+        <div class="additional-content">
+          <div class="row columns-center">
+            <div class="col-sm-3">
+              <p class="title">ШВИДКО</p>
+              <p class="gray">*<?php echo the_field('quick_teaser_text'); ?></p>
+            </div>
+
+            <div class="col-sm-3 col-sm-offset-1">
+              <p class="title">Зручно</p>
+              <p class="gray">*<?php echo the_field('easy_teaser_text'); ?></p>
+            </div>
+
+            <div class="col-sm-3 col-sm-offset-1">
+              <p class="title">Корисно</p>
+              <p class="gray">*<?php echo the_field('healthy_teaser_text'); ?></p>
             </div>
           </div>
 
-          <div class="row profits-row columns-center">
-            <?php 
-              $profits = explode(PHP_EOL, get_field('profits_textarea'));
-              $counter = 0;
-            ?>
-
-            <?php foreach ($profits as $profit): $counter++; ?>
-              <div class="col-sm-3<?php if ($counter > 1) echo ' col-sm-offset-1'?>">
-                <div class="text-wrapper">
-                  <p><?php echo $profit; ?></p>
-                </div>
+          <div class="profits">
+            <div class="row">
+              <div class="col-sm-12 text-center margin-bottom-25">
+                <h2>ЦЕ ДІЙСНО ТАК ЗРУЧНО, ЯК ЗДАЄТЬСЯ?</h2>
               </div>
-            <?php endforeach; ?>
+            </div>
+
+            <div class="row profits-row columns-center">
+              <?php 
+                $profits = explode(PHP_EOL, get_field('profits_textarea'));
+                $counter = 0;
+              ?>
+
+              <?php foreach ($profits as $profit): ?>
+                <?php if ($counter == 3): $counter = 0; ?>
+                  </div>
+
+                  <div class="row profits-row columns-center">
+                <?php endif; ?>
+
+                <div class="col-sm-3<?php if ($counter > 0) echo ' col-sm-offset-1'?>">
+                  <div class="text-wrapper">
+                    <p><?php $counter++; echo $profit; ?></p>
+                  </div>
+                </div>
+              <?php endforeach; ?>
+
+              <?php if (count($profits) % 3 != 0): ?>
+                <div class="col-sm-3 col-sm-offset-1"></div>
+              <?php endif; ?>
+            </div>
           </div>
         </div>
 
@@ -75,7 +89,7 @@
   </div>
 
   <div class="quick-link">
-    <a href="#"><p>Спробуй! Тобі сподобається!</p></a>
+    <a href="#" target="_blank"><p>Спробуй! Тобі сподобається!</p></a>
   </div>
 </section><!-- #main-section -->
  
