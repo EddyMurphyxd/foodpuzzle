@@ -8,6 +8,7 @@
     customizeCarousel();
     preventNegative();
     inputNumberArrows();
+    setFullWidth();
 
     if (!$('body').hasClass('home-page')) stickyHeader();
 
@@ -28,7 +29,7 @@
     function setItemsHeight() {
       $('.owl-carousel, .owl-carousel .item img').height(_winHeight);
       $('.single-product .images').height(_winHeight);
-      $('.single-product .summary').css('margin-top',  _winHeight);
+      $('.single-product .summary').css('margin-top',  _winHeight - 40);
     }
 
     function customizeCarousel() {
@@ -120,6 +121,17 @@
         }
 
         lastScrollTop = scrollTop;
+      });
+    }
+
+    function setFullWidth() {
+      var _winWidth = _win.width(),
+          containerWidth = $('.container').width(),
+          marg  = (_winWidth - containerWidth) / 2;
+
+      $('.ingridients-image-wrapper').css({
+        "margin-left": -marg,
+        "margin-right": -marg
       });
     }
   });

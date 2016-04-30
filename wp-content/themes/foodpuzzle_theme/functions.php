@@ -285,8 +285,6 @@
     
     echo '<div class="options_group">';
 
-
-
     // Textarea
     woocommerce_wp_textarea_input( 
     	array( 

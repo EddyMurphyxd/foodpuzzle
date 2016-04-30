@@ -37,25 +37,25 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
   
   <!-- Template for 3 columns description - start -->
   
-  <div class="row">
-    <div class="col-sm-4 product-weight-column">
-      <h3>ВАГА 1 ПОРЦІЇ</h3>
-      <p class="bold"><?php echo get_post_meta( $post->ID, '_weight_text_field', true ); ?></p>
+  <div class="row columns-center description-columns-row">
+    <div class="col-sm-3 product-weight-column">
+      <p class="title">Вага 1 порції</p>
+      <p class="bold"><?php echo get_post_meta( $post->ID, '_weight_text_field', true ); ?>.</p>
 
       <p class="small-gray">*<?php echo get_post_meta( $post->ID, '_weight_textarea', true ); ?></p>
       
     </div>
 
-    <div class="col-sm-4 product-time-column">
-      <h3>ЧАС ПРИГОТУВАННЯ</h3>
+    <div class="col-sm-3 col-sm-offset-1 product-time-column">
+      <p class="title">Час приготування</p>
 
-      <p class="bold"><?php echo get_post_meta( $post->ID, '_time_text_field', true ); ?></p>
+      <p class="bold"><?php echo get_post_meta( $post->ID, '_time_text_field', true ); ?>.</p>
 
       <p class="small-gray">*<?php echo get_post_meta( $post->ID, '_time_textarea', true ); ?></p>
     </div>
 
-    <div class="col-sm-4 product-difficulty-column">
-      <h3>РІВЕНЬ СКЛАДНОСТІ</h3>
+    <div class="col-sm-3 col-sm-offset-1 product-difficulty-column">
+      <p class="title">Рівень складності</p>
 
       <p class="bold"><?php echo get_post_meta( $post->ID, '_difficulty_text_field', true ); ?></p>
 
@@ -67,14 +67,14 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 
   <!-- Template for ingridients - start -->
 
-  <div class="row">
+  <div class="row ingridients-row">
     <div class="col-sm-12">
       <h2>І Н Г Р А Д І Є Н Т И</h2>
       <p>все це ви знайдете в пакеті від foodpuzzle</p>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row columns-center">
     <?php
       $ingridients = get_post_meta( $post->ID, '_ingridients_list_textarea', true );
       $ingrArray   = explode(",", $ingridients);
@@ -82,29 +82,33 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
     ?>
 
     <?php foreach ($ingrArray as $item): ?>
-      <?php if ($counter == 3): ?>
+      <?php if ($counter == 3): $counter = 0; ?>
         </div>
 
-        <div class="row">
+        <div class="row columns-center">
       <?php endif; ?>
 
-      <div class="col-sm-4">
+      <div class="col-sm-3<?php if ($counter > 0) echo ' col-sm-offset-1'?>">
         <p class="ingridient"><?php $counter++; echo $item; ?></p>
       </div>
     <?php endforeach;?>
+
+    <?php if (count($ingrArray) % 3 != 0): ?>
+      <div class="col-sm-3 col-sm-offset-1"></div>
+    <?php endif; ?>
   </div>
 
   <!-- Template for ingridients - end -->
 
   <!-- Template for required items - start -->
-  <div class="row">
+  <div class="row required-items-row">
     <div class="col-sm-12">
       <h2>І Н В Е Н Т А Р</h2>
       <p>те, що вам знадобиться для приготування</p>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row columns-center">
     <?php
       $requiredItems = get_post_meta( $post->ID, '_required_items_textarea', true );
       $itemsArray   = explode(",", $requiredItems);
@@ -112,18 +116,30 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
     ?>
 
     <?php foreach ($itemsArray as $item): ?>
-      <?php if ($counter == 3): ?>
+      <?php if ($counter == 3): $counter = 0; ?>
         </div>
 
-        <div class="row">
+        <div class="row columns-center">
       <?php endif; ?>
 
-      <div class="col-sm-4">
+      <div class="col-sm-3<?php if ($counter > 0) echo ' col-sm-offset-1'?>">
         <p class="required-item"><?php $counter++; echo $item; ?></p>
       </div>
     <?php endforeach;?>
+
+    <?php if (count($itemsArray) % 3 != 0): ?>
+      <div class="col-sm-3 col-sm-offset-1"></div>
+    <?php endif; ?>
   </div>
   <!-- Template for required items - end -->
+
+  <div class="ingridients-image-wrapper">
+    <?php 
+      $imgSrc = get_field( "ingridient_image" );
+    ?>
+
+    <img src="<?php echo $imgSrc; ?>" alt="">
+  </div>
 
   <div class="general-description">
     <?php the_content(); ?>
