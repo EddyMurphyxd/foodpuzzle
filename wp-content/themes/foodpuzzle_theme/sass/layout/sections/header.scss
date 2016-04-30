@@ -25,7 +25,8 @@ header {
       background: none;
     }
 
-    .menu li > a {
+    .menu li > a,
+    .main-cart {
       color: #fff;
 
       &:hover {

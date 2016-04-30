@@ -20,7 +20,8 @@
       $('body.shop').pandaFilter({
         sorting: false,
         rowItems: false,
-        fancyRowItems: true
+        fancyRowItems: true,
+        singleCategory: true
       });
     });
 

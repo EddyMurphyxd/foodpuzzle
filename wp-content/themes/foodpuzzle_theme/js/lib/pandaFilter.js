@@ -158,7 +158,9 @@
 
     loadMore: {},
 
-    sorting: true
+    sorting: true,
+
+    singleCategory: false
   };
 
   /**
@@ -364,6 +366,7 @@
         filterCategory = self.data('filter-category'),
         filterTypeTemp = this.getFilterTypeArray();
 
+    this._categoryButtons.removeClass('active');
     self.toggleClass('active');
 
     if (this.options.showActive) this.showActiveList(self);
@@ -378,8 +381,14 @@
         this.clearSearch(); // Clear search filter either
       }
     } else {
+      if (this.options.singleCategory) {
+        filterTypeTemp = [];
+      }
+
       filterTypeTemp.push(filterCategory); // Add filter type to filter type array
     }
+
+    this.setFilterTypeArray(filterTypeTemp);
 
     this.matchItems(filterTypeTemp);
 
@@ -694,6 +703,13 @@
    */
   Panda.prototype.setActiveItems = function(newActiveItems) {
     this._activeItems = $(newActiveItems);
+  };
+
+  /**
+   * Sets global filterTypeArray
+   */
+  Panda.prototype.setFilterTypeArray = function(array) {
+    this._filterTypes = array;
   };
 
   /**

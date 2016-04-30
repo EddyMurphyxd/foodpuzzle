@@ -5841,9 +5841,11 @@ header {
     background-color: rgba(0, 0, 0, 0.85); }
     header.hidden-header .main-navigation {
       background: none; }
-    header.hidden-header .menu li > a {
+    header.hidden-header .menu li > a,
+    header.hidden-header .main-cart {
       color: #fff; }
-      header.hidden-header .menu li > a:hover {
+      header.hidden-header .menu li > a:hover,
+      header.hidden-header .main-cart:hover {
         color: #35B881; }
     header.hidden-header .mmenu-button {
       color: #fff; }
