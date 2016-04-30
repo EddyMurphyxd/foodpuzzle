@@ -157,24 +157,6 @@ figure {
   @include btn-active;
 }
 
-.single-product {
-  .cart {
-    padding: 15px 0;
-
-    @include clearfix();
-
-    .button {
-      margin-left: 20px;
-      margin-top: -5px;
-      float: left;
-    }
-  }
-
-  .quantity{
-    float: left;
-  }
-}
-
 .comment-form {
   input.submit {
     @include btn-active;
