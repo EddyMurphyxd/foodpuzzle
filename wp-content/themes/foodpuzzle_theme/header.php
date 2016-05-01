@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?> <?php if (is_home() || is_front_page()) echo 'class="home-page"'?>>
 <head>
   <title>
     <?php
@@ -52,6 +52,7 @@
   }
 ?>
 <body class="<?php echo $pageClass;?>">
+
 <div id="wrapper">
   <header class="main-header">
     

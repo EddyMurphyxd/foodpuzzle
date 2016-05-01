@@ -2,7 +2,7 @@
   .item {
     img {
       @include scale(1);
-      @include transition(all 4s);
+      @include transition(all 6s);
     }
   }
 

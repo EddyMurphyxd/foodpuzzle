@@ -115,3 +115,11 @@ article.product {
 .items-wrapper {
   margin-left: 50px;
 }
+
+body.shop {
+  position: fixed;
+
+  &.loaded {
+    position: static;
+  }
+}

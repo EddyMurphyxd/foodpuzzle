@@ -15,4 +15,5 @@
  * @version     2.0.0
  */
 ?>
+<div class="preloader-wrapper"><div class="preloader"></div></div>
 <div class="products-list filter-wrapper">
