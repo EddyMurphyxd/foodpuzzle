@@ -43,7 +43,8 @@ if ( ! $checkout->enable_signup && ! $checkout->enable_guest_checkout && ! is_us
 			</div>
 
 			<div class="col-2">
-				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+				<?php /** do_action( 'woocommerce_checkout_shipping' ); **/?>
+				<p>*заповніть всі поля, для подальшого підтвердження замовлення нашим оператором; всі ваші дані захищені і використовуватимуться лише для підтвердження замовлення.</p>
 			</div>
 		</div>
 

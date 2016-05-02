@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WooCommerce 2.5.5\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
 "POT-Creation-Date: 2016-03-11 17:54:31+00:00\n"
-"PO-Revision-Date: Sun Apr 24 2016 19:14:32 GMT+0300 (EEST)\n"
+"PO-Revision-Date: Sun May 01 2016 14:07:40 GMT+0300 (EEST)\n"
 "Last-Translator: admin <vladislav.fang@gmail.com>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "Language: Ukrainian\n"
@@ -6091,10 +6091,6 @@ msgid ""
 "g. software, check this box."
 msgstr ""
 
-#: includes/admin/class-wc-admin-pointers.php:140
-msgid "Prices"
-msgstr "Ціни"
-
 #: includes/admin/class-wc-admin-pointers.php:141
 msgid "Next you'll need to give your product a price."
 msgstr ""
@@ -6396,19 +6392,6 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-stock.php:35
 msgid "Stock"
 msgstr ""
-
-#: includes/admin/class-wc-admin-post-types.php:229
-#: includes/admin/views/html-bulk-edit-product.php:21
-#: includes/admin/views/html-quick-edit-product.php:33
-#: includes/widgets/class-wc-widget-products.php:56 templates/cart/cart.php:36
-#: templates/cart/cart.php:95 templates/emails/email-order-details.php:35
-msgid "Price"
-msgstr "Ціна"
-
-#: includes/admin/class-wc-admin-post-types.php:230
-#: includes/admin/reports/class-wc-report-sales-by-category.php:192
-msgid "Categories"
-msgstr "Категорії"
 
 #: includes/admin/class-wc-admin-post-types.php:231
 msgid "Tags"
@@ -6849,7 +6832,7 @@ msgstr ""
 #: includes/admin/class-wc-admin-profile.php:97
 #: templates/myaccount/form-edit-account.php:30
 msgid "First name"
-msgstr ""
+msgstr "Ім'я, Приізвище"
 
 #: includes/admin/class-wc-admin-profile.php:48
 #: includes/admin/class-wc-admin-profile.php:101
@@ -9706,19 +9689,6 @@ msgstr ""
 
 #: includes/admin/reports/class-wc-report-stock.php:44
 msgid "No products found."
-msgstr ""
-
-#: includes/admin/reports/class-wc-report-stock.php:148
-msgid "product"
-msgstr ""
-
-#: includes/admin/reports/class-wc-report-stock.php:164
-#: includes/class-wc-post-types.php:240 templates/cart/cart.php:35
-#: templates/cart/cart.php:77 templates/checkout/form-pay.php:28
-#: templates/checkout/review-order.php:25
-#: templates/emails/email-order-details.php:33
-#: templates/order/order-details.php:31
-msgid "Product"
 msgstr ""
 
 #: includes/admin/reports/class-wc-report-stock.php:165
@@ -17985,6 +17955,36 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
+#: includes/admin/reports/class-wc-report-stock.php:148
+msgid "product"
+msgstr "продукт"
+
+#: includes/admin/reports/class-wc-report-stock.php:164
+#: includes/class-wc-post-types.php:240 templates/cart/cart.php:35
+#: templates/cart/cart.php:77 templates/checkout/form-pay.php:28
+#: templates/checkout/review-order.php:25
+#: templates/emails/email-order-details.php:33
+#: templates/order/order-details.php:31
+msgid "Product"
+msgstr "Продукт"
+
+#: includes/admin/class-wc-admin-pointers.php:140
+msgid "Prices"
+msgstr "Ціни"
+
+#: includes/admin/class-wc-admin-post-types.php:229
+#: includes/admin/views/html-bulk-edit-product.php:21
+#: includes/admin/views/html-quick-edit-product.php:33
+#: includes/widgets/class-wc-widget-products.php:56 templates/cart/cart.php:36
+#: templates/cart/cart.php:95 templates/emails/email-order-details.php:35
+msgid "Price"
+msgstr "Ціна"
+
+#: includes/admin/class-wc-admin-post-types.php:230
+#: includes/admin/reports/class-wc-report-sales-by-category.php:192
+msgid "Categories"
+msgstr "Категорії"
+
 #: includes/abstracts/abstract-wc-order.php:1842
 msgid "Subtotal:"
 msgstr "Попередньо:"
@@ -18029,7 +18029,7 @@ msgstr "Доступно"
 #: templates/checkout/review-order.php:105 templates/myaccount/my-orders.php:28
 #: templates/order/order-details.php:32
 msgid "Total"
-msgstr "Разом"
+msgstr "Всього до сплати"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:753
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:328

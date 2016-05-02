@@ -379,4 +379,23 @@
   }
   add_filter('woocommerce_related_products_args','wc_remove_related_products', 10); 
 
+  // Hook in
+  add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+
+  // Our hooked in function - $fields is passed via the filter!
+  function custom_override_checkout_fields( $fields ) {
+       unset($fields['order']['order_comments']);
+
+       unset($fields['billing']['billing_company']);
+       unset($fields['billing']['billing_address_2']);
+       unset($fields['billing']['billing_city']);
+       unset($fields['billing']['billing_postcode']);
+       unset($fields['billing']['billing_country']);
+       unset($fields['billing']['billing_state']);
+       unset($fields['billing']['billing_email']);
+       unset($fields['billing']['billing_last_name']);
+
+       return $fields;
+  }
+
 ?>
