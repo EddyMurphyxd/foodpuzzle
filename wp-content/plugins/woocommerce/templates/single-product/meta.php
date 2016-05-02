@@ -38,6 +38,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
   <!-- Template for 3 columns description - start -->
   
   <div class="row columns-center description-columns-row">
+    <?php if (!empty(get_post_meta( $post->ID, '_weight_text_field', true ))): ?>
     <div class="col-sm-3 product-weight-column">
       <p class="title">Вага 1 порції</p>
       <p class="bold"><?php echo get_post_meta( $post->ID, '_weight_text_field', true ); ?>.</p>
@@ -45,7 +46,9 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
       <p class="small-gray">*<?php echo get_post_meta( $post->ID, '_weight_textarea', true ); ?></p>
       
     </div>
+    <?php endif; ?>
 
+    <?php if (!empty(get_post_meta( $post->ID, '_time_text_field', true ))): ?>
     <div class="col-sm-3 col-sm-offset-1 product-time-column">
       <p class="title">Час приготування</p>
 
@@ -53,7 +56,9 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 
       <p class="small-gray">*<?php echo get_post_meta( $post->ID, '_time_textarea', true ); ?></p>
     </div>
+    <?php endif; ?>
 
+    <?php if (!empty(get_post_meta( $post->ID, '_difficulty_text_field', true ))): ?>
     <div class="col-sm-3 col-sm-offset-1 product-difficulty-column">
       <p class="title">Рівень складності</p>
 
@@ -61,6 +66,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 
       <p class="small-gray">*<?php echo get_post_meta( $post->ID, '_difficulty_textarea', true ); ?></p>
     </div>
+    <?php endif; ?>
   </div>
 
   <!-- Template for 3 columns description - end -->
