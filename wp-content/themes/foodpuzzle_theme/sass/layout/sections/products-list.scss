@@ -128,12 +128,6 @@ body.shop {
   display: none;
 }
 
-.woocommerce {
-  header {
-    display: none;
-  }
-}
-
 .checkout-button,
 #order_review_heading,
 #order_review .shop_table,
@@ -185,6 +179,7 @@ body.shop {
     margin-bottom: 0;
     position: absolute;
     left: 0;
+    bottom: 45px;
     width: 100%;
     background: $lighter-gray;;
     text-align: center;
@@ -194,10 +189,23 @@ body.shop {
       display: inline-block;
       border: none;
       font-size: 26px;
+
+      &:hover {
+        background: none;
+        border: none;
+        color: $light-gray;
+      }
     }
   }
 }
 
 .woocommerce .col2-set, .woocommerce-page .col2-set {
-  padding-bottom: 30px;
+  padding-bottom: 80px;
+}
+
+.woocommerce {
+  ul.order_details {
+    padding-left: 0;
+    margin-top: 25px;
+  }
 }

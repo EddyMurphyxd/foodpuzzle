@@ -93,12 +93,16 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 				 * @hooked my_add_short_description - 9
 				 */
 				// do_action( 'woocommerce_after_shop_loop_item_title' );
+				$price = get_post_meta( get_the_ID(), '_regular_price', true);
 			?>
 
 			
 			<p><?php if (!empty(get_field('_weight_text_field'))): ?>1 порція: <?php echo get_field('_weight_text_field'); ?>.<?php endif; ?></p>
 			<p><?php if (!empty(get_field('_time_text_field'))): ?>час приготування: <?php echo get_field('_time_text_field'); ?>.<?php endif; ?></p>
 			<p><?php if (!empty(get_field('_time_text_field'))): ?>складність: <?php echo get_field('_time_text_field'); ?><?php endif; ?></p>
+			<span class="price">
+				<span class="amount"><?php echo $price . ' ' . get_woocommerce_currency_symbol(); ?> </span>
+			</span>
 		</div>
 	</div>
 	

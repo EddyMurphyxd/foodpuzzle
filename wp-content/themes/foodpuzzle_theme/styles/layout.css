@@ -5820,7 +5820,7 @@ button.close {
 .woocommerce-message {
   padding-bottom: 15px; }
 
-header {
+header.main-header {
   padding: 0 15px;
   position: absolute;
   top: 0;
@@ -5832,24 +5832,24 @@ header {
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s; }
-  header a {
+  header.main-header a {
     color: #4c5b52; }
-    header a:hover {
+    header.main-header a:hover {
       color: #35B881; }
-  header.hidden-header {
+  header.main-header.hidden-header {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.85); }
-    header.hidden-header .main-navigation {
+    header.main-header.hidden-header .main-navigation {
       background: none; }
-    header.hidden-header .menu li > a,
-    header.hidden-header .main-cart {
+    header.main-header.hidden-header .menu li > a,
+    header.main-header.hidden-header .main-cart {
       color: #fff; }
-      header.hidden-header .menu li > a:hover,
-      header.hidden-header .main-cart:hover {
+      header.main-header.hidden-header .menu li > a:hover,
+      header.main-header.hidden-header .main-cart:hover {
         color: #35B881; }
-    header.hidden-header .mmenu-button {
+    header.main-header.hidden-header .mmenu-button {
       color: #fff; }
-      header.hidden-header .mmenu-button:hover {
+      header.main-header.hidden-header .mmenu-button:hover {
         color: #35B881; }
 
 #logo-wrapper,
@@ -6097,9 +6097,6 @@ body.shop {
 .cart-subtotal {
   display: none; }
 
-.woocommerce header {
-  display: none; }
-
 .checkout-button,
 #order_review_heading,
 #order_review .shop_table,
@@ -6152,6 +6149,7 @@ body.shop {
   margin-bottom: 0;
   position: absolute;
   left: 0;
+  bottom: 45px;
   width: 100%;
   background: #EEEFE9;
   text-align: center; }
@@ -6160,9 +6158,17 @@ body.shop {
     display: inline-block;
     border: none;
     font-size: 26px; }
+    #payment .place-order input#place_order:hover {
+      background: none;
+      border: none;
+      color: #4c5b52; }
 
 .woocommerce .col2-set, .woocommerce-page .col2-set {
-  padding-bottom: 30px; }
+  padding-bottom: 80px; }
+
+.woocommerce ul.order_details {
+  padding-left: 0;
+  margin-top: 25px; }
 
 .single-product form.cart {
   position: fixed;
@@ -6328,6 +6334,14 @@ body.shop {
     display: block;
     padding: 20px 0 15px;
     font-size: 26px; }
+
+body.cart h1 {
+  text-align: center;
+  margin-bottom: 40px; }
+
+.cart-empty,
+.return-to-shop {
+  text-align: center; }
 
 .owl-carousel .item img {
   -webkit-transform: scale(1);
@@ -6539,7 +6553,7 @@ a {
     color: #4c5b52;
     text-decoration: none; }
 
-.title {
+p.title {
   font-weight: 300;
   line-height: 1;
   text-transform: uppercase;

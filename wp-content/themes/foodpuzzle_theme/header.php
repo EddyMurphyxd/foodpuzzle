@@ -39,19 +39,19 @@
 
   if (is_home() || is_front_page()) {
     $pageClass = 'home-page';
+  } else if (get_option( 'woocommerce_cart_page_id' ) == get_the_ID()) {
+    $pageClass = 'cart';
   } else if (is_page()) {
     $pageClass = 'default';
   } else if (is_shop()) {
     $pageClass = 'shop';
-  } else if (wc_get_page_id( 'cart' ) == get_the_ID()) {
-    $pageClass = 'cart';
   } else if (is_product()) {
     $pageClass = 'single-product';
   } else {
     $pageClass = 'page_' . get_the_ID();
   }
 ?>
-<body class="<?php echo $pageClass;?>">
+<body class="<?php echo $pageClass?>">
 
 <div id="wrapper">
   <header class="main-header">
