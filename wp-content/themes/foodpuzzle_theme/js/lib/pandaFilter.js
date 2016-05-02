@@ -599,59 +599,114 @@
         totalGridHeight = 0,
         maxItemHeight;
 
-    var lastgridItemOffset = {left: 0, top: 0};
-
-    if (that.options.rowItems) {
-      var itemsHeights = [];
+    if (that.options.fancyRowItems) {
+      fancyGrid();
+    } else {
+      defaultGrid();
     }
 
-    gridItems.each(function() {
-      var self           = $(this),
-          prevItem       = $(gridItems[gridItems.index(self) - 1]),
-          prevItemHeight = (prevItem.length) ? prevItem.outerHeight() : 0,
-          itemWidth      = self.outerWidth(), 
-          itemHeight     = self.outerHeight();
+    function fancyGrid() {
+      var columns = [];
 
-      self.css({
-        top: lastgridItemOffset.top,
-        left: lastgridItemOffset.left
-      });
+      var lastGridItemOffset = {left: 0, top: 0};
 
-      lastgridItemOffset.left += itemWidth;
+      // Add columns as specified (2, 3 etc)
+      for (var i = 0; i < 2; i++) {
+        columns.push([]); 
+      }
 
-      if (that.options.rowItems) itemsHeights.push(itemHeight);
+      // Split gridItems into amount of columns
+      for (var i = 0; i < gridItems.length; i++) {
+        if (i % 2 == 0) {
+          columns[0].push(gridItems[i]);
+        } else {
+          columns[1].push(gridItems[i]); // Temp hardcode
+        }
+      }
 
-      if (itemCounter == maxItemsPerRow) {
-        maxItemHeight = (that.options.rowItems) ? Math.max.apply(null, itemsHeights) : itemHeight;
+      for (var i in columns) {
+        var column = columns[i];
 
-        if (that.options.fancyRowItems) maxItemHeight = prevItemHeight;
+        lastGridItemOffset.top = 0;
+        lastGridItemOffset.left = (i == 0) ? 0 : $(column[0]).outerWidth();
 
-        lastgridItemOffset.top += maxItemHeight;
-        lastgridItemOffset.left = 0;
-        totalGridHeight += maxItemHeight;
+        $(column).each(function() {
+          var self           = $(this),
+              itemWidth      = self.outerWidth(), 
+              itemHeight     = self.outerHeight();
 
-        itemCounter = 1;
-        itemsHeights = [];
-        rowCounter++;
-      } else {
-        // Last row check
-        if (rowCounter == maxRows && gridItems.index(self) == gridItems.length - 1) { 
+          self.css({
+            top: lastGridItemOffset.top,
+            left: lastGridItemOffset.left
+          });
+
+          // Check for last item in a row
+          if (itemCounter == maxItemsPerRow) {
+            lastGridItemOffset.top += itemHeight;
+            totalGridHeight += itemHeight;
+
+            itemCounter = 1;
+            rowCounter++;
+          } else {
+            // Last row check
+            if (rowCounter == maxRows && gridItems.index(self) == gridItems.length - 1) {
+              totalGridHeight += itemHeight;
+            }
+
+            lastGridItemOffset.top += itemHeight;
+
+            itemCounter++;
+          }
+        });
+      } 
+    }
+
+    function defaultGrid() {
+      var lastGridItemOffset = {left: 0, top: 0};
+
+      if (that.options.rowItems) {
+        var itemsHeights = [];
+      }
+
+      gridItems.each(function() {
+        var self           = $(this),
+            itemWidth      = self.outerWidth(), 
+            itemHeight     = self.outerHeight();
+
+        self.css({
+          top: lastGridItemOffset.top,
+          left: lastGridItemOffset.left
+        });
+
+        lastGridItemOffset.left += itemWidth;
+
+        if (that.options.rowItems) itemsHeights.push(itemHeight);
+
+        // Check for last item in a row
+        if (itemCounter == maxItemsPerRow) {
           maxItemHeight = (that.options.rowItems) ? Math.max.apply(null, itemsHeights) : itemHeight;
 
-          if (that.options.fancyRowItems) maxItemHeight = prevItemHeight;
-
+          lastGridItemOffset.top += maxItemHeight;
+          lastGridItemOffset.left = 0;
           totalGridHeight += maxItemHeight;
+
+          itemCounter = 1;
+          itemsHeights = [];
+          rowCounter++;
+        } else {
+          // Last row check
+          if (rowCounter == maxRows && gridItems.index(self) == gridItems.length - 1) { 
+            maxItemHeight = (that.options.rowItems) ? Math.max.apply(null, itemsHeights) : itemHeight;
+
+            totalGridHeight += maxItemHeight;
+          }
+
+          lastGridItemOffset.top += maxItemHeight;
+
+          itemCounter++;
         }
-
-        if (that.options.fancyRowItems) {
-          maxItemHeight = prevItemHeight;
-
-          lastgridItemOffset.top = maxItemHeight;
-        }
-
-        itemCounter++;
-      }
-    });
+      });
+    }
 
     that._itemsList.height(totalGridHeight); 
   };

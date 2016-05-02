@@ -59,6 +59,7 @@ header.main-header {
   .menu {
     padding-left: 0;
     list-style: none;
+    margin-bottom: 0;
 
     li {
       display: inline-block;
@@ -160,3 +161,8 @@ header.main-header {
     min-width: 20px;
   }
 }
+
+// article.panda-filter-item {
+//   float: left;
+//   position: relative !important;
+// }

@@ -52,7 +52,11 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 }
 ?>
 
-<article data-filter-category="<?php echo $single_cat->slug; ?>" <?php array_push($classes, 'panda-filter-item'); post_class( $classes ); ?>>
+<?php 
+	$productFilterCategory = (is_object($single_cat)) ? $single_cat->slug : '';
+?>
+
+<article data-filter-category="<?php echo $productFilterCategory; ?>" <?php array_push($classes, 'panda-filter-item'); post_class( $classes ); ?>>
 
 	<?php
 	/**

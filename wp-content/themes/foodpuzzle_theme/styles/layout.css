@@ -5861,7 +5861,8 @@ header.main-header {
 
 .menu-header .menu {
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 0; }
   .menu-header .menu li {
     display: inline-block;
     font-size: 18px; }
