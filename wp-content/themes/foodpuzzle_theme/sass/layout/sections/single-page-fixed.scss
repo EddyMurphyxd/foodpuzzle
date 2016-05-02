@@ -22,7 +22,7 @@
 
 .shipping-page {
   .shipping-keyvisual {
-    min-height: 600px;
+    height: 600px;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -40,5 +40,37 @@
     position: absolute;
     
     @include translate(-50%, -50%);
+  }
+
+  .shipping-info {
+    margin-top: 550px;
+    text-align: center;
+
+    .shipping-options {
+      display: inline-block;
+      text-align: left;
+      margin-bottom: 25px;
+      padding-left: 130px;
+
+      h3 {
+        position: relative;
+        padding-left: 20px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 9px;
+          background: $base-green;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+        }
+      }
+
+      p {
+        padding-left: 20px;
+      }
+    }
   }
 }

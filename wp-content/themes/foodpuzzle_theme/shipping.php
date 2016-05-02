@@ -26,7 +26,14 @@
         </div>
 
         <div class="shipping-info">
+          <h2>Доставка</h2>
           
+          <div class="shipping-options">
+            <?php echo get_field('shipping_options'); ?>
+          </div>
+
+          <h2>Оплата</h2>
+          <p><?php echo get_field('shipping_simple_text'); ?></p>
         </div>
       </div><!-- .entry-content -->
     <?php /* Microformatted category and tag links along with a comments link */ ?>

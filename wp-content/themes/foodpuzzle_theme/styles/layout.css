@@ -6361,7 +6361,7 @@ body.cart h1 {
       margin-bottom: 30px; }
 
 .shipping-page .shipping-keyvisual {
-  min-height: 600px;
+  height: 600px;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -6380,6 +6380,29 @@ body.cart h1 {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+.shipping-page .shipping-info {
+  margin-top: 550px;
+  text-align: center; }
+  .shipping-page .shipping-info .shipping-options {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 25px;
+    padding-left: 130px; }
+    .shipping-page .shipping-info .shipping-options h3 {
+      position: relative;
+      padding-left: 20px; }
+      .shipping-page .shipping-info .shipping-options h3:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 9px;
+        background: #35B881;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%; }
+    .shipping-page .shipping-info .shipping-options p {
+      padding-left: 20px; }
 
 .owl-carousel .item img {
   -webkit-transform: scale(1);
