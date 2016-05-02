@@ -7,6 +7,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    
     @include translate(-50%, -50%);
 
     p {
@@ -16,5 +17,28 @@
     h1 {
       margin-bottom: 30px;
     }
+  }
+}
+
+.shipping-page {
+  .shipping-keyvisual {
+    min-height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .keyvisual-text {
+    color: #fff;
+    min-width: 1140px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    
+    @include translate(-50%, -50%);
   }
 }
