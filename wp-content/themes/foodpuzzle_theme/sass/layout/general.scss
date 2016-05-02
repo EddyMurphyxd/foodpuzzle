@@ -340,3 +340,12 @@ body.loaded {
   background-repeat: no-repeat;
   z-index: -1;
 }
+
+.entry-content .woocommerce .woocommerce-message {
+  border-top-color: $base-green;
+
+  &:before {
+    color: $base-green;
+  }
+}
+

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WooCommerce 2.5.5\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
 "POT-Creation-Date: 2016-03-11 17:54:31+00:00\n"
-"PO-Revision-Date: Mon May 02 2016 14:43:31 GMT+0300 (EEST)\n"
+"PO-Revision-Date: Tue May 03 2016 02:30:45 GMT+0300 (EEST)\n"
 "Last-Translator: admin <vladislav.fang@gmail.com>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "Language: Ukrainian\n"
@@ -4878,13 +4878,6 @@ msgstr ""
 #: includes/admin/meta-boxes/views/html-order-fee.php:20
 msgid "Fee"
 msgstr ""
-
-#: includes/abstracts/abstract-wc-order.php:1909
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:292
-#: includes/shortcodes/class-wc-shortcode-checkout.php:154
-#: templates/checkout/thankyou.php:54
-msgid "Payment Method:"
-msgstr "Метод оплати:"
 
 #: includes/abstracts/abstract-wc-order.php:1917
 #: includes/admin/meta-boxes/views/html-order-items.php:245
@@ -13749,7 +13742,7 @@ msgstr ""
 
 #: includes/class-wc-form-handler.php:479
 msgid "Cart updated."
-msgstr ""
+msgstr "Кошик оновлено."
 
 #: includes/class-wc-form-handler.php:545
 msgid "The cart has been filled with the items from your previous order."
@@ -15881,16 +15874,6 @@ msgstr ""
 msgid "Sorry, this order is invalid and cannot be paid for."
 msgstr ""
 
-#: includes/shortcodes/class-wc-shortcode-checkout.php:141
-#: templates/checkout/thankyou.php:41
-msgid "Order Number:"
-msgstr "Номер Замовлення:"
-
-#: includes/shortcodes/class-wc-shortcode-checkout.php:145
-#: templates/checkout/thankyou.php:45
-msgid "Date:"
-msgstr "Дата:"
-
 #: includes/shortcodes/class-wc-shortcode-checkout.php:242
 msgid ""
 "The order totals have been updated. Please confirm your order by pressing "
@@ -16329,10 +16312,6 @@ msgid ""
 "in WC 2.2."
 msgstr ""
 
-#: includes/wc-template-functions.php:1418
-msgid "Place order"
-msgstr "Замовити"
-
 #: includes/wc-template-functions.php:1782
 msgid "Update country"
 msgstr ""
@@ -16685,10 +16664,6 @@ msgstr ""
 msgid "Application Authentication Request"
 msgstr ""
 
-#: templates/cart/cart-empty.php:27
-msgid "Your cart is currently empty."
-msgstr "Ваш кошик пустий."
-
 #: templates/cart/cart-shipping.php:47
 msgid "Shipping costs will be calculated once you have provided your address."
 msgstr ""
@@ -16839,10 +16814,6 @@ msgid ""
 "again."
 msgstr ""
 
-#: templates/checkout/thankyou.php:37 templates/checkout/thankyou.php:68
-msgid "Thank you. Your order has been received."
-msgstr "Дякуємо! Ваше замовлення було отримано."
-
 #: templates/emails/admin-cancelled-order.php:27
 #: templates/emails/plain/admin-cancelled-order.php:24
 #, c-format
@@ -16951,20 +16922,10 @@ msgstr ""
 msgid "Click here to reset your password"
 msgstr ""
 
-#: templates/emails/email-addresses.php:25
-#: templates/emails/plain/email-addresses.php:22
-msgid "Billing address"
-msgstr "Адреса доставки"
-
 #: templates/emails/email-addresses.php:31
 #: templates/emails/plain/email-addresses.php:26
 msgid "Shipping address"
 msgstr ""
-
-#: templates/emails/email-customer-details.php:25
-#: templates/emails/plain/email-customer-details.php:24
-msgid "Customer details"
-msgstr "Контактні дані"
 
 #: templates/emails/plain/admin-new-order.php:24
 #, c-format
@@ -16982,11 +16943,6 @@ msgid ""
 "Hi there. Your order on %s has been refunded. Your order details are shown "
 "below for your reference:"
 msgstr ""
-
-#: templates/emails/plain/email-order-details.php:24
-#, c-format
-msgid "Order number: %s"
-msgstr "Номер замовлення: %s"
 
 #: templates/emails/plain/email-order-details.php:25
 msgid "jS F Y"
@@ -17059,12 +17015,6 @@ msgstr ""
 #: templates/myaccount/form-edit-account.php:56
 msgid "Confirm New Password"
 msgstr ""
-
-#: templates/myaccount/form-edit-address.php:22
-#: templates/myaccount/my-address.php:27 templates/myaccount/my-address.php:33
-#: templates/order/order-details-customer.php:57
-msgid "Billing Address"
-msgstr "Адреса доставки"
 
 #: templates/myaccount/form-edit-address.php:22
 #: templates/myaccount/my-address.php:28
@@ -17203,10 +17153,6 @@ msgstr ""
 msgid "Order Again"
 msgstr ""
 
-#: templates/order/order-details-customer.php:22
-msgid "Customer Details"
-msgstr "Контактні дані"
-
 #: templates/order/order-details-customer.php:27
 msgid "Note:"
 msgstr ""
@@ -17214,14 +17160,6 @@ msgstr ""
 #: templates/order/order-details-customer.php:34
 msgid "Email:"
 msgstr ""
-
-#: templates/order/order-details-customer.php:41
-msgid "Telephone:"
-msgstr "Моб. телефон"
-
-#: templates/order/order-details.php:27
-msgid "Order Details"
-msgstr "Деталі замовлення"
 
 #: templates/order/tracking.php:22
 #, c-format
@@ -17929,6 +17867,68 @@ msgstr ""
 msgctxt "submit button"
 msgid "Search"
 msgstr ""
+
+#: includes/abstracts/abstract-wc-order.php:1909
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:292
+#: includes/shortcodes/class-wc-shortcode-checkout.php:154
+#: templates/checkout/thankyou.php:54
+msgid "Payment Method:"
+msgstr "Метод оплати:"
+
+#: includes/shortcodes/class-wc-shortcode-checkout.php:141
+#: templates/checkout/thankyou.php:41
+msgid "Order Number:"
+msgstr "Номер Замовлення:"
+
+#: includes/shortcodes/class-wc-shortcode-checkout.php:145
+#: templates/checkout/thankyou.php:45
+msgid "Date:"
+msgstr "Дата:"
+
+#: includes/wc-template-functions.php:1418
+msgid "Place order"
+msgstr "Замовити"
+
+#: templates/cart/cart-empty.php:27
+msgid "Your cart is currently empty."
+msgstr "Ваш кошик пустий."
+
+#: templates/checkout/thankyou.php:37 templates/checkout/thankyou.php:68
+msgid "Thank you. Your order has been received."
+msgstr "Дякуємо! Ваше замовлення було отримано."
+
+#: templates/emails/email-addresses.php:25
+#: templates/emails/plain/email-addresses.php:22
+msgid "Billing address"
+msgstr "Адреса доставки"
+
+#: templates/emails/email-customer-details.php:25
+#: templates/emails/plain/email-customer-details.php:24
+msgid "Customer details"
+msgstr "Контактні дані"
+
+#: templates/emails/plain/email-order-details.php:24
+#, c-format
+msgid "Order number: %s"
+msgstr "Номер замовлення: %s"
+
+#: templates/myaccount/form-edit-address.php:22
+#: templates/myaccount/my-address.php:27 templates/myaccount/my-address.php:33
+#: templates/order/order-details-customer.php:57
+msgid "Billing Address"
+msgstr "Адреса доставки"
+
+#: templates/order/order-details-customer.php:22
+msgid "Customer Details"
+msgstr "Контактні дані"
+
+#: templates/order/order-details-customer.php:41
+msgid "Telephone:"
+msgstr "Моб. телефон"
+
+#: templates/order/order-details.php:27
+msgid "Order Details"
+msgstr "Деталі замовлення"
 
 #: includes/admin/class-wc-admin-profile.php:44
 #: includes/admin/class-wc-admin-profile.php:97
