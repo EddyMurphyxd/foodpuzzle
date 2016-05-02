@@ -328,3 +328,15 @@ body.loaded {
     transform: rotate(360deg);
   }
 }
+
+.background-page-image {
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
