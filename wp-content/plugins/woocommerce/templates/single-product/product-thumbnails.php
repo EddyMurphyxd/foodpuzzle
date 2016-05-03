@@ -23,7 +23,7 @@ global $post, $product, $woocommerce;
 
 $attachment_ids = $product->get_gallery_attachment_ids();
 
-if ( $attachment_ids ) {
+if ( false /** $attachment_ids **/ ) { // Disable this feature -Vlad
 	$loop 		= 0;
 	$columns 	= apply_filters( 'woocommerce_product_thumbnails_columns', 3 );
 	?>

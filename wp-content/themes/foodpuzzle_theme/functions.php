@@ -405,7 +405,6 @@
        unset($fields['billing']['billing_postcode']);
        unset($fields['billing']['billing_country']);
        unset($fields['billing']['billing_state']);
-       unset($fields['billing']['billing_email']);
        unset($fields['billing']['billing_last_name']);
 
        return $fields;

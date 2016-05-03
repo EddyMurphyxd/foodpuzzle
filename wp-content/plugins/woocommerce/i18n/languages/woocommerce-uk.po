@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WooCommerce 2.5.5\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
 "POT-Creation-Date: 2016-03-11 17:54:31+00:00\n"
-"PO-Revision-Date: Tue May 03 2016 02:30:45 GMT+0300 (EEST)\n"
+"PO-Revision-Date: Tue May 03 2016 04:09:46 GMT+0300 (EEST)\n"
 "Last-Translator: admin <vladislav.fang@gmail.com>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "Language: Ukrainian\n"
@@ -5494,12 +5494,6 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: includes/admin/class-wc-admin-attributes.php:348
-#: includes/admin/class-wc-admin-menus.php:62
-#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:111
-msgid "Attributes"
-msgstr ""
-
 #: includes/admin/class-wc-admin-attributes.php:359
 #: includes/widgets/class-wc-widget-product-categories.php:49
 #: includes/widgets/class-wc-widget-products.php:53
@@ -5924,11 +5918,6 @@ msgstr ""
 #: includes/admin/class-wc-admin-meta-boxes.php:125
 #, c-format
 msgid "%s Data"
-msgstr ""
-
-#: includes/admin/class-wc-admin-meta-boxes.php:126
-#, c-format
-msgid "%s Items"
 msgstr ""
 
 #: includes/admin/class-wc-admin-meta-boxes.php:127
@@ -6390,20 +6379,6 @@ msgstr ""
 msgid "Tags"
 msgstr ""
 
-#: includes/admin/class-wc-admin-post-types.php:234
-#: includes/admin/class-wc-admin-post-types.php:274
-#: includes/admin/reports/class-wc-report-coupon-usage.php:350
-#: includes/admin/reports/class-wc-report-customers.php:226
-#: includes/admin/reports/class-wc-report-sales-by-category.php:263
-#: includes/admin/reports/class-wc-report-sales-by-date.php:472
-#: includes/admin/reports/class-wc-report-sales-by-product.php:387
-#: includes/admin/settings/views/html-webhook-logs.php:17
-#: includes/admin/settings/views/html-webhook-logs.php:25
-#: includes/widgets/class-wc-widget-products.php:55
-#: templates/myaccount/my-orders.php:26
-msgid "Date"
-msgstr ""
-
 #: includes/admin/class-wc-admin-post-types.php:248
 msgid "Code"
 msgstr ""
@@ -6439,23 +6414,8 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
-#: includes/admin/class-wc-admin-post-types.php:268
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:165
-#: includes/gateways/paypal/includes/class-wc-gateway-paypal-request.php:181
-#: templates/myaccount/my-orders.php:25
-msgid "Order"
-msgstr ""
-
-#: includes/admin/class-wc-admin-post-types.php:269
-msgid "Purchased"
-msgstr ""
-
 #: includes/admin/class-wc-admin-post-types.php:270
 msgid "Billing"
-msgstr ""
-
-#: includes/admin/class-wc-admin-post-types.php:271
-msgid "Ship to"
 msgstr ""
 
 #: includes/admin/class-wc-admin-post-types.php:272
@@ -6465,14 +6425,6 @@ msgstr ""
 #: includes/admin/class-wc-admin-post-types.php:273
 #: includes/class-wc-checkout.php:125
 msgid "Order Notes"
-msgstr ""
-
-#: includes/admin/class-wc-admin-post-types.php:276
-#: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:43
-#: includes/admin/meta-boxes/views/html-order-items.php:221
-#: includes/admin/reports/class-wc-report-customer-list.php:237
-#: includes/admin/reports/class-wc-report-stock.php:168
-msgid "Actions"
 msgstr ""
 
 #: includes/admin/class-wc-admin-post-types.php:351
@@ -6636,7 +6588,7 @@ msgstr[1] ""
 
 #: includes/admin/class-wc-admin-post-types.php:679
 msgid "Tel:"
-msgstr ""
+msgstr "Тел.:"
 
 #: includes/admin/class-wc-admin-post-types.php:692
 #: includes/admin/class-wc-admin-post-types.php:728
@@ -6734,11 +6686,6 @@ msgstr ""
 
 #: includes/admin/class-wc-admin-post-types.php:1711
 msgid "Show all types"
-msgstr ""
-
-#: includes/admin/class-wc-admin-post-types.php:1740
-#: includes/admin/settings/views/html-keys-edit.php:35
-msgid "Search for a customer&hellip;"
 msgstr ""
 
 #: includes/admin/class-wc-admin-post-types.php:2085
@@ -6912,12 +6859,6 @@ msgstr ""
 
 #: includes/admin/class-wc-admin-profile.php:94
 msgid "Customer Shipping Address"
-msgstr ""
-
-#: includes/admin/class-wc-admin-reports.php:45
-#: includes/admin/reports/class-wc-report-customer-list.php:234
-#: includes/class-wc-post-types.php:292
-msgid "Orders"
 msgstr ""
 
 #: includes/admin/class-wc-admin-reports.php:48
@@ -8085,46 +8026,12 @@ msgstr ""
 msgid "Last Name"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:173
-#, c-format
-msgid "Payment via %s"
-msgstr ""
-
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:186
-msgid "Customer IP"
-msgstr ""
-
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:192
-msgid "General Details"
-msgstr ""
-
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:194
-msgid "Order date:"
-msgstr ""
-
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:195
-msgid "h"
-msgstr ""
-
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:198
-msgid "Order status:"
-msgstr ""
-
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:202
 msgid "Customer payment page"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:216
-msgid "Customer:"
-msgstr ""
-
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:224
 msgid "View other orders"
-msgstr ""
-
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:243
-#: templates/checkout/form-billing.php:32
-msgid "Billing Details"
 msgstr ""
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:245
@@ -8158,11 +8065,6 @@ msgstr ""
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:317
 msgid "Transaction ID"
-msgstr ""
-
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:327
-#: includes/gateways/paypal/includes/settings-paypal.php:82
-msgid "Shipping Details"
 msgstr ""
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:329
@@ -13501,7 +13403,7 @@ msgstr ""
 
 #: includes/class-wc-countries.php:946
 msgid "Email Address"
-msgstr ""
+msgstr "Email"
 
 #: includes/class-wc-coupon.php:783
 msgid "Coupon code applied successfully."
@@ -13725,24 +13627,10 @@ msgstr ""
 msgid "Payment method added."
 msgstr ""
 
-#: includes/class-wc-form-handler.php:406
-#, c-format
-msgid "%s removed. %sUndo?%s"
-msgstr ""
-
-#: includes/class-wc-form-handler.php:408
-#, c-format
-msgid "%s removed."
-msgstr ""
-
 #: includes/class-wc-form-handler.php:455
 #, c-format
 msgid "You can only have 1 %s in your cart."
 msgstr ""
-
-#: includes/class-wc-form-handler.php:479
-msgid "Cart updated."
-msgstr "Кошик оновлено."
 
 #: includes/class-wc-form-handler.php:545
 msgid "The cart has been filled with the items from your previous order."
@@ -14068,10 +13956,6 @@ msgstr ""
 msgid "New %s"
 msgstr ""
 
-#: includes/class-wc-post-types.php:242
-msgid "Add Product"
-msgstr ""
-
 #: includes/class-wc-post-types.php:243
 msgid "Add New Product"
 msgstr ""
@@ -14125,16 +14009,8 @@ msgstr ""
 msgid "This is where you can add new products to your store."
 msgstr ""
 
-#: includes/class-wc-post-types.php:294
-msgid "Add Order"
-msgstr ""
-
 #: includes/class-wc-post-types.php:295
 msgid "Add New Order"
-msgstr ""
-
-#: includes/class-wc-post-types.php:297
-msgid "Edit Order"
 msgstr ""
 
 #: includes/class-wc-post-types.php:298
@@ -14327,7 +14203,7 @@ msgstr ""
 #: templates/emails/email-order-details.php:27
 #, c-format
 msgid "Order #%s"
-msgstr ""
+msgstr "Замовлення #%s"
 
 #: includes/class-wc-query.php:119
 msgid "Edit Account Details"
@@ -14621,11 +14497,11 @@ msgstr ""
 
 #: includes/emails/class-wc-email-customer-processing-order.php:30
 msgid "Thank you for your order"
-msgstr ""
+msgstr "Дякуюємо за Ваше замовлення!"
 
 #: includes/emails/class-wc-email-customer-processing-order.php:31
 msgid "Your {site_title} order receipt from {order_date}"
-msgstr ""
+msgstr "Ваше {site_title} замовлення {order_date}"
 
 #: includes/emails/class-wc-email-customer-refunded-order.php:57
 msgid "Your {site_title} order from {order_date} has been partially refunded"
@@ -16829,7 +16705,7 @@ msgstr ""
 #: templates/emails/admin-new-order.php:27
 #, c-format
 msgid "You have received an order from %s. The order is as follows:"
-msgstr ""
+msgstr "Ви отримали замовлення від %s."
 
 #: templates/emails/customer-completed-order.php:27
 #: templates/emails/plain/customer-completed-order.php:24
@@ -16885,7 +16761,7 @@ msgstr ""
 msgid ""
 "Your order has been received and is now being processed. Your order details "
 "are shown below for your reference:"
-msgstr ""
+msgstr "Ваше замовлення було отримано і є в процесі. Деталі Вашого замовлення: "
 
 #: templates/emails/customer-refunded-order.php:29
 #, c-format
@@ -17393,14 +17269,6 @@ msgctxt "enhanced select"
 msgid "Please enter 1 or more characters"
 msgstr ""
 
-#: includes/admin/class-wc-admin-assets.php:119
-#: includes/admin/class-wc-admin-setup-wizard.php:101
-#: includes/class-wc-frontend-scripts.php:333
-#, c-format
-msgctxt "enhanced select"
-msgid "Please enter %qty% or more characters"
-msgstr ""
-
 #: includes/admin/class-wc-admin-assets.php:120
 #: includes/admin/class-wc-admin-setup-wizard.php:102
 #: includes/class-wc-frontend-scripts.php:334
@@ -17445,30 +17313,9 @@ msgctxt "enhanced select"
 msgid "Searching&hellip;"
 msgstr ""
 
-#: includes/admin/class-wc-admin-menus.php:142
-#: includes/class-wc-post-types.php:305
-msgctxt "Admin menu name"
-msgid "Orders"
-msgstr ""
-
-#: includes/class-wc-post-types.php:67
-msgctxt "Admin menu name"
-msgid "Categories"
-msgstr ""
-
-#: includes/class-wc-post-types.php:102
-msgctxt "Admin menu name"
-msgid "Tags"
-msgstr ""
-
 #: includes/class-wc-post-types.php:139
 msgctxt "Admin menu name"
 msgid "Shipping Classes"
-msgstr ""
-
-#: includes/class-wc-post-types.php:241
-msgctxt "Admin menu name"
-msgid "Products"
 msgstr ""
 
 #: includes/class-wc-post-types.php:352
@@ -17517,12 +17364,6 @@ msgstr ""
 #: includes/admin/class-wc-admin-permalink-settings.php:104
 msgctxt "default-slug"
 msgid "product"
-msgstr ""
-
-#: includes/admin/class-wc-admin-post-types.php:757
-#, c-format
-msgctxt "Order number by X"
-msgid "%s by %s"
 msgstr ""
 
 #: includes/admin/class-wc-admin-setup-wizard.php:232
@@ -17600,24 +17441,9 @@ msgctxt "placeholder"
 msgid "To&hellip;"
 msgstr ""
 
-#: includes/class-wc-checkout.php:108
-msgctxt "placeholder"
-msgid "Username"
-msgstr ""
-
-#: includes/class-wc-checkout.php:117
-msgctxt "placeholder"
-msgid "Password"
-msgstr ""
-
 #: includes/class-wc-checkout.php:126
 msgctxt "placeholder"
 msgid "Notes about your order, e.g. special notes for delivery."
-msgstr ""
-
-#: includes/class-wc-countries.php:519
-msgctxt "placeholder"
-msgid "Street address"
 msgstr ""
 
 #: includes/class-wc-countries.php:524
@@ -17630,24 +17456,12 @@ msgctxt "placeholder"
 msgid "Search Products&hellip;"
 msgstr ""
 
-#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:169
-#, c-format
-msgctxt "Order #123 details"
-msgid "%s #%s details"
-msgstr ""
-
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:262
 #: includes/admin/views/html-bulk-edit-product.php:78
 #: includes/admin/views/html-quick-edit-product.php:57
 #: includes/shipping/flat-rate/includes/settings-flat-rate.php:54
 msgctxt "Tax status"
 msgid "None"
-msgstr ""
-
-#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:729
-#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:763
-msgctxt "number of pages"
-msgid "of"
 msgstr ""
 
 #: includes/admin/meta-boxes/views/html-order-items.php:305
@@ -17689,12 +17503,6 @@ msgstr ""
 #: includes/admin/settings/class-wc-settings-checkout.php:96
 msgctxt "Settings group label"
 msgid "Checkout"
-msgstr ""
-
-#: includes/admin/settings/views/html-settings-tax.php:98
-#, c-format
-msgctxt "%s will be a number eventually, but must be a string for now."
-msgid "%s items"
 msgstr ""
 
 #: includes/admin/settings/views/html-settings-tax.php:112
@@ -17761,44 +17569,9 @@ msgctxt "Page slug"
 msgid "my-account"
 msgstr ""
 
-#: includes/class-wc-post-types.php:293
-msgctxt "shop_order post type singular name"
-msgid "Order"
-msgstr ""
-
 #: includes/class-wc-post-types.php:426 includes/wc-order-functions.php:25
 msgctxt "Order status"
 msgid "Pending Payment"
-msgstr ""
-
-#: includes/class-wc-post-types.php:434 includes/wc-order-functions.php:26
-msgctxt "Order status"
-msgid "Processing"
-msgstr ""
-
-#: includes/class-wc-post-types.php:442 includes/wc-order-functions.php:27
-msgctxt "Order status"
-msgid "On Hold"
-msgstr ""
-
-#: includes/class-wc-post-types.php:450 includes/wc-order-functions.php:28
-msgctxt "Order status"
-msgid "Completed"
-msgstr ""
-
-#: includes/class-wc-post-types.php:458 includes/wc-order-functions.php:29
-msgctxt "Order status"
-msgid "Cancelled"
-msgstr ""
-
-#: includes/class-wc-post-types.php:466 includes/wc-order-functions.php:30
-msgctxt "Order status"
-msgid "Refunded"
-msgstr ""
-
-#: includes/class-wc-post-types.php:474 includes/wc-order-functions.php:31
-msgctxt "Order status"
-msgid "Failed"
 msgstr ""
 
 #: includes/class-wc-product-grouped.php:156
@@ -17836,11 +17609,6 @@ msgctxt "breadcrumb"
 msgid "Home"
 msgstr ""
 
-#: includes/widgets/class-wc-widget-products.php:64
-msgctxt "Sorting order"
-msgid "Order"
-msgstr ""
-
 #: includes/widgets/class-wc-widget-recent-reviews.php:86
 #, c-format
 msgctxt "by comment author"
@@ -17867,6 +17635,238 @@ msgstr ""
 msgctxt "submit button"
 msgid "Search"
 msgstr ""
+
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:173
+#, c-format
+msgid "Payment via %s"
+msgstr "Оплата способом: %s"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:186
+msgid "Customer IP"
+msgstr "IP клієнта"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:192
+msgid "General Details"
+msgstr "Загальна інформація"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:194
+msgid "Order date:"
+msgstr "Дата замовлення:"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:195
+msgid "h"
+msgstr "г"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:198
+msgid "Order status:"
+msgstr "Статус замовлення"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:216
+msgid "Customer:"
+msgstr "Клієнт:"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:243
+#: templates/checkout/form-billing.php:32
+msgid "Billing Details"
+msgstr "Платіжна інформація"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:327
+#: includes/gateways/paypal/includes/settings-paypal.php:82
+msgid "Shipping Details"
+msgstr "Деталі доставки"
+
+#: includes/class-wc-post-types.php:297
+msgid "Edit Order"
+msgstr "Редагувати замовлення"
+
+#: includes/admin/class-wc-admin-meta-boxes.php:126
+#, c-format
+msgid "%s Items"
+msgstr "%s елементів"
+
+#: includes/admin/class-wc-admin-post-types.php:234
+#: includes/admin/class-wc-admin-post-types.php:274
+#: includes/admin/reports/class-wc-report-coupon-usage.php:350
+#: includes/admin/reports/class-wc-report-customers.php:226
+#: includes/admin/reports/class-wc-report-sales-by-category.php:263
+#: includes/admin/reports/class-wc-report-sales-by-date.php:472
+#: includes/admin/reports/class-wc-report-sales-by-product.php:387
+#: includes/admin/settings/views/html-webhook-logs.php:17
+#: includes/admin/settings/views/html-webhook-logs.php:25
+#: includes/widgets/class-wc-widget-products.php:55
+#: templates/myaccount/my-orders.php:26
+msgid "Date"
+msgstr "Дата"
+
+#: includes/admin/class-wc-admin-post-types.php:268
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:165
+#: includes/gateways/paypal/includes/class-wc-gateway-paypal-request.php:181
+#: templates/myaccount/my-orders.php:25
+msgid "Order"
+msgstr "Замовлення"
+
+#: includes/admin/class-wc-admin-post-types.php:269
+msgid "Purchased"
+msgstr "Куплено"
+
+#: includes/admin/class-wc-admin-post-types.php:271
+msgid "Ship to"
+msgstr "Адрес доставки"
+
+#: includes/admin/class-wc-admin-post-types.php:276
+#: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:43
+#: includes/admin/meta-boxes/views/html-order-items.php:221
+#: includes/admin/reports/class-wc-report-customer-list.php:237
+#: includes/admin/reports/class-wc-report-stock.php:168
+msgid "Actions"
+msgstr "Дії"
+
+#: includes/admin/class-wc-admin-post-types.php:1740
+#: includes/admin/settings/views/html-keys-edit.php:35
+msgid "Search for a customer&hellip;"
+msgstr "Пошук клієнта..."
+
+#: includes/admin/class-wc-admin-reports.php:45
+#: includes/admin/reports/class-wc-report-customer-list.php:234
+#: includes/class-wc-post-types.php:292
+msgid "Orders"
+msgstr "Замовлення"
+
+#: includes/class-wc-post-types.php:294
+msgid "Add Order"
+msgstr "Нове замовлення"
+
+#: includes/admin/class-wc-admin-assets.php:119
+#: includes/admin/class-wc-admin-setup-wizard.php:101
+#: includes/class-wc-frontend-scripts.php:333
+#, c-format
+msgctxt "enhanced select"
+msgid "Please enter %qty% or more characters"
+msgstr "Будь ласка, введіть %qty% або більше символів"
+
+#: includes/admin/class-wc-admin-post-types.php:757
+#, c-format
+msgctxt "Order number by X"
+msgid "%s by %s"
+msgstr "%s ким: %s"
+
+#: includes/admin/settings/views/html-settings-tax.php:98
+#, c-format
+msgctxt "%s will be a number eventually, but must be a string for now."
+msgid "%s items"
+msgstr "%s елементів"
+
+#: includes/class-wc-post-types.php:293
+msgctxt "shop_order post type singular name"
+msgid "Order"
+msgstr "Замовлення"
+
+#: includes/class-wc-post-types.php:434 includes/wc-order-functions.php:26
+msgctxt "Order status"
+msgid "Processing"
+msgstr "В процесі"
+
+#: includes/class-wc-post-types.php:442 includes/wc-order-functions.php:27
+msgctxt "Order status"
+msgid "On Hold"
+msgstr "На паузі"
+
+#: includes/class-wc-post-types.php:450 includes/wc-order-functions.php:28
+msgctxt "Order status"
+msgid "Completed"
+msgstr "Завершено"
+
+#: includes/class-wc-post-types.php:458 includes/wc-order-functions.php:29
+msgctxt "Order status"
+msgid "Cancelled"
+msgstr "Відмінено"
+
+#: includes/class-wc-post-types.php:466 includes/wc-order-functions.php:30
+msgctxt "Order status"
+msgid "Refunded"
+msgstr "Відшкодовано"
+
+#: includes/class-wc-post-types.php:474 includes/wc-order-functions.php:31
+msgctxt "Order status"
+msgid "Failed"
+msgstr "Невдало"
+
+#: includes/widgets/class-wc-widget-products.php:64
+msgctxt "Sorting order"
+msgid "Order"
+msgstr "Замовлення"
+
+#: includes/admin/class-wc-admin-attributes.php:348
+#: includes/admin/class-wc-admin-menus.php:62
+#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:111
+msgid "Attributes"
+msgstr "Атрибути"
+
+#: includes/class-wc-post-types.php:242
+msgid "Add Product"
+msgstr "Новий продукт"
+
+#: includes/admin/class-wc-admin-menus.php:142
+#: includes/class-wc-post-types.php:305
+msgctxt "Admin menu name"
+msgid "Orders"
+msgstr "Замовлення"
+
+#: includes/class-wc-post-types.php:67
+msgctxt "Admin menu name"
+msgid "Categories"
+msgstr "Категорії"
+
+#: includes/class-wc-post-types.php:102
+msgctxt "Admin menu name"
+msgid "Tags"
+msgstr "Теги"
+
+#: includes/class-wc-form-handler.php:406
+#, c-format
+msgid "%s removed. %sUndo?%s"
+msgstr "%s видалено. %sВідмінити?%s"
+
+#: includes/class-wc-form-handler.php:408
+#, c-format
+msgid "%s removed."
+msgstr "%s видалено."
+
+#: includes/class-wc-post-types.php:241
+msgctxt "Admin menu name"
+msgid "Products"
+msgstr "Продукти"
+
+#: includes/class-wc-checkout.php:108
+msgctxt "placeholder"
+msgid "Username"
+msgstr "Логін"
+
+#: includes/class-wc-checkout.php:117
+msgctxt "placeholder"
+msgid "Password"
+msgstr "Пароль"
+
+#: includes/class-wc-countries.php:519
+msgctxt "placeholder"
+msgid "Street address"
+msgstr "Вулиця, кв."
+
+#: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:169
+#, c-format
+msgctxt "Order #123 details"
+msgid "%s #%s details"
+msgstr "%s #%s деталі"
+
+#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:729
+#: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:763
+msgctxt "number of pages"
+msgid "of"
+msgstr "з"
+
+#: includes/class-wc-form-handler.php:479
+msgid "Cart updated."
+msgstr "Кошик оновлено."
 
 #: includes/abstracts/abstract-wc-order.php:1909
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:292
