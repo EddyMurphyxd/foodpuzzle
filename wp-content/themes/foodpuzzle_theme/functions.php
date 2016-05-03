@@ -209,7 +209,7 @@
   function woocommerce_header_add_to_cart_fragment( $fragments ) {
     ob_start();
     ?>
-     <a class="main-cart cart-contents " href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><span class="qty"><?php echo sprintf (_n( '%d', WC()->cart->get_cart_contents_count(), WC()->cart->get_cart_contents_count() )); ?></span></a>
+     <a class="main-cart cart-contents " href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><span class="qty"><?php echo sprintf (_n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span></a>
     <?php
     
     $fragments['a.cart-contents'] = ob_get_clean();

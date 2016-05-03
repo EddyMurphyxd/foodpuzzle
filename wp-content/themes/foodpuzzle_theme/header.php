@@ -66,7 +66,7 @@
           wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'menu-header' ) );
         ?>
 
-        <a class="main-cart cart-contents " href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><span class="qty"><?php echo sprintf (_n( '%d', WC()->cart->get_cart_contents_count(), WC()->cart->get_cart_contents_count() )); ?></span></a>
+        <a class="main-cart cart-contents " href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><span class="qty"><?php echo sprintf (_n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span></a>
       </div>
     </nav><!-- .main-navigation -->
   </header><!-- .main-header -->
