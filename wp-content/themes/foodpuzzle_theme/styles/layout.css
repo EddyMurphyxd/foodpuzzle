@@ -6281,6 +6281,25 @@ body.shop {
   .single-product .ingridients-image-wrapper img {
     max-width: 100%; }
 
+.recommendated-dishes {
+  margin-top: 50px; }
+  .recommendated-dishes h2 {
+    text-align: center;
+    text-transform: uppercase; }
+  .recommendated-dishes ul {
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none; }
+    .recommendated-dishes ul li {
+      text-align: left; }
+      .recommendated-dishes ul li:first-child {
+        margin-left: 0 !important; }
+      .recommendated-dishes ul li a {
+        color: initial; }
+        .recommendated-dishes ul li a img {
+          margin-bottom: 10px; }
+
 .concept-image-teaser {
   position: absolute;
   top: 0;
@@ -6830,9 +6849,13 @@ figure img {
 main.hidden-header .mmenu-button {
   color: #000; }
 
-.row.columns-center {
+.row.columns-center,
+ul.columns-center {
   text-align: center; }
-  .row.columns-center > div {
+  .row.columns-center > div,
+  .row.columns-center > li,
+  ul.columns-center > div,
+  ul.columns-center > li {
     display: inline-block;
     float: none;
     vertical-align: top;

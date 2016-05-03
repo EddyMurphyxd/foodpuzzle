@@ -228,10 +228,12 @@ main.hidden-header {
   }
 }
 
-.row.columns-center {
+.row.columns-center,
+ul.columns-center {
   text-align: center;
 
-  > div {
+  > div,
+  > li {
     display: inline-block;
     float: none;
     vertical-align: top;

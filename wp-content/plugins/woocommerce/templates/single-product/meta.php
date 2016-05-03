@@ -151,6 +151,37 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
     <?php the_content(); ?>
   </div>
 
+  <?php
+    $recommendatedDishes = get_field('recommendated_dishes');
+  ?>
+
+  <?php if (!empty($recommendatedDishes)): ?>
+    <div class="recommendated-dishes">
+      <h2>Ми рекомендуємо!</h2>
+
+      <ul class="columns-center">
+        <?php foreach ($recommendatedDishes as $key): ?>
+          <?php 
+            $productArray = get_object_vars($key);
+            $productID    = $productArray['ID'];
+
+            $product       = wc_get_product($productID);
+            $productURL    = get_permalink($productID);
+            $productImage  = $product->get_image();
+            $productTeaser = $productArray['post_title'];
+          ?>
+
+          <li class="col-sm-offset-1">
+            <a href="<?php echo $productURL; ?>">
+              <?php echo $productImage; ?>
+              <p><?php echo $productTeaser; ?></p>
+            </a>
+          </li>
+
+        <?php endforeach; ?>
+      </ul>
+    </div>
+  <?php endif; ?>
 	<?php echo $product->get_categories( ', ', '<span class="posted_in">' . _n( 'Category:', 'Categories:', $cat_count, 'woocommerce' ) . ' ', '</span>' ); ?>
 
 	<?php echo $product->get_tags( ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', $tag_count, 'woocommerce' ) . ' ', '</span>' ); ?>

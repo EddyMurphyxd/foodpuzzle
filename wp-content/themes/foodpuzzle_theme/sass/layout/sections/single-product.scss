@@ -136,3 +136,35 @@
     }
   }
 }
+
+.recommendated-dishes {
+  margin-top: 50px;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  ul {
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      text-align: left;
+
+      &:first-child {
+        margin-left: 0 !important;
+      }
+
+      a {
+        color: initial;
+
+        img {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
