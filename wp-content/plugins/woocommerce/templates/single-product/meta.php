@@ -36,33 +36,38 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 	<?php endif; ?>
   
   <!-- Template for 3 columns description - start -->
+  <?php 
+    $weightText = get_post_meta( $post->ID, '_weight_text_field', true );
+    $timeText   = get_post_meta( $post->ID, '_time_text_field', true );
+    $diffText   = get_post_meta( $post->ID, '_difficulty_text_field', true );
+  ?>
   
   <div class="row columns-center description-columns-row">
-    <?php if (!empty(get_post_meta( $post->ID, '_weight_text_field', true ))): ?>
+    <?php if (!empty($weightText)): ?>
     <div class="col-sm-3 product-weight-column">
       <p class="title">Вага 1 порції</p>
-      <p class="bold"><?php echo get_post_meta( $post->ID, '_weight_text_field', true ); ?>.</p>
+      <p class="bold"><?php echo $weightText; ?>.</p>
 
       <p class="small-gray">*<?php echo get_post_meta( $post->ID, '_weight_textarea', true ); ?></p>
       
     </div>
     <?php endif; ?>
 
-    <?php if (!empty(get_post_meta( $post->ID, '_time_text_field', true ))): ?>
+    <?php if (!empty($timeText)): ?>
     <div class="col-sm-3 col-sm-offset-1 product-time-column">
       <p class="title">Час приготування</p>
 
-      <p class="bold"><?php echo get_post_meta( $post->ID, '_time_text_field', true ); ?>.</p>
+      <p class="bold"><?php echo $timeText; ?>.</p>
 
       <p class="small-gray">*<?php echo get_post_meta( $post->ID, '_time_textarea', true ); ?></p>
     </div>
     <?php endif; ?>
 
-    <?php if (!empty(get_post_meta( $post->ID, '_difficulty_text_field', true ))): ?>
+    <?php if (!empty($diffText)): ?>
     <div class="col-sm-3 col-sm-offset-1 product-difficulty-column">
       <p class="title">Рівень складності</p>
 
-      <p class="bold"><?php echo get_post_meta( $post->ID, '_difficulty_text_field', true ); ?></p>
+      <p class="bold"><?php echo $diffText; ?></p>
 
       <p class="small-gray">*<?php echo get_post_meta( $post->ID, '_difficulty_textarea', true ); ?></p>
     </div>

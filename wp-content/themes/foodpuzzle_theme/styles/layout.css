@@ -6279,7 +6279,8 @@ body.shop {
   position: relative;
   margin-top: 25px; }
   .single-product .ingridients-image-wrapper img {
-    max-width: 100%; }
+    max-width: 100%;
+    width: 100%; }
 
 .recommendated-dishes {
   margin-top: 50px; }
