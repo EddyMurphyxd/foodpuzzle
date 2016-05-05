@@ -23,6 +23,7 @@ global $post, $woocommerce, $product;
 
 ?>
 <div class="images">
+	<h1><?php echo the_title(); ?></h1>
 	<?php
 		if ( has_post_thumbnail() ) {
 			$image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;

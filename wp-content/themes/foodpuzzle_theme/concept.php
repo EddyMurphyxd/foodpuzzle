@@ -71,10 +71,23 @@
                 </div>
               <?php endforeach; ?>
 
-              <?php if (count($profits) % 3 != 0): ?>
+              <?php if (count($profits) % 1 == 0): ?>
+                <div class="col-sm-3 col-sm-offset-1"></div>
+              <?php endif; ?>
+
+              <?php if (count($profits) % 2 == 0): ?>
+                <div class="col-sm-3 col-sm-offset-1"></div>
                 <div class="col-sm-3 col-sm-offset-1"></div>
               <?php endif; ?>
             </div>
+          </div>
+
+          <div class="concept-carousel">
+            <?php 
+              $conceptCarousel =  do_shortcode('[owl-carousel category="Concept-slider" items="1" autoplay="true" animateOut="fadeOut" animateIn="fadeIn" autoplayHoverPause="false" loop="true" dots="false" mouseDrag="false" nav="true" navText=","]'); 
+
+              echo $conceptCarousel;
+            ?>
           </div>
         </div>
 
@@ -89,7 +102,7 @@
   </div>
 
   <div class="quick-link">
-    <a href="#" target="_blank"><p>Спробуй! Тобі сподобається!</p></a>
+    <a href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>"><p>Спробуй! Тобі сподобається!</p></a>
   </div>
 </section><!-- #main-section -->
  

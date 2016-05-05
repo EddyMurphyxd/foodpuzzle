@@ -104,7 +104,12 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
       </div>
     <?php endforeach;?>
 
-    <?php if (count($ingrArray) % 3 != 0): ?>
+    <?php if (count($ingrArray) % 2 == 0): ?>
+      <div class="col-sm-3 col-sm-offset-1"></div>
+    <?php endif; ?>
+
+    <?php if (count($ingrArray) % 1 == 0): ?>
+      <div class="col-sm-3 col-sm-offset-1"></div>
       <div class="col-sm-3 col-sm-offset-1"></div>
     <?php endif; ?>
   </div>
@@ -138,9 +143,15 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
       </div>
     <?php endforeach;?>
 
-    <?php if (count($itemsArray) % 3 != 0): ?>
+    <?php if (count($itemsArray) % 2 == 0): ?>
       <div class="col-sm-3 col-sm-offset-1"></div>
     <?php endif; ?>
+
+    <?php if (count($itemsArray) % 1 == 0): ?>
+      <div class="col-sm-3 col-sm-offset-1"></div>
+      <div class="col-sm-3 col-sm-offset-1"></div>
+    <?php endif; ?>
+
   </div>
   <!-- Template for required items - end -->
 

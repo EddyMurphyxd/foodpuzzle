@@ -37,6 +37,7 @@ class The_Social_Links{
 
         $this->social_networks = apply_filters( 'add_tsl_social_networks', array(
             'facebook' => 'Facebook',
+            'vk' => 'Vkontakte',
             'google-plus' => 'Google+',
             'instagram' => 'Instagram',
             'linkedin' => 'LinkedIn',

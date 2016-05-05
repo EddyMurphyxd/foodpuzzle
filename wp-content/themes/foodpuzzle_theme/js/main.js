@@ -88,14 +88,32 @@
 
     function inputNumberArrows() {
       $('.quantity').each(function() {
-        var wrapper = $(this),
-            input   = wrapper.find('input.qty');
+        var wrapper   = $(this),
+            input     = wrapper.find('input.qty'),
+            miniPrice = wrapper.parents('.summary').find('div[itemprop="offers"] .amount');
+
+        var priceArr = miniPrice.text(),
+            priceStr = priceArr.slice(priceArr.length - 2, priceArr.length),
+            priceInt = parseInt(priceArr.slice(0, priceArr.length - 2)),
+            tempPrice = priceInt;
+
+        function refreshValues() {
+          priceArr = miniPrice.text(),
+          priceStr = priceArr.slice(priceArr.length - 2, priceArr.length),
+          priceInt = parseInt(priceArr.slice(0, priceArr.length - 2));
+        }
 
         wrapper.find('.minus').click(function() {
           var currentVal = parseInt(input.val());
 
           if (currentVal > 1) {
             input.val(currentVal - 1);
+
+            var newPriceInt = Math.abs(tempPrice - priceInt);
+
+            miniPrice.text(newPriceInt + ' ' + priceStr);
+
+            refreshValues();
           }
         });
 
@@ -103,6 +121,12 @@
           var currentVal = parseInt(input.val());
 
           input.val(currentVal + 1);
+
+          var newPriceInt = tempPrice + priceInt;
+
+          miniPrice.text(newPriceInt + ' ' + priceStr);
+
+          refreshValues();
         });
       });
     }

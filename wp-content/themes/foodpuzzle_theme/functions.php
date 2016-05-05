@@ -410,4 +410,13 @@
        return $fields;
   }
 
+  //NUMBER OF PRODICTS TO DISPLAY ON SHOP PAGE
+  add_filter('loop_shop_per_page', create_function('$cols', 'return 1000;'));
+
+  add_filter( 'woocommerce_price_trim_zeros', 'wc_hide_trailing_zeros', 10, 1 );
+  function wc_hide_trailing_zeros( $trim ) {
+      // set to false to show trailing zeros
+      return true;
+  }
+
 ?>

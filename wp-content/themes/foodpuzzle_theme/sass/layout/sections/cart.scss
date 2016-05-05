@@ -9,3 +9,13 @@ body.cart {
 .return-to-shop {
   text-align: center;
 }
+
+.cart {
+  .woocommerce  {
+    table.shop_table {
+      &, td {
+        border: none;
+      }
+    }
+  }
+}
