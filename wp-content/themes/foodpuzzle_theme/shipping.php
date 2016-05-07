@@ -20,7 +20,7 @@
     <?php /* The entry content */ ?>
       <div class="entry-content">
         <div class="shipping-keyvisual" style="background-image: url(<?php echo get_field('shipping_keyvisual_image'); ?>);">
-          <div class="keyvisual-text">
+          <div class="keyvisual-text text-shadow">
             <?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'hbd-theme' )  ); ?>
           </div>
         </div>

@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  -webkit-font-smoothing: antialiased;
 
   &.home-page {
     position: fixed;
@@ -22,6 +23,10 @@ body {
 
 }
 
+.text-shadow {
+  text-shadow: 0 0 20px rgba(0, 0, 0, .75);
+}
+
 a {
   color: $base-green;
 
@@ -30,6 +35,7 @@ a {
   &:focus {
     color: $light-gray;
     outline: none;
+    text-decoration: none;
   }
 
   &:hover {

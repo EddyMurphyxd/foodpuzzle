@@ -342,10 +342,10 @@ function owl_function($atts, $content = null) {
                 $slide_title = get_the_title();
                 $slide_content = explode(PHP_EOL, get_the_content());
                 $img_overlay = '<div class="owl-carousel-item-imgoverlay container">';
-                    $img_overlay .= '<div class="owl-carousel-item-imgtitle"><span>' . $slide_title . '</span></div>';
+                    $img_overlay .= '<div class="owl-carousel-item-imgtitle"><span class="text-shadow">' . $slide_title . '</span></div>';
                     $img_overlay .= '<div class="owl-carousel-item-imgcontent">';
                         foreach ($slide_content as $paragraph) {
-                            $img_overlay .= '<span>' . $paragraph . '</span>';
+                            $img_overlay .= '<span class="text-shadow">' . $paragraph . '</span>';
                         }
                     $img_overlay .= '</div>';
                 $img_overlay .= '</div>';

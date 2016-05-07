@@ -20,7 +20,7 @@
         <div class="concept-image-teaser">
           <img src="<?php echo the_field('concept_image'); ?>" alt="">
 
-          <div class="text">
+          <div class="text text-shadow">
             <?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'hbd-theme' )  ); ?>
             <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'hbd-theme' ) . '&after=</div>') ?>
           </div>
@@ -84,7 +84,7 @@
 
           <div class="concept-carousel">
             <?php 
-              $conceptCarousel =  do_shortcode('[owl-carousel category="Concept-slider" items="1" autoplay="true" animateOut="fadeOut" animateIn="fadeIn" autoplayHoverPause="false" loop="true" dots="false" mouseDrag="false" nav="true" navText=","]'); 
+              $conceptCarousel =  do_shortcode('[owl-carousel category="Concept-slider" items="1" autoplay="false" autoplayHoverPause="false" loop="true" dots="false" mouseDrag="false" nav="true" navText=","]'); 
 
               echo $conceptCarousel;
             ?>

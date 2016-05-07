@@ -27,8 +27,6 @@
   overflow: hidden;
   @include translate(-50%, -50%);
 
-  text-shadow: 1px -1px 1px rgba(0, 0, 0, 1);
-
   span {
     display: block;
   }

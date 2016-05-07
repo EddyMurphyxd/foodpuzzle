@@ -43,17 +43,18 @@
 
     function customizeCarousel() {
       var owl = $('.owl-carousel');
+      var owlHome = $('.home-page .owl-carousel');
 
-      var activeItem = owl.find('.owl-item.active');
+      var activeItem = owlHome.find('.owl-item.active');
 
       activeItem.addClass('scale').find('.owl-carousel-item-imgoverlay span').addClass('animated fadeInLeft');
 
-      owl.on('changed.owl.carousel', function(event) {
-        var items   = owl.find('.owl-item'),
+      owlHome.on('changed.owl.carousel', function(event) {
+        var items   = owlHome.find('.owl-item'),
             teasers = items.find('.owl-carousel-item-imgoverlay span');
         
         setTimeout(function() {
-          var activeItemChanged = owl.find('.owl-item.active'),
+          var activeItemChanged = owlHome.find('.owl-item.active'),
               teasersChanged    = activeItemChanged.find('.owl-carousel-item-imgoverlay span');
 
           items.removeClass('scale');

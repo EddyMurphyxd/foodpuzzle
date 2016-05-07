@@ -25,6 +25,10 @@
 	<?php /* Close up the post div and then end the loop with endwhile */ ?>      
 
 	<?php endwhile; ?>
+
+	<div class="quick-link">
+	  <a href="/index.php/about-us"><p>Вперше на сайті? Давай познайомимось!</p></a>
+	</div>
 </section><!-- #main-section -->
  
 <?php get_footer(); ?>

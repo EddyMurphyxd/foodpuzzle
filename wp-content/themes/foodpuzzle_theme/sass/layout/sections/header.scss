@@ -19,10 +19,9 @@ header.main-header {
 
   &.hidden-header {
     position: fixed;
-    background-color: rgba(255, 255, 255, .85);
 
     .main-navigation {
-      background: none;
+      background-color: rgba(255, 255, 255, .85);
     }
 
     .menu li > a,
@@ -79,9 +78,11 @@ header.main-header {
 }
 
 .shop {
-  .main-header {
+  .main-navigation {
     background-color: $base-green;
+  }
 
+  .main-header {
     a {
       color: #fff;
 
@@ -123,10 +124,6 @@ header.main-header {
         }
       }
     }
-  }
-
-  .main-navigation {
-    background-color: transparent;
   }
 }
 
