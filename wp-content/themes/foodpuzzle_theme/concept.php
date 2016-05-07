@@ -44,6 +44,18 @@
             </div>
           </div>
 
+          <?php 
+            $profits = explode(PHP_EOL, get_field('profits_textarea'));
+          ?>
+
+          <div class="concept-carousel">
+            <?php 
+              $conceptCarousel =  do_shortcode('[owl-carousel category="Concept-slider" items="1" autoplay="false" autoplayHoverPause="false" loop="true" dots="false" mouseDrag="false" nav="true" navText=","]'); 
+
+              echo $conceptCarousel;
+            ?>
+          </div>
+
           <div class="profits">
             <div class="row">
               <div class="col-sm-12 text-center margin-bottom-25">
@@ -52,8 +64,7 @@
             </div>
 
             <div class="row profits-row columns-center">
-              <?php 
-                $profits = explode(PHP_EOL, get_field('profits_textarea'));
+              <?php
                 $counter = 0;
               ?>
 
@@ -80,14 +91,6 @@
                 <div class="col-sm-3 col-sm-offset-1"></div>
               <?php endif; ?>
             </div>
-          </div>
-
-          <div class="concept-carousel">
-            <?php 
-              $conceptCarousel =  do_shortcode('[owl-carousel category="Concept-slider" items="1" autoplay="false" autoplayHoverPause="false" loop="true" dots="false" mouseDrag="false" nav="true" navText=","]'); 
-
-              echo $conceptCarousel;
-            ?>
           </div>
         </div>
 

@@ -235,6 +235,14 @@
     
     // Text Field
     woocommerce_wp_text_input( 
+      array( 
+        'id'          => '_teaser_text_field', 
+        'label'       => __( 'Короткий опис до готування', 'woocommerce' ) 
+      )
+    );
+    
+    // Text Field
+    woocommerce_wp_text_input( 
     	array( 
     		'id'          => '_weight_text_field', 
     		'label'       => __( 'Вага порції', 'woocommerce' ), 
@@ -323,6 +331,11 @@
   }
 
   function woo_add_custom_general_fields_save( $post_id ){
+    // Text Field
+    $woocommerce_text_field = $_POST['_teaser_text_field'];
+    if( !empty( $woocommerce_text_field ) )
+      update_post_meta( $post_id, '_teaser_text_field', esc_attr( $woocommerce_text_field ) );
+
   	// Text Field
   	$woocommerce_text_field = $_POST['_weight_text_field'];
   	if( !empty( $woocommerce_text_field ) )

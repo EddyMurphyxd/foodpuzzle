@@ -139,9 +139,14 @@ header.main-header {
   }
 
   &:before {
-    @include fa;
-
-    content: "\f07a";
+    height: 40px;
+    width: 40px;
+    content: "";
+    background-image: url("/wp-content/themes/foodpuzzle_theme/img/main-cart.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -10px;
   }
 
   .qty {

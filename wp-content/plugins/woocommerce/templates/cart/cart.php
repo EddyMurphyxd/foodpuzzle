@@ -25,6 +25,8 @@ wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
 
+<img class="big-cart-image" src="/wp-content/themes/foodpuzzle_theme/img/big-cart.jpg" alt="">
+
 <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
 <?php do_action( 'woocommerce_before_cart_table' ); ?>

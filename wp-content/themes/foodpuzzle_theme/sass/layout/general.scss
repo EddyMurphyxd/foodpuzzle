@@ -20,7 +20,13 @@ body {
       padding-bottom: 80px;
     }
   }
+}
 
+input,
+a {
+  &:focus {
+    outline: none;
+  }
 }
 
 .text-shadow {
@@ -34,7 +40,6 @@ a {
 
   &:focus {
     color: $light-gray;
-    outline: none;
     text-decoration: none;
   }
 

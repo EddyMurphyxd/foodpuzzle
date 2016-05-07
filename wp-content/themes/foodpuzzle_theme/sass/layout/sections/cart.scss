@@ -2,6 +2,16 @@ body.cart {
   h1 {
     text-align: center;
     margin-bottom: 40px;
+    padding-top: 140px;
+    text-transform: uppercase;
+  }
+
+  .big-cart-image {
+    position: absolute;
+    top: 90px;
+    height: 140px;
+    left: 50%;
+    margin-left: -70px;
   }
 }
 

@@ -5910,13 +5910,14 @@ header.main-header {
   .main-cart:hover {
     color: inherit; }
   .main-cart:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f07a"; }
+    height: 40px;
+    width: 40px;
+    content: "";
+    background-image: url("/wp-content/themes/foodpuzzle_theme/img/main-cart.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -10px; }
   .main-cart .qty {
     position: absolute;
     font-size: 15px;
@@ -6397,22 +6398,27 @@ body.shop {
     font-size: 26px; }
 
 .profits {
-  margin-top: 1040px;
+  margin-top: 690px;
   margin-bottom: 70px; }
 
 .concept-carousel {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 940px;
-  -webkit-transform: translate(0, -150%);
-  -ms-transform: translate(0, -150%);
-  -o-transform: translate(0, -150%);
-  transform: translate(0, -150%); }
+  margin-top: 40px; }
 
 body.cart h1 {
   text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding-top: 140px;
+  text-transform: uppercase; }
+
+body.cart .big-cart-image {
+  position: absolute;
+  top: 90px;
+  height: 140px;
+  left: 50%;
+  margin-left: -70px; }
 
 .cart-empty,
 .return-to-shop {
@@ -6680,6 +6686,10 @@ body:not(.home-page) #wrapper {
   position: relative;
   padding-bottom: 80px; }
 
+input:focus,
+a:focus {
+  outline: none; }
+
 .text-shadow {
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.75); }
 
@@ -6691,7 +6701,6 @@ a {
   transition: all 0.3s; }
   a:focus {
     color: #4c5b52;
-    outline: none;
     text-decoration: none; }
   a:hover {
     color: #4c5b52;

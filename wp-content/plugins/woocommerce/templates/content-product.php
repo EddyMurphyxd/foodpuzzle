@@ -98,6 +98,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 				 */
 				// do_action( 'woocommerce_after_shop_loop_item_title' );
 				$price = get_post_meta( get_the_ID(), '_regular_price', true);
+				$teaserField = get_field('_teaser_text_field');
 				$weightField = get_field('_weight_text_field');
 				$timeField = get_field('_time_text_field');
 				$timeTextField = get_field('_time_text_field');
@@ -105,6 +106,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 			?>
 
 			
+			<p><?php if (!empty($teaserField)): ?><?php echo $teaserField; ?>.<?php endif; ?></p>
 			<p><?php if (!empty($weightField)): ?>1 порція: <?php echo $weightField; ?>.<?php endif; ?></p>
 			<p><?php if (!empty($timeField)): ?>час приготування: <?php echo $timeField; ?>.<?php endif; ?></p>
 			<p><?php if (!empty($timeTextField)): ?>складність: <?php echo $timeTextField; ?><?php endif; ?></p>
