@@ -2,7 +2,6 @@
 
 <?php get_header(); ?>
 <section id="main-section">
-  <div class="container">
     <?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
 
     <?php } ?>
@@ -25,24 +24,27 @@
             <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'hbd-theme' ) . '&after=</div>') ?>
           </div>
         </div>
+        
+        <div class="container">
+          <div class="additional-content">
+            <div class="row columns-center">
+              <div class="wow slideInLeft col-sm-3">
+                <p class="title">Легко</p>
+                <p class="gray">*<?php echo the_field('quick_teaser_text'); ?></p>
+              </div>
 
-        <div class="additional-content">
-          <div class="row columns-center">
-            <div class="col-sm-3">
-              <p class="title">ШВИДКО</p>
-              <p class="gray">*<?php echo the_field('quick_teaser_text'); ?></p>
-            </div>
+              <div class="wow fadeInDown col-sm-3 col-sm-offset-1">
+                <p class="title">Зручно</p>
+                <p class="gray">*<?php echo the_field('easy_teaser_text'); ?></p>
+              </div>
 
-            <div class="col-sm-3 col-sm-offset-1">
-              <p class="title">Зручно</p>
-              <p class="gray">*<?php echo the_field('easy_teaser_text'); ?></p>
-            </div>
-
-            <div class="col-sm-3 col-sm-offset-1">
-              <p class="title">Корисно</p>
-              <p class="gray">*<?php echo the_field('healthy_teaser_text'); ?></p>
+              <div class="wow slideInRight col-sm-3 col-sm-offset-1">
+                <p class="title">Корисно</p>
+                <p class="gray">*<?php echo the_field('healthy_teaser_text'); ?></p>
+              </div>
             </div>
           </div>
+        </div>
 
           <?php 
             $profits = explode(PHP_EOL, get_field('profits_textarea'));
@@ -55,44 +57,45 @@
               echo $conceptCarousel;
             ?>
           </div>
-
-          <div class="profits">
-            <div class="row">
-              <div class="col-sm-12 text-center margin-bottom-25">
-                <h2>ЦЕ ДІЙСНО ТАК ЗРУЧНО, ЯК ЗДАЄТЬСЯ?</h2>
+          
+          <div class="container">
+            <div class="profits">
+              <div class="row">
+                <div class="col-sm-12 text-center margin-bottom-25">
+                  <h2>ЦЕ ДІЙСНО ТАК ЗРУЧНО, ЯК ЗДАЄТЬСЯ?</h2>
+                </div>
               </div>
-            </div>
 
-            <div class="row profits-row columns-center">
-              <?php
-                $counter = 0;
-              ?>
+              <div class="row profits-row columns-center">
+                <?php
+                  $counter = 0;
+                ?>
 
-              <?php foreach ($profits as $profit): ?>
-                <?php if ($counter == 3): $counter = 0; ?>
+                <?php foreach ($profits as $profit): ?>
+                  <?php if ($counter == 3): $counter = 0; ?>
+                    </div>
+
+                    <div class="row profits-row columns-center">
+                  <?php endif; ?>
+
+                  <div class="wow fadeInUp col-sm-3<?php if ($counter > 0) echo ' col-sm-offset-1'?>">
+                    <div class="text-wrapper">
+                      <p><?php $counter++; echo $profit; ?></p>
+                    </div>
                   </div>
+                <?php endforeach; ?>
 
-                  <div class="row profits-row columns-center">
+                <?php if (count($profits) % 1 == 0): ?>
+                  <div class="wow fadeInUp col-sm-3 col-sm-offset-1"></div>
                 <?php endif; ?>
 
-                <div class="col-sm-3<?php if ($counter > 0) echo ' col-sm-offset-1'?>">
-                  <div class="text-wrapper">
-                    <p><?php $counter++; echo $profit; ?></p>
-                  </div>
-                </div>
-              <?php endforeach; ?>
-
-              <?php if (count($profits) % 1 == 0): ?>
-                <div class="col-sm-3 col-sm-offset-1"></div>
-              <?php endif; ?>
-
-              <?php if (count($profits) % 2 == 0): ?>
-                <div class="col-sm-3 col-sm-offset-1"></div>
-                <div class="col-sm-3 col-sm-offset-1"></div>
-              <?php endif; ?>
+                <?php if (count($profits) % 2 == 0): ?>
+                  <div class="wow fadeInUp col-sm-3 col-sm-offset-1"></div>
+                  <div class="wow fadeInUp col-sm-3 col-sm-offset-1"></div>
+                <?php endif; ?>
+              </div>
             </div>
           </div>
-        </div>
 
       </div><!-- .entry-content -->
     <?php /* Microformatted category and tag links along with a comments link */ ?>
@@ -102,7 +105,6 @@
     <?php /* Close up the post div and then end the loop with endwhile */ ?>      
 
     <?php endwhile; ?>
-  </div>
 
   <div class="quick-link">
     <a href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>"><p>Спробуй! Тобі сподобається!</p></a>

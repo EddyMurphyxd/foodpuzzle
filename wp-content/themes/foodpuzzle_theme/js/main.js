@@ -1,4 +1,6 @@
 ;(function($) {
+  new WOW().init();
+
   $(function() {
     var _win = $(window),
         _winHeight = _win.innerHeight(),
@@ -10,6 +12,7 @@
     inputNumberArrows();
     setFullWidth($('.ingridients-image-wrapper'));
 
+    $('.single-product .quantity').addClass('wow slideInRight');
 
     if (!$('body').hasClass('home-page')) stickyHeader();
 
@@ -38,7 +41,7 @@
       $('.single-product .images').height(_winHeight);
       $('.concept-image-teaser').height(_winHeight);
       $('.single-product .summary').css('margin-top',  _winHeight - 40);
-      $('.concept-image-teaser + .additional-content').css('margin-top',  _winHeight - 40);
+      $('.concept-image-teaser + .container .additional-content').css('margin-top',  _winHeight - 40);
     }
 
     function customizeCarousel() {

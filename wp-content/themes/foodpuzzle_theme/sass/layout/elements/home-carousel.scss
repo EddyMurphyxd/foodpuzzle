@@ -1,19 +1,21 @@
 .owl-carousel {
   .item {
     img {
-      @include scale(1);
-      @include transition(all 6s);
+      @include scale(1.1);
+      @include transition(all 8s);
     }
   }
 
   .owl-item {
-    z-index: 0;
+    opacity: 0;
+
+    @include transition(all 3s);
 
     &.scale {
-      z-index: 6;
+      opacity: 1;
 
       img {
-        @include scale(1.1);
+        @include scale(1);
       }
     }
   }

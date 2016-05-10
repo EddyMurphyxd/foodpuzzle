@@ -180,15 +180,18 @@ body.shop {
     position: absolute;
     left: 0;
     bottom: 45px;
-    width: 100%;
-    background: $lighter-gray;;
     text-align: center;
+    padding: 0 15px !important;
+    width: 100%;
 
     input#place_order {
       float: none;
-      display: inline-block;
       border: none;
       font-size: 26px;
+      width: 100%;
+      background: $lighter-gray;
+      padding: 1em;
+      display: block;
 
       &:hover {
         background: none;

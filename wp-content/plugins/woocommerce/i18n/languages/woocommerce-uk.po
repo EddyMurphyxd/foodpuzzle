@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WooCommerce 2.5.5\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
 "POT-Creation-Date: 2016-03-11 17:54:31+00:00\n"
-"PO-Revision-Date: Tue May 03 2016 04:09:46 GMT+0300 (EEST)\n"
+"PO-Revision-Date: Wed May 11 2016 01:51:15 GMT+0300 (EEST)\n"
 "Last-Translator: admin <vladislav.fang@gmail.com>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "Language: Ukrainian\n"
@@ -6585,10 +6585,6 @@ msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] ""
-
-#: includes/admin/class-wc-admin-post-types.php:679
-msgid "Tel:"
-msgstr "Тел.:"
 
 #: includes/admin/class-wc-admin-post-types.php:692
 #: includes/admin/class-wc-admin-post-types.php:728
@@ -13401,10 +13397,6 @@ msgstr ""
 msgid "ZIP"
 msgstr ""
 
-#: includes/class-wc-countries.php:946
-msgid "Email Address"
-msgstr "Email"
-
 #: includes/class-wc-coupon.php:783
 msgid "Coupon code applied successfully."
 msgstr ""
@@ -14197,14 +14189,6 @@ msgstr ""
 msgid "Pay for Order"
 msgstr ""
 
-#: includes/class-wc-query.php:116
-#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:406
-#: templates/emails/email-order-details.php:25
-#: templates/emails/email-order-details.php:27
-#, c-format
-msgid "Order #%s"
-msgstr "Замовлення #%s"
-
 #: includes/class-wc-query.php:119
 msgid "Edit Account Details"
 msgstr ""
@@ -14494,14 +14478,6 @@ msgid ""
 "This is an order notification sent to customers containing their order "
 "details after payment."
 msgstr ""
-
-#: includes/emails/class-wc-email-customer-processing-order.php:30
-msgid "Thank you for your order"
-msgstr "Дякуюємо за Ваше замовлення!"
-
-#: includes/emails/class-wc-email-customer-processing-order.php:31
-msgid "Your {site_title} order receipt from {order_date}"
-msgstr "Ваше {site_title} замовлення {order_date}"
 
 #: includes/emails/class-wc-email-customer-refunded-order.php:57
 msgid "Your {site_title} order from {order_date} has been partially refunded"
@@ -16702,11 +16678,6 @@ msgstr ""
 msgid "Payment for order #%d from %s has failed. The order was as follows:"
 msgstr ""
 
-#: templates/emails/admin-new-order.php:27
-#, c-format
-msgid "You have received an order from %s. The order is as follows:"
-msgstr "Ви отримали замовлення від %s."
-
 #: templates/emails/customer-completed-order.php:27
 #: templates/emails/plain/customer-completed-order.php:24
 #, c-format
@@ -16755,13 +16726,6 @@ msgstr ""
 #: templates/emails/plain/customer-note.php:32
 msgid "For your reference, your order details are shown below."
 msgstr ""
-
-#: templates/emails/customer-processing-order.php:27
-#: templates/emails/plain/customer-processing-order.php:24
-msgid ""
-"Your order has been received and is now being processed. Your order details "
-"are shown below for your reference:"
-msgstr "Ваше замовлення було отримано і є в процесі. Деталі Вашого замовлення: "
 
 #: templates/emails/customer-refunded-order.php:29
 #, c-format
@@ -17636,6 +17600,42 @@ msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
+#: includes/admin/class-wc-admin-post-types.php:679
+msgid "Tel:"
+msgstr "Тел.:"
+
+#: includes/class-wc-countries.php:946
+msgid "Email Address"
+msgstr "Email"
+
+#: includes/class-wc-query.php:116
+#: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:406
+#: templates/emails/email-order-details.php:25
+#: templates/emails/email-order-details.php:27
+#, c-format
+msgid "Order #%s"
+msgstr "Замовлення #%s"
+
+#: includes/emails/class-wc-email-customer-processing-order.php:30
+msgid "Thank you for your order"
+msgstr "Дякуюємо за Ваше замовлення!"
+
+#: includes/emails/class-wc-email-customer-processing-order.php:31
+msgid "Your {site_title} order receipt from {order_date}"
+msgstr "Ваше {site_title} замовлення {order_date}"
+
+#: templates/emails/admin-new-order.php:27
+#, c-format
+msgid "You have received an order from %s. The order is as follows:"
+msgstr "Ви отримали замовлення від %s."
+
+#: templates/emails/customer-processing-order.php:27
+#: templates/emails/plain/customer-processing-order.php:24
+msgid ""
+"Your order has been received and is now being processed. Your order details "
+"are shown below for your reference:"
+msgstr "Ваше замовлення було отримано і є в процесі. Деталі Вашого замовлення: "
+
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:173
 #, c-format
 msgid "Payment via %s"
@@ -17966,7 +17966,7 @@ msgstr "продукт"
 #: templates/emails/email-order-details.php:33
 #: templates/order/order-details.php:31
 msgid "Product"
-msgstr "Продукт"
+msgstr "Страва"
 
 #: includes/admin/class-wc-admin-pointers.php:140
 msgid "Prices"
@@ -18029,7 +18029,7 @@ msgstr "Доступно"
 #: templates/checkout/review-order.php:105 templates/myaccount/my-orders.php:28
 #: templates/order/order-details.php:32
 msgid "Total"
-msgstr "Всього до сплати"
+msgstr "Всього"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:753
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:328
@@ -18080,7 +18080,7 @@ msgstr "Попередньо"
 #: templates/cart/cart.php:37 templates/cart/cart.php:101
 #: templates/emails/email-order-details.php:34
 msgid "Quantity"
-msgstr "Кількість"
+msgstr "К-сть порцій"
 
 #: templates/cart/cart.php:142
 msgid "Update Cart"

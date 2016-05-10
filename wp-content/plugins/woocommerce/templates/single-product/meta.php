@@ -38,38 +38,41 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
   <!-- Template for 3 columns description - start -->
   <?php 
     $weightText = get_post_meta( $post->ID, '_weight_text_field', true );
+    $weightTextarea = get_post_meta( $post->ID, '_weight_textarea', true );
     $timeText   = get_post_meta( $post->ID, '_time_text_field', true );
+    $timeTextarea = get_post_meta( $post->ID, '_time_textarea', true );
     $diffText   = get_post_meta( $post->ID, '_difficulty_text_field', true );
+    $diffTextarea = get_post_meta( $post->ID, '_difficulty_textarea', true );
   ?>
   
   <div class="row columns-center description-columns-row">
     <?php if (!empty($weightText)): ?>
-    <div class="col-sm-3 product-weight-column">
+    <div class="col-sm-3 product-weight-column wow fadeInLeft">
       <p class="title">Вага 1 порції</p>
       <p class="bold"><?php echo $weightText; ?>.</p>
 
-      <p class="small-gray">*<?php echo get_post_meta( $post->ID, '_weight_textarea', true ); ?></p>
+      <?php if (!empty($weightTextarea)): ?><p class="small-gray">*<?php echo $weightTextarea; ?></p><?php endif; ?>
       
     </div>
     <?php endif; ?>
 
     <?php if (!empty($timeText)): ?>
-    <div class="col-sm-3 col-sm-offset-1 product-time-column">
+    <div class="col-sm-3 col-sm-offset-1 product-time-column wow fadeInDown">
       <p class="title">Час приготування</p>
 
       <p class="bold"><?php echo $timeText; ?>.</p>
 
-      <p class="small-gray">*<?php echo get_post_meta( $post->ID, '_time_textarea', true ); ?></p>
+      <?php if (!empty($timeTextarea)): ?><p class="small-gray">*<?php echo $timeTextarea; ?></p><?php endif; ?>
     </div>
     <?php endif; ?>
 
     <?php if (!empty($diffText)): ?>
-    <div class="col-sm-3 col-sm-offset-1 product-difficulty-column">
+    <div class="col-sm-3 col-sm-offset-1 product-difficulty-column wow fadeInRight">
       <p class="title">Рівень складності</p>
 
       <p class="bold"><?php echo $diffText; ?></p>
 
-      <p class="small-gray">*<?php echo get_post_meta( $post->ID, '_difficulty_textarea', true ); ?></p>
+      <?php if (!empty($diffTextarea)): ?><p class="small-gray">*<?php echo $diffTextarea; ?></p><?php endif; ?>
     </div>
     <?php endif; ?>
   </div>
@@ -80,8 +83,8 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 
   <div class="row ingridients-row">
     <div class="col-sm-12">
-      <h2>І Н Г Р А Д І Є Н Т И</h2>
-      <p>все це ви знайдете в пакеті від foodpuzzle</p>
+      <h2 class="wow fadeInUp">І Н Г Р А Д І Є Н Т И</h2>
+      <p class="wow fadeInUp">все це ви знайдете в пакеті від foodpuzzle</p>
     </div>
   </div>
 
@@ -99,18 +102,18 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
         <div class="row columns-center">
       <?php endif; ?>
 
-      <div class="col-sm-3<?php if ($counter > 0) echo ' col-sm-offset-1'?>">
+      <div class="wow fadeInDown col-sm-3<?php if ($counter > 0) echo ' col-sm-offset-1'?>">
         <p class="ingridient"><?php $counter++; echo $item; ?></p>
       </div>
     <?php endforeach;?>
 
     <?php if (count($ingrArray) % 2 == 0): ?>
-      <div class="col-sm-3 col-sm-offset-1"></div>
+      <div class="wow fadeInDown col-sm-3 col-sm-offset-1"></div>
     <?php endif; ?>
 
     <?php if (count($ingrArray) % 1 == 0): ?>
-      <div class="col-sm-3 col-sm-offset-1"></div>
-      <div class="col-sm-3 col-sm-offset-1"></div>
+      <div class="wow fadeInDown col-sm-3 col-sm-offset-1"></div>
+      <div class="wow fadeInDown col-sm-3 col-sm-offset-1"></div>
     <?php endif; ?>
   </div>
 
@@ -119,8 +122,8 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
   <!-- Template for required items - start -->
   <div class="row required-items-row">
     <div class="col-sm-12">
-      <h2>І Н В Е Н Т А Р</h2>
-      <p>те, що вам знадобиться для приготування</p>
+      <h2 class="wow fadeInUp">І Н В Е Н Т А Р</h2>
+      <p class="wow fadeInUp">те, що вам знадобиться для приготування</p>
     </div>
   </div>
 
@@ -138,18 +141,18 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
         <div class="row columns-center">
       <?php endif; ?>
 
-      <div class="col-sm-3<?php if ($counter > 0) echo ' col-sm-offset-1'?>">
+      <div class="wow fadeInDown col-sm-3<?php if ($counter > 0) echo ' col-sm-offset-1'?>">
         <p class="required-item"><?php $counter++; echo $item; ?></p>
       </div>
     <?php endforeach;?>
 
     <?php if (count($itemsArray) % 2 == 0): ?>
-      <div class="col-sm-3 col-sm-offset-1"></div>
+      <div class="wow fadeInDown col-sm-3 col-sm-offset-1"></div>
     <?php endif; ?>
 
     <?php if (count($itemsArray) % 1 == 0): ?>
-      <div class="col-sm-3 col-sm-offset-1"></div>
-      <div class="col-sm-3 col-sm-offset-1"></div>
+      <div class="wow fadeInDown col-sm-3 col-sm-offset-1"></div>
+      <div class="wow fadeInDown col-sm-3 col-sm-offset-1"></div>
     <?php endif; ?>
 
   </div>
@@ -163,7 +166,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
     <img src="<?php echo $imgSrc; ?>" alt="">
   </div>
 
-  <div class="general-description">
+  <div class="general-description wow fadeIn">
     <?php the_content(); ?>
   </div>
 
@@ -173,9 +176,9 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 
   <?php if (!empty($recommendatedDishes)): ?>
     <div class="recommendated-dishes">
-      <h2>Ми рекомендуємо!</h2>
+      <h2 class="wow fadeInUp">Ми рекомендуємо!</h2>
 
-      <ul class="columns-center">
+      <ul class="wow fadeIn columns-center">
         <?php foreach ($recommendatedDishes as $key): ?>
           <?php 
             $productArray = get_object_vars($key);
