@@ -7074,3 +7074,33 @@ body.loaded .preloader-wrapper {
 .woocommerce-info,
 .create-account {
   display: none; }
+
+.faq-section .text-center > ul {
+  text-align: left;
+  font-size: 24px;
+  list-style: none;
+  margin: 0;
+  margin-top: 30px; }
+  .faq-section .text-center > ul > li {
+    background: #EEEFE9;
+    padding: 10px 0 10px 10px;
+    position: relative;
+    margin-bottom: 20px; }
+    .faq-section .text-center > ul > li:before {
+      content: "";
+      background: #35B881;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      position: absolute;
+      left: -30px;
+      top: 20px; }
+  .faq-section .text-center > ul ul {
+    background: #fff;
+    padding-left: 0;
+    left: 0;
+    list-style: none;
+    padding: 10px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+    margin-top: 10px; }
