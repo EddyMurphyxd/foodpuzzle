@@ -12,7 +12,7 @@
     inputNumberArrows();
     setFullWidth($('.ingridients-image-wrapper'));
 
-    $('.single-product .quantity').addClass('wow slideInRight');
+    $('.single-product .quantity').addClass('wow slideInRight').find('input').val(1);
 
     if (!$('body').hasClass('home-page')) stickyHeader();
 

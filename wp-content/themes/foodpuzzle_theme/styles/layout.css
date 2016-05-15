@@ -6322,9 +6322,9 @@ body.shop {
     position: absolute; }
   .single-product .images h1 {
     position: absolute;
-    top: 20%;
-    left: 30%;
-    font-size: 52px;
+    top: 15%;
+    left: 50%;
+    font-size: 46px;
     color: #fff;
     z-index: 2;
     -webkit-transform: translate(-50%, -50%);
