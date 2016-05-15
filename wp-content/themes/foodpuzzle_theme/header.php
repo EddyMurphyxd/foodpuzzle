@@ -60,7 +60,7 @@
       <?php #wp_page_menu( 'sort_column=menu_order' ); ?>
       <div class="container">
         <div id="logo-wrapper">
-          <a href="<?php echo get_site_url(); ?>">Foodpuzzle</a>
+          <a href="<?php echo get_site_url(); ?>"><img src="/wp-content/themes/foodpuzzle_theme/img/logo.png" alt="" /></a>
         </div>
         <?php  
           wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'menu-header' ) );

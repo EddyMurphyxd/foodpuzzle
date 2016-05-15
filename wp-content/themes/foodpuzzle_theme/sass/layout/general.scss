@@ -108,7 +108,7 @@ p.title {
         }
 
         td {
-          text-align: right;
+          text-align: center;
           border: none;
           background: #9ADBC0;
           
@@ -390,6 +390,18 @@ body.loaded {
         position: absolute;
         left: -30px;
         top: 20px;
+      }
+
+      > ul {
+        display: none;
+
+        @include transition(all 0.3s);
+      }
+
+      &.active {
+        ul {
+          display: block;
+        }
       }
     }
 

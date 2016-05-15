@@ -1055,7 +1055,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -5187,7 +5187,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5300,7 +5300,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5862,7 +5862,7 @@ header.main-header {
   header.main-header a {
     color: #4c5b52; }
     header.main-header a:hover {
-      color: #35B881; }
+      color: #5ED08B; }
   header.main-header.hidden-header {
     position: fixed; }
     header.main-header.hidden-header .main-navigation {
@@ -5872,18 +5872,23 @@ header.main-header {
       color: #000; }
       header.main-header.hidden-header .menu li > a:hover,
       header.main-header.hidden-header .main-cart:hover {
-        color: #35B881; }
+        color: #5ED08B; }
     header.main-header.hidden-header .mmenu-button {
       color: #fff; }
       header.main-header.hidden-header .mmenu-button:hover {
-        color: #35B881; }
+        color: #5ED08B; }
 
 #logo-wrapper,
 .menu-header {
   display: inline-block; }
 
-#logo-wrapper a {
-  padding: 0 20px; }
+#logo-wrapper {
+  max-width: 250px;
+  margin-right: 25px; }
+  #logo-wrapper a {
+    padding: 0 20px; }
+  #logo-wrapper img {
+    max-width: 100%; }
 
 .menu-header .menu {
   padding-left: 0;
@@ -5901,7 +5906,7 @@ header.main-header {
   background: rgba(255, 255, 255, 0.9); }
 
 .shop .main-navigation {
-  background-color: #35B881; }
+  background-color: #5ED08B; }
 
 .shop .main-header a {
   color: #fff; }
@@ -5920,13 +5925,13 @@ header.main-header {
     .shop .main-header.hidden-header .menu li > a:hover,
     .shop .main-header.hidden-header .main-cart:hover,
     .shop .main-header.hidden-header #logo-wrapper a:hover {
-      color: #35B881; }
+      color: #5ED08B; }
   .shop .main-header.hidden-header li.current-menu-item a {
-    color: #35B881; }
+    color: #5ED08B; }
   .shop .main-header.hidden-header .mmenu-button {
     color: #000; }
     .shop .main-header.hidden-header .mmenu-button:hover {
-      color: #35B881; }
+      color: #5ED08B; }
 
 .main-cart {
   display: block;
@@ -6003,7 +6008,7 @@ footer {
         padding: 13px 15px;
         display: block; }
         footer .menu li a:hover {
-          color: #35B881; }
+          color: #5ED08B; }
   footer .copyright {
     position: absolute;
     left: 20px;
@@ -6033,7 +6038,7 @@ footer {
         -ms-transition: color 0.3s;
         transition: color 0.3s; }
       footer .social-links a:hover i {
-        color: #35B881 !important; }
+        color: #5ED08B !important; }
 
 article.product {
   display: inline-block; }
@@ -6263,7 +6268,7 @@ body.shop {
       font-size: 26px; }
     .single-product .quantity > div:hover {
       background: none;
-      color: #35B881; }
+      color: #5ED08B; }
   .single-product .quantity .qty {
     width: 35px !important;
     font-size: 26px;
@@ -6412,7 +6417,7 @@ body.shop {
       top: -20px;
       width: 10px;
       height: 10px;
-      background: #35B881;
+      background: #5ED08B;
       border-radius: 50%;
       left: 40%;
       -webkit-transform: translate(-50%, 0);
@@ -6517,14 +6522,14 @@ body.cart .big-cart-image {
         position: absolute;
         left: 0;
         top: 9px;
-        background: #35B881;
+        background: #5ED08B;
         width: 10px;
         height: 10px;
         border-radius: 50%; }
     .shipping-page .shipping-info .shipping-options p {
       padding-left: 20px; }
 
-.owl-carousel .item img {
+.home-page .owl-carousel .item img {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -6534,15 +6539,15 @@ body.cart .big-cart-image {
   -ms-transition: all 8s;
   transition: all 8s; }
 
-.owl-carousel .owl-item {
+.home-page .owl-carousel .owl-item {
   opacity: 0;
   -webkit-transition: all 3s;
   -moz-transition: all 3s;
   -ms-transition: all 3s;
   transition: all 3s; }
-  .owl-carousel .owl-item.scale {
+  .home-page .owl-carousel .owl-item.scale {
     opacity: 1; }
-    .owl-carousel .owl-item.scale img {
+    .home-page .owl-carousel .owl-item.scale img {
       -webkit-transform: scale(1);
       -moz-transform: scale(1);
       -ms-transform: scale(1);
@@ -6596,9 +6601,9 @@ body.cart .big-cart-image {
   -ms-transition: all 0.3s;
   transition: all 0.3s; }
   .owl-nav > div:hover {
-    border-color: #35B881; }
+    border-color: #5ED08B; }
     .owl-nav > div:hover:before {
-      color: #35B881; }
+      color: #5ED08B; }
   .owl-nav > div:before {
     color: #fff;
     display: inline-block;
@@ -6638,14 +6643,14 @@ body.cart .big-cart-image {
     float: left;
     position: relative; }
     .wc-tabs li.active a {
-      background: #35B881;
+      background: #5ED08B;
       color: #fff; }
     .wc-tabs li + li {
       margin-left: 10px; }
     .wc-tabs li a {
       background: transparent;
-      border: 2px solid #35B881;
-      color: #35B881;
+      border: 2px solid #5ED08B;
+      color: #5ED08B;
       padding: 10px 15px;
       z-index: 1;
       text-transform: uppercase;
@@ -6663,13 +6668,13 @@ body.cart .big-cart-image {
       .wc-tabs li a:focus {
         text-decoration: none; }
       .wc-tabs li a:hover {
-        background: #35B881;
-        border-color: #35B881;
+        background: #5ED08B;
+        border-color: #5ED08B;
         color: #fff; }
 
 .wc-tabs-wrapper .panel {
   border-width: 2px;
-  border-color: #35B881;
+  border-color: #5ED08B;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   padding: 15px;
@@ -6733,7 +6738,7 @@ a:focus {
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.75); }
 
 a {
-  color: #35B881;
+  color: #5ED08B;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -6767,8 +6772,8 @@ p.title {
 #wrapper .woocommerce button.button,
 #wrapper .woocommerce input.button {
   background: transparent;
-  border: 2px solid #35B881;
-  color: #35B881;
+  border: 2px solid #5ED08B;
+  color: #5ED08B;
   padding: 10px 15px;
   z-index: 1;
   text-transform: uppercase;
@@ -6788,8 +6793,8 @@ p.title {
   #wrapper .woocommerce a.button:hover,
   #wrapper .woocommerce button.button:hover,
   #wrapper .woocommerce input.button:hover {
-    background: #35B881;
-    border-color: #35B881;
+    background: #5ED08B;
+    border-color: #5ED08B;
     color: #fff; }
   #wrapper .woocommerce #respond input#submit[name="update_cart"],
   #wrapper .woocommerce a.button[name="update_cart"],
@@ -6817,7 +6822,7 @@ p.title {
     border: none;
     font-weight: normal; }
   .woocommerce .cart_totals table.shop_table tr td {
-    text-align: right;
+    text-align: center;
     border: none;
     background: #9ADBC0; }
     .woocommerce .cart_totals table.shop_table tr td strong {
@@ -6852,8 +6857,8 @@ p.title {
   cursor: pointer;
   position: relative;
   background: transparent;
-  border: 2px solid #35B881;
-  color: #35B881;
+  border: 2px solid #5ED08B;
+  color: #5ED08B;
   padding: 10px 15px;
   z-index: 1;
   text-transform: uppercase;
@@ -6868,8 +6873,8 @@ p.title {
   .quantity > div:focus {
     text-decoration: none; }
   .quantity > div:hover {
-    background: #35B881;
-    border-color: #35B881;
+    background: #5ED08B;
+    border-color: #5ED08B;
     color: #fff; }
   .quantity > div:before {
     font-size: 34px;
@@ -6902,8 +6907,8 @@ figure img {
 
 .button {
   background: transparent;
-  border: 2px solid #35B881;
-  color: #35B881;
+  border: 2px solid #5ED08B;
+  color: #5ED08B;
   padding: 10px 15px;
   z-index: 1;
   text-transform: uppercase;
@@ -6917,14 +6922,14 @@ figure img {
   .button:focus {
     text-decoration: none; }
   .button:hover {
-    background: #35B881;
-    border-color: #35B881;
+    background: #5ED08B;
+    border-color: #5ED08B;
     color: #fff; }
 
 .comment-form input.submit {
   background: transparent;
-  border: 2px solid #35B881;
-  color: #35B881;
+  border: 2px solid #5ED08B;
+  color: #5ED08B;
   padding: 10px 15px;
   z-index: 1;
   text-transform: uppercase;
@@ -6938,8 +6943,8 @@ figure img {
   .comment-form input.submit:focus {
     text-decoration: none; }
   .comment-form input.submit:hover {
-    background: #35B881;
-    border-color: #35B881;
+    background: #5ED08B;
+    border-color: #5ED08B;
     color: #fff; }
 
 .comment-form .comment-form-comment label {
@@ -7015,7 +7020,7 @@ body.loaded .preloader-wrapper {
   animation: load2 2s infinite ease 1.5s; }
 
 .preloader {
-  color: #35B881;
+  color: #5ED08B;
   font-size: 11px;
   text-indent: -99999em;
   margin: 55px auto;
@@ -7067,9 +7072,9 @@ body.loaded .preloader-wrapper {
   z-index: -1; }
 
 .entry-content .woocommerce .woocommerce-message {
-  border-top-color: #35B881; }
+  border-top-color: #5ED08B; }
   .entry-content .woocommerce .woocommerce-message:before {
-    color: #35B881; }
+    color: #5ED08B; }
 
 .woocommerce-info,
 .create-account {
@@ -7088,13 +7093,21 @@ body.loaded .preloader-wrapper {
     margin-bottom: 20px; }
     .faq-section .text-center > ul > li:before {
       content: "";
-      background: #35B881;
+      background: #5ED08B;
       width: 10px;
       height: 10px;
       border-radius: 5px;
       position: absolute;
       left: -30px;
       top: 20px; }
+    .faq-section .text-center > ul > li > ul {
+      display: none;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      transition: all 0.3s; }
+    .faq-section .text-center > ul > li.active ul {
+      display: block; }
   .faq-section .text-center > ul ul {
     background: #fff;
     padding-left: 0;
