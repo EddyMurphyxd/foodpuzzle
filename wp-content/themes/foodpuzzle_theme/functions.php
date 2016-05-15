@@ -432,4 +432,18 @@
       return true;
   }
 
+  /**
+   * Change the Shop archive page title.
+   * @param  string $title
+   * @return string
+   */
+  function wc_custom_shop_archive_title( $title ) {
+    if ( is_shop() ) {
+      return str_replace( __( 'Products', 'woocommerce' ), 'Страви', $title );
+    }
+
+    return $title;
+  }
+
+  add_filter( 'wp_title', 'wc_custom_shop_archive_title' );
 ?>

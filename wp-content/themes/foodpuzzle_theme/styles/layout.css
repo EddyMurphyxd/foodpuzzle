@@ -5897,6 +5897,8 @@ header.main-header {
   .menu-header .menu li {
     display: inline-block;
     font-size: 18px; }
+    .menu-header .menu li.current-menu-item a {
+      color: #5ED08B !important; }
     .menu-header .menu li > a {
       padding: 15px 20px;
       display: block;
@@ -5914,7 +5916,7 @@ header.main-header {
     color: #4c5b52; }
 
 .shop .main-header li.current-menu-item a {
-  color: #4c5b52; }
+  color: #4c5b52 !important; }
 
 .shop .main-header.hidden-header {
   position: fixed; }
@@ -7079,6 +7081,9 @@ body.loaded .preloader-wrapper {
 .woocommerce-info,
 .create-account {
   display: none; }
+
+.faq-section .text-center > img {
+  max-width: 90px; }
 
 .faq-section .text-center > ul {
   text-align: left;

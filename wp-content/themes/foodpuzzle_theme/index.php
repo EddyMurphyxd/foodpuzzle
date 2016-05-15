@@ -1,6 +1,8 @@
 <?php /* Template Name: Home page */ ?>
 <?php get_header(); ?>
 <section id="main-section">
+	<h1 class="hidden meta">Швидка доставка їжі</h1>
+	<h2 class="hidden meta">Швидка доставка їжі по Львову та його межами. Швидка доставка виключно якісних інгридієнтів та наборів для страв з рецептами.</h2>
 	<?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
 
 	<?php } ?>

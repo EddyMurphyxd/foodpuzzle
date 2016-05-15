@@ -62,7 +62,7 @@
             <div class="profits">
               <div class="row">
                 <div class="col-sm-12 text-center margin-bottom-25">
-                  <h2>ЦЕ ДІЙСНО ТАК ЗРУЧНО, ЯК ЗДАЄТЬСЯ?</h2>
+                  <h2>ЦЕ ДІЙСНО ТАК ЗРУЧНО, ЯК ЗДАЄТЬСЯ!</h2>
                 </div>
               </div>
 

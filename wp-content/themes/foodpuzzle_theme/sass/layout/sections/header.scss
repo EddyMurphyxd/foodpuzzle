@@ -71,6 +71,12 @@ header.main-header {
       display: inline-block;
       font-size: 18px;
 
+      &.current-menu-item {
+        a {
+          color: $base-green !important;
+        }
+      }
+
       > a {
         padding: 15px 20px;
         display: block;
@@ -100,7 +106,7 @@ header.main-header {
 
     li.current-menu-item {
       a {
-        color: $light-gray;
+        color: $light-gray !important;
       }
     }
 

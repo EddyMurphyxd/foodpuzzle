@@ -17,6 +17,8 @@
     <?php /* The entry content */ ?>
       <div class="entry-content">
         <div class="container text-center">
+          <img src="/wp-content/themes/foodpuzzle_theme/img/faq.png" alt="">
+
           <h1>ПИТАННЯ  ТА  ВІДПОВІДІ</h1>
 
           <?php the_content( __( 'Continue reading <span class="meta-nav">&raquo;</span>', 'hbd-theme' )  ); ?>
