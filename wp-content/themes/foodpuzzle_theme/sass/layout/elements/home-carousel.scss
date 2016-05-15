@@ -1,21 +1,25 @@
-.owl-carousel {
-  .item {
-    img {
-      @include scale(1.1);
-      @include transition(all 8s);
-    }
-  }
-
-  .owl-item {
-    opacity: 0;
-
-    @include transition(all 3s);
-
-    &.scale {
-      opacity: 1;
-
+.home-page {
+  .owl-carousel {
+    .item {
       img {
-        @include scale(1);
+        @include scale(1.1);
+        @include transition(all 8s);
+      }
+    }
+
+    .owl-item {
+      .owl-item {
+        opacity: 0;
+
+        @include transition(all 3s);
+
+        &.scale {
+          opacity: 1;
+
+          img {
+            @include scale(1);
+          }
+        }
       }
     }
   }

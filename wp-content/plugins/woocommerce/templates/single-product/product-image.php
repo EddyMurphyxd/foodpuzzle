@@ -24,7 +24,7 @@ global $post, $woocommerce, $product;
 $productImage = get_field('detailed_product_image');
 ?>
 <div class="images">
-	<h1 class="text-shadow"><?php echo the_title(); ?></h1>
+	<h1 class="text-shadow wow fadeIn"><?php echo the_title(); ?></h1>
 	<img src="<?php echo $productImage; ?>" alt="">
 	<?php
 		// if ( has_post_thumbnail() ) {
