@@ -111,7 +111,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 			<p><?php if (!empty($timeField)): ?>час приготування: <?php echo $timeField; ?>.<?php endif; ?></p>
 			<p><?php if (!empty($difficultyField)): ?>складність: <?php echo $difficultyField; ?><?php endif; ?></p>
 			<span class="price">
-				<span class="amount"><?php echo $price . ' ' . get_woocommerce_currency_symbol(); ?> </span>
+				<span class="amount"><?php echo $product->get_price_html(); ?> </span>
 			</span>
 		</div>
 	</div>

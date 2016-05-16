@@ -67,9 +67,14 @@ article.product {
   .price {
     font-size: 26px;
 
-    del {
-      display: block;
+    del,
+    ins {
+      display: inline-block;
       font-size: 20px;
+    }
+
+    ins {
+      text-decoration: none;
     }
   }
 }

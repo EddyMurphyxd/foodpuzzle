@@ -20,6 +20,11 @@
         }
       }
     }
+
+    span.animated {
+      -webkit-animation-delay: 1.4s !important; /* Chrome, Safari, Opera */
+      animation-delay: 1.4s !important;
+    }
   }
 }
 

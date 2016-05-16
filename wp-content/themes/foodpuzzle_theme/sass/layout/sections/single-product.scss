@@ -17,6 +17,11 @@
 }
 
 .single-product {
+  .woocommerce-message,
+  .onsale {
+    display: none;
+  }
+
   form.cart {
     position: fixed;
     right: 0;
@@ -75,7 +80,6 @@
     position: fixed;
     right: 0;
     top: 50%;
-    padding: 8px 15px;
     color: #fff;
     font-size: 26px;
     text-align: center;
@@ -85,9 +89,15 @@
     @include mini-cart-block();
     margin-top: -88px;
 
+    padding: 0;
+
     p {
       margin: 0;
       font-size: 26px;
+    }
+
+    ins {
+      text-decoration: none;
     }
   }
 

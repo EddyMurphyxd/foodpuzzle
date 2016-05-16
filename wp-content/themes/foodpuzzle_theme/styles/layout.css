@@ -6088,9 +6088,12 @@ article.product {
     opacity: 0; }
   article.product .price {
     font-size: 26px; }
-    article.product .price del {
-      display: block;
+    article.product .price del,
+    article.product .price ins {
+      display: inline-block;
       font-size: 20px; }
+    article.product .price ins {
+      text-decoration: none; }
 
 .product-info-overlay {
   position: absolute;
@@ -6217,6 +6220,10 @@ body.shop {
   padding-left: 0;
   margin-top: 25px; }
 
+.single-product .woocommerce-message,
+.single-product .onsale {
+  display: none; }
+
 .single-product form.cart {
   position: fixed;
   right: 0;
@@ -6284,7 +6291,6 @@ body.shop {
   position: fixed;
   right: 0;
   top: 50%;
-  padding: 8px 15px;
   color: #fff;
   font-size: 26px;
   text-align: center;
@@ -6300,12 +6306,15 @@ body.shop {
   padding-top: 0;
   padding-bottom: 0;
   text-align: center;
-  margin-top: -88px; }
+  margin-top: -88px;
+  padding: 0; }
   .single-product div[itemprop="offers"], .single-product div[itemprop="offers"] p {
     line-height: 60px; }
   .single-product div[itemprop="offers"] p {
     margin: 0;
     font-size: 26px; }
+  .single-product div[itemprop="offers"] ins {
+    text-decoration: none; }
 
 .single-product .images {
   position: absolute;
@@ -6409,10 +6418,14 @@ body.shop {
       .concept-image-teaser .text {
         min-width: 1140px; } }
 
+.additional-content .gray {
+  font-size: 16px; }
+
 .profits-row {
   margin-top: 25px; }
   .profits-row .text-wrapper {
-    position: relative; }
+    position: relative;
+    font-size: 16px; }
     .profits-row .text-wrapper:before {
       content: "";
       position: absolute;
@@ -6493,6 +6506,8 @@ body.cart .big-cart-image {
   top: 0;
   left: 0;
   width: 100%; }
+  .shipping-page .shipping-keyvisual p {
+    font-size: 16px; }
 
 .shipping-page .keyvisual-text {
   color: #fff;
@@ -6554,6 +6569,11 @@ body.cart .big-cart-image {
       -moz-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1); }
+
+.home-page .owl-carousel span.animated {
+  -webkit-animation-delay: 1.4s !important;
+  /* Chrome, Safari, Opera */
+  animation-delay: 1.4s !important; }
 
 .owl-carousel-item-imgoverlay {
   position: absolute;
@@ -6717,6 +6737,66 @@ html.mm-opening .mm-slideout {
   -webkit-transform: translate3d(255px, 0, 0) !important;
   transform: translate3d(255px, 0, 0) !important; }
 
+#promo-modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 0;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  transition: all 0.6s; }
+  #promo-modal .close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 28px; }
+    #promo-modal .close:focus {
+      outline: none; }
+  #promo-modal .inner {
+    top: 50%;
+    background: #fff;
+    width: 50%;
+    left: 50%;
+    padding: 95px 45px 120px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -80%);
+    -ms-transform: translate(-50%, -80%);
+    -o-transform: translate(-50%, -80%);
+    transform: translate(-50%, -80%);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s; }
+  #promo-modal.loaded {
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.3); }
+    #promo-modal.loaded .inner {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  #promo-modal input {
+    margin-top: 25px; }
+    #promo-modal input.form-control {
+      width: 70%;
+      float: left;
+      border-radius: 0; }
+    #promo-modal input[type="submit"] {
+      width: 30%;
+      height: 34px;
+      background: #5ED08B;
+      color: #fff;
+      border: none;
+      line-height: 1; }
+
 html, body {
   height: 100%;
   width: 100%;
@@ -6756,14 +6836,14 @@ p.title {
   font-weight: 300;
   line-height: 1;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: -1px; }
 
 .bold {
   font-weight: 700;
   line-height: 1;
   text-transform: capitalize;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: -1px; }
 
 .margin-bottom-25 {

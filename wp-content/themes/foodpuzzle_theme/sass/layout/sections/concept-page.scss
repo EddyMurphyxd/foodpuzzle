@@ -29,11 +29,18 @@
   }
 }
 
+.additional-content {
+  .gray {
+    font-size: 16px;
+  }
+}
+
 .profits-row {
   margin-top: 25px;
 
   .text-wrapper {
     position: relative;
+    font-size: 16px;
 
     &:before {
       content: "";

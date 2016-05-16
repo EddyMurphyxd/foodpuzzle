@@ -12,7 +12,7 @@
     inputNumberArrows();
     setFullWidth($('.ingridients-image-wrapper'));
 
-    $('.single-product .quantity').addClass('wow slideInRight').find('input').val(1);
+    $('.single-product .quantity').addClass('wow slideInRight');
 
     if (!$('body').hasClass('home-page')) stickyHeader();
 
@@ -41,6 +41,46 @@
         var self = $(this);
 
         self.toggleClass('active');
+      });
+    })();
+
+    (function() {
+      var modal = $('#promo-modal');
+
+      modal.addClass('loaded');
+      
+      modal.find('.close').click(function() {
+        modal.removeClass('loaded');
+      });
+
+      modal.find('form').submit(function(event) {
+        event.preventDefault();
+
+        var formData = {
+          email: $('input[name="potential-customer"]').val()
+        };
+
+        var url = $(this).attr('action');
+
+
+        $.ajax({
+          url: url,
+          type: 'post',
+          dataType: 'json',
+          data: formData,
+          error: function(error) {
+            console.log(error);
+          },
+          success: function(data) {
+            modal.find('p').remove();
+            modal.find('input').remove();
+            modal.find('h3').text('Дякуємо!');
+            
+            setTimeout(function() {
+              modal.removeClass('loaded');
+            }, 400);
+          }
+        });
       });
     })();
 
@@ -102,7 +142,8 @@
       $('.quantity').each(function() {
         var wrapper   = $(this),
             input     = wrapper.find('input.qty'),
-            miniPrice = wrapper.parents('.summary').find('div[itemprop="offers"] .amount');
+            priceWrap = wrapper.parents('.summary').find('div[itemprop="offers"] ins');
+            miniPrice = (priceWrap.length) ? priceWrap : wrapper.parents('.summary').find('div[itemprop="offers"] .amount');
 
         var priceArr = miniPrice.text(),
             priceStr = priceArr.slice(priceArr.length - 2, priceArr.length),
