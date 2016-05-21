@@ -2,6 +2,9 @@
   .owl-carousel {
     .item {
       img {
+        min-height: 100%;
+        height: auto;
+        
         @include scale(1.1);
         @include transition(all 8s);
       }

@@ -28,13 +28,13 @@
 
 	<?php endwhile; ?>
 
-	<div id="promo-modal">
+	<div id="promo-modal" class="modal-popup">
 		<div class="inner">
 			<button class="close">x</button>
 
-			<h3>Привіт, наш сервіс закінчує етап підготовки і вже зовсім скоро ми з радістю доставлятимемо набори для Вас!</h3>
+			<h3>Привіт, наш сервіс закінчує етап підготовки, і вже зовсім скоро ми з радістю доставлятимемо набори для Вас!</h3>
 
-			<p>Якщо Ви хочете першими дізнатись про наш початок, залиште свою електронну пошту і ми обов'язково повідомимо Вам про відкриття та зробимо персональну знижку ;)</p>
+			<p>Якщо Ви хочете першими дізнатись про наш початок, залиште свою електронну пошту, і ми обов'язково повідомимо Вас про відкриття та зробимо персональну знижку ;)</p>
 
 			<form action="<?php echo get_site_url(); ?>/wp-content/themes/foodpuzzle_theme/potential-customer.php" class="form-group">
 				<input type="mail" class="form-control" name="potential-customer" required>
