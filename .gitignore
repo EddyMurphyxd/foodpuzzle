@@ -1,1 +1,4 @@
 wp-content/uploads/*
+wp-admin
+sftp-config.json
+wp*
