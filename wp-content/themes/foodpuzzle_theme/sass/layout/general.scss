@@ -224,13 +224,32 @@ figure {
 }
 
 .mmenu-button {
-  color: #ddd;
-  font-size: 24px;
+  color: #333;
   cursor: pointer;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
   float: left;
   position: fixed;
+  margin-left: -35px;
+  display: block;
+
+  span {
+    width: 35px;
+    height: 5px;
+    border-radius: 3px;
+    background: #333;
+    display: block;
+
+    @include transition(background 0.3s);
+
+    & + span {
+      margin-top: 5px;
+    }
+  }
+
+  &:hover {
+    span {
+      background: $base-green;
+    }
+  }
 }
 
 main.hidden-header {
@@ -385,6 +404,15 @@ body.loaded {
         padding: 10px 0 10px 10px;
         position: relative;
         margin-bottom: 20px;
+        cursor: pointer;
+
+        @include transition(0.3s ease-in-out);
+
+        &:hover,
+        &.active {
+          color: #fff;
+          background: $base-green;
+        }
 
         &:before {
           content: "";
@@ -399,6 +427,10 @@ body.loaded {
 
         > ul {
           display: none;
+
+          li {
+            color: #333333;
+          }
 
           @include transition(all 0.3s);
         }

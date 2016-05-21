@@ -13,6 +13,7 @@
     setFullWidth($('.ingridients-image-wrapper'));
 
     $('.single-product .quantity').addClass('wow slideInRight');
+    $('.single-product .quantity input').val(1);
 
     if (!$('body').hasClass('home-page')) stickyHeader();
 
@@ -21,7 +22,14 @@
 
     $('.concept-image-teaser .text *').addClass('animated fadeInLeft');
 
-    $('nav.categories-list').mmenu();
+    $('nav.categories-list').mmenu({
+      // options
+    }, {
+      // configuration
+      offCanvas: {
+        pageSelector: "#wrapper"
+      }
+    });
 
     _win.load(function() {
       $('body.shop').addClass('loaded').pandaFilter({
@@ -142,44 +150,46 @@
       $('.quantity').each(function() {
         var wrapper   = $(this),
             input     = wrapper.find('input.qty'),
-            priceWrap = wrapper.parents('.summary').find('div[itemprop="offers"] ins');
-            miniPrice = (priceWrap.length) ? priceWrap : wrapper.parents('.summary').find('div[itemprop="offers"] .amount');
+            priceWrap = wrapper.parents('.summary').find('div[itemprop="offers"] ins'),
+            regWrap   = wrapper.parents('.summary').find('div[itemprop="offers"] del .amount'),
+            regPrice  = regWrap,
+            price     = priceWrap;
 
-        var priceArr = miniPrice.text(),
-            priceStr = priceArr.slice(priceArr.length - 2, priceArr.length),
-            priceInt = parseInt(priceArr.slice(0, priceArr.length - 2)),
-            tempPrice = priceInt;
+        var currentVal = 1;
 
-        function refreshValues() {
-          priceArr = miniPrice.text(),
-          priceStr = priceArr.slice(priceArr.length - 2, priceArr.length),
-          priceInt = parseInt(priceArr.slice(0, priceArr.length - 2));
+        var priceArr    = price.text(),
+            priceStr    = priceArr.slice(priceArr.length - 2, priceArr.length),
+            priceInt    = parseInt($('p.price').data('price')),
+            regPriceInt = parseInt($('p.price').data('regular-price'));
+
+        function updateValues() {
+          var newPrice    = priceInt * currentVal,
+              newRegPrice = regPriceInt * currentVal;
+
+          price.text(newPrice + '' + priceStr);
+          regPrice.text(newRegPrice + '' + priceStr);
         }
 
         wrapper.find('.minus').click(function() {
-          var currentVal = parseInt(input.val());
+          currentVal = parseInt(input.val());
 
           if (currentVal > 1) {
-            input.val(currentVal - 1);
+            currentVal--;
 
-            var newPriceInt = Math.abs(tempPrice - priceInt);
+            input.val(currentVal);
 
-            miniPrice.text(newPriceInt + ' ' + priceStr);
-
-            refreshValues();
+            updateValues();
           }
         });
 
         wrapper.find('.plus').click(function() {
-          var currentVal = parseInt(input.val());
+          currentVal = parseInt(input.val());
 
-          input.val(currentVal + 1);
+          currentVal++;
 
-          var newPriceInt = tempPrice + priceInt;
-
-          miniPrice.text(newPriceInt + ' ' + priceStr);
-
-          refreshValues();
+          input.val(currentVal);
+          
+          updateValues();
         });
       });
     }

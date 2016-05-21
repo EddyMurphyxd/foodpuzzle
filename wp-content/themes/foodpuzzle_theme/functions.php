@@ -333,48 +333,75 @@
   function woo_add_custom_general_fields_save( $post_id ){
     // Text Field
     $woocommerce_text_field = $_POST['_teaser_text_field'];
-    if( !empty( $woocommerce_text_field ) )
+    if( !empty( $woocommerce_text_field ) ) {
       update_post_meta( $post_id, '_teaser_text_field', esc_attr( $woocommerce_text_field ) );
+    } else {
+      update_post_meta( $post_id, '_teaser_text_field', '' );
+    }
 
   	// Text Field
   	$woocommerce_text_field = $_POST['_weight_text_field'];
-  	if( !empty( $woocommerce_text_field ) )
+  	if( !empty( $woocommerce_text_field ) ) {
   		update_post_meta( $post_id, '_weight_text_field', esc_attr( $woocommerce_text_field ) );
+    } else {
+      update_post_meta( $post_id, '_weight_text_field', '' );
+    }
 
   	// Textarea
   		$woocommerce_textarea = $_POST['_weight_textarea'];
-  		if( !empty( $woocommerce_textarea ) )
+  		if( !empty( $woocommerce_textarea ) ) {
   			update_post_meta( $post_id, '_weight_textarea', esc_html( $woocommerce_textarea ) );
+      } else {
+        update_post_meta( $post_id, '_weight_textarea', '' );
+      }
   		
   	// Text Field
   	$woocommerce_text_field = $_POST['_time_text_field'];
-  	if( !empty( $woocommerce_text_field ) )
+  	if( !empty( $woocommerce_text_field ) ) {
   		update_post_meta( $post_id, '_time_text_field', esc_attr( $woocommerce_text_field ) );
+    } else {
+      update_post_meta( $post_id, '_time_text_field', '' );
+    }
 
   	// Textarea
   		$woocommerce_textarea = $_POST['_time_textarea'];
-  		if( !empty( $woocommerce_textarea ) )
+  		if( !empty( $woocommerce_textarea ) ) {
   			update_post_meta( $post_id, '_time_textarea', esc_html( $woocommerce_textarea ) );
+      } else {
+        update_post_meta( $post_id, '_time_textarea', '' );
+      }
 
   	// Text Field
   	$woocommerce_text_field = $_POST['_difficulty_text_field'];
-  	if( !empty( $woocommerce_text_field ) )
+  	if( !empty( $woocommerce_text_field ) ) {
   		update_post_meta( $post_id, '_difficulty_text_field', esc_attr( $woocommerce_text_field ) );
+    } else {
+      update_post_meta( $post_id, '_difficulty_text_field', '' );
+    }
 
   	// Textarea
   		$woocommerce_textarea = $_POST['_difficulty_textarea'];
-  		if( !empty( $woocommerce_textarea ) )
+  		if( !empty( $woocommerce_textarea ) ) {
   			update_post_meta( $post_id, '_difficulty_textarea', esc_html( $woocommerce_textarea ) );
+      } else {
+        update_post_meta( $post_id, '_difficulty_textarea', '' );
+      }
 
   	// Textarea
   		$woocommerce_textarea = $_POST['_ingridients_list_textarea'];
-  		if( !empty( $woocommerce_textarea ) )
+  		if( !empty( $woocommerce_textarea ) ) {
   			update_post_meta( $post_id, '_ingridients_list_textarea', esc_html( $woocommerce_textarea ) );
+      } else {
+        update_post_meta( $post_id, '_ingridients_list_textarea', '' );
+      }
 
   	// Textarea
   		$woocommerce_textarea = $_POST['_required_items_textarea'];
-  		if( !empty( $woocommerce_textarea ) )
+  		if( !empty( $woocommerce_textarea ) ) {
   			update_post_meta( $post_id, '_required_items_textarea', esc_html( $woocommerce_textarea ) );
+      } else {
+        update_post_meta( $post_id, '_required_items_textarea', '' );
+      }
   	
   }
 

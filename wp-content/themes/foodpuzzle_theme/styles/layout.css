@@ -5886,7 +5886,7 @@ header.main-header {
   max-width: 250px;
   margin-right: 25px; }
   #logo-wrapper a {
-    padding: 0 20px; }
+    padding: 0 20px 0 0; }
   #logo-wrapper img {
     max-width: 100%; }
 
@@ -6360,7 +6360,8 @@ body.shop {
 
 .single-product .general-description {
   margin-top: 35px;
-  text-align: center; }
+  text-align: center;
+  font-size: 18px; }
 
 .single-product .ingridients-image-wrapper {
   position: relative;
@@ -6419,7 +6420,7 @@ body.shop {
         min-width: 1140px; } }
 
 .additional-content .gray {
-  font-size: 16px; }
+  font-size: 18px; }
 
 .profits-row {
   margin-top: 25px; }
@@ -6524,13 +6525,16 @@ body.cart .big-cart-image {
       min-width: 1140px; } }
 
 .shipping-page .shipping-info {
-  margin-top: 550px;
-  text-align: center; }
+  margin-top: 550px; }
+  .shipping-page .shipping-info h2 {
+    text-align: center; }
   .shipping-page .shipping-info .shipping-options {
-    display: inline-block;
+    display: block;
     text-align: left;
     margin-bottom: 25px;
     padding-left: 130px; }
+    .shipping-page .shipping-info .shipping-options h2 {
+      margin-left: -130px; }
     .shipping-page .shipping-info .shipping-options h3 {
       position: relative;
       padding-left: 20px; }
@@ -7036,13 +7040,26 @@ figure img {
   display: block; }
 
 .mmenu-button {
-  color: #ddd;
-  font-size: 24px;
+  color: #333;
   cursor: pointer;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
   float: left;
-  position: fixed; }
+  position: fixed;
+  margin-left: -35px;
+  display: block; }
+  .mmenu-button span {
+    width: 35px;
+    height: 5px;
+    border-radius: 3px;
+    background: #333;
+    display: block;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -ms-transition: background 0.3s;
+    transition: background 0.3s; }
+    .mmenu-button span + span {
+      margin-top: 5px; }
+  .mmenu-button:hover span {
+    background: #5ED08B; }
 
 main.hidden-header .mmenu-button {
   color: #000; }
@@ -7175,7 +7192,15 @@ body.loaded .preloader-wrapper {
     background: #EEEFE9;
     padding: 10px 0 10px 10px;
     position: relative;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .faq-section .text-center > ul > li:hover, .faq-section .text-center > ul > li.active {
+      color: #fff;
+      background: #5ED08B; }
     .faq-section .text-center > ul > li:before {
       content: "";
       background: #5ED08B;
@@ -7191,6 +7216,8 @@ body.loaded .preloader-wrapper {
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
       transition: all 0.3s; }
+      .faq-section .text-center > ul > li > ul li {
+        color: #333333; }
     .faq-section .text-center > ul > li.active ul {
       display: block; }
   .faq-section .text-center > ul ul {

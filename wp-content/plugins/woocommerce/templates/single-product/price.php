@@ -24,7 +24,7 @@ global $product;
 ?>
 <div class="wow slideInRight" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 
-	<p class="price"><?php echo $product->get_price_html(); ?></p>
+	<p class="price" data-regular-price="<?php echo $product->get_regular_price(); ?>" data-price="<?php echo $product->get_price(); ?>"><?php echo $product->get_price_html(); ?></p>
 
 	<meta itemprop="price" content="<?php echo esc_attr( $product->get_price() ); ?>" />
 	<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" />

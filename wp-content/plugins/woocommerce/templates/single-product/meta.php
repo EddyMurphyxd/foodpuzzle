@@ -83,7 +83,7 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 
   <div class="row ingridients-row">
     <div class="col-sm-12">
-      <h2 class="wow fadeInUp">І Н Г Р А Д І Є Н Т И</h2>
+      <h2 class="wow fadeInUp">І Н Г Р Е Д І Є Н Т И</h2>
       <p class="wow fadeInUp">все це ви знайдете в пакеті від foodpuzzle</p>
     </div>
   </div>

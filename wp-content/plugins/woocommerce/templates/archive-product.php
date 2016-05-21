@@ -65,7 +65,12 @@ get_header( 'shop' ); ?>
 
 				<div class="container">
 
-					<a href="#mmenu" class="mmenu-button"><i class="fa fa-navicon"></i></a>
+					<a href="#mmenu" class="mmenu-button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					
 					<nav class="categories-list" id="mmenu">
 					  <ul>
 					    <?php include_once('categories-list.php');?>

@@ -18,6 +18,10 @@
     <?php /* Microformatted, translatable post meta */ ?>
 
     <?php /* The entry content */ ?>
+      <?php 
+        $shippingOptions    = get_field('shipping_options');
+        $shippingSimpleText = get_field('shipping_simple_text');
+      ?>
       <div class="entry-content">
         <div class="shipping-keyvisual" style="background-image: url(<?php echo get_field('shipping_keyvisual_image'); ?>);">
           <div class="keyvisual-text text-shadow">
@@ -29,11 +33,14 @@
           <h2>Доставка</h2>
           
           <div class="shipping-options">
-            <?php echo get_field('shipping_options'); ?>
+            <?php echo $shippingOptions; ?>
           </div>
 
           <h2>Оплата</h2>
-          <p><?php echo get_field('shipping_simple_text'); ?></p>
+
+          <div class="shipping-options">
+            <p><?php echo $shippingSimpleText; ?></p>
+          </div>
         </div>
       </div><!-- .entry-content -->
     <?php /* Microformatted category and tag links along with a comments link */ ?>

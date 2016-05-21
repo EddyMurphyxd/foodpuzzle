@@ -53,13 +53,21 @@
 
   .shipping-info {
     margin-top: 550px;
-    text-align: center;
+    
+
+    h2 {
+      text-align: center;
+    }
 
     .shipping-options {
-      display: inline-block;
+      display: block;
       text-align: left;
       margin-bottom: 25px;
       padding-left: 130px;
+
+      h2 {
+        margin-left: -130px;
+      }
 
       h3 {
         position: relative;
