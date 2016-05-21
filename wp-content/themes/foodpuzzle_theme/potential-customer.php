@@ -2,7 +2,7 @@
 
 if (isset($_POST) && !empty($_POST['email'])) {
 
-  $file = 'potential-customers.txt';
+  $file = './potential-customers.txt';
 
   $current = file_get_contents($file);
 

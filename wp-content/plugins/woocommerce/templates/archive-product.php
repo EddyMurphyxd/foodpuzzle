@@ -63,6 +63,14 @@ get_header( 'shop' ); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
 
+				<div id="promo-modal" class="modal-popup">
+					<div class="inner">
+						<button class="close">x</button>
+
+						<h3>У зв'язку з відкритям ми зробили знижки 10% на всі страви - встигни скористатись!</h3>
+					</div>
+				</div>
+
 				<div class="container">
 
 					<a href="#mmenu" class="mmenu-button">

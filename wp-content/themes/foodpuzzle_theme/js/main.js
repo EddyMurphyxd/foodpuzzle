@@ -53,7 +53,7 @@
     })();
 
     (function() {
-      var modal = $('#promo-modal');
+      var modal = $('.modal-popup');
 
       modal.addClass('loaded');
       
@@ -70,7 +70,6 @@
 
         var url = $(this).attr('action');
 
-
         $.ajax({
           url: url,
           type: 'post',
@@ -86,14 +85,14 @@
             
             setTimeout(function() {
               modal.removeClass('loaded');
-            }, 400);
+            }, 600);
           }
         });
       });
     })();
 
     function setItemsHeight() {
-      $('.owl-carousel, .owl-carousel .item img').height(_winHeight);
+      $('.owl-carousel, .owl-carousel .item').height(_winHeight);
       $('.single-product .images').height(_winHeight);
       $('.concept-image-teaser').height(_winHeight);
       $('.single-product .summary').css('margin-top',  _winHeight - 40);
