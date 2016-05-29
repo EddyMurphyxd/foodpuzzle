@@ -7237,3 +7237,13 @@ body.loaded .preloader-wrapper {
     margin-left: -10px;
     margin-bottom: -10px;
     margin-top: 10px; }
+
+.coupon #coupon_code {
+  height: 38px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #ccc;
+  padding-left: 8px; }
+
+.cart-table-last-row > td {
+  padding-top: 30px !important; }

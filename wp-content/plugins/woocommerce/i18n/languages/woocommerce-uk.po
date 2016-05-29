@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WooCommerce 2.5.5\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
 "POT-Creation-Date: 2016-03-11 17:54:31+00:00\n"
-"PO-Revision-Date: Wed May 11 2016 01:51:15 GMT+0300 (EEST)\n"
+"PO-Revision-Date: Sun May 29 2016 15:04:18 GMT+0300 (EEST)\n"
 "Last-Translator: admin <vladislav.fang@gmail.com>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "Language: Ukrainian\n"
@@ -4846,7 +4846,7 @@ msgstr ""
 #: includes/admin/views/html-admin-page-status-report.php:407
 #: includes/class-wc-install.php:748
 msgid "Settings"
-msgstr ""
+msgstr "Налаштування"
 
 #: includes/abstracts/abstract-wc-order.php:270
 #: includes/abstracts/abstract-wc-order.php:326
@@ -5722,14 +5722,7 @@ msgstr ""
 #: includes/admin/class-wc-admin-help.php:121
 #: includes/admin/class-wc-admin-menus.php:70
 msgid "Reports"
-msgstr ""
-
-#: includes/admin/class-wc-admin-help.php:125
-#: includes/admin/class-wc-admin-help.php:129
-#: includes/admin/settings/class-wc-settings-checkout.php:75
-#: includes/class-wc-post-types.php:350
-msgid "Coupons"
-msgstr ""
+msgstr "Звіти"
 
 #: includes/admin/class-wc-admin-help.php:133
 #: includes/admin/class-wc-admin-help.php:137
@@ -6222,23 +6215,9 @@ msgstr ""
 msgid "Order updated and email sent."
 msgstr ""
 
-#: includes/admin/class-wc-admin-post-types.php:153
-#: includes/admin/class-wc-admin-post-types.php:156
-#: includes/admin/class-wc-admin-post-types.php:158
-msgid "Coupon updated."
-msgstr ""
-
 #: includes/admin/class-wc-admin-post-types.php:157
 #, c-format
 msgid "Coupon restored to revision from %s"
-msgstr ""
-
-#: includes/admin/class-wc-admin-post-types.php:159
-msgid "Coupon saved."
-msgstr ""
-
-#: includes/admin/class-wc-admin-post-types.php:160
-msgid "Coupon submitted."
 msgstr ""
 
 #: includes/admin/class-wc-admin-post-types.php:161
@@ -6381,16 +6360,6 @@ msgstr ""
 
 #: includes/admin/class-wc-admin-post-types.php:248
 msgid "Code"
-msgstr ""
-
-#: includes/admin/class-wc-admin-post-types.php:249
-msgid "Coupon type"
-msgstr ""
-
-#: includes/admin/class-wc-admin-post-types.php:250
-#: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:70
-#: includes/admin/reports/class-wc-report-sales-by-date.php:583
-msgid "Coupon amount"
 msgstr ""
 
 #: includes/admin/class-wc-admin-post-types.php:252
@@ -6686,11 +6655,6 @@ msgstr ""
 
 #: includes/admin/class-wc-admin-post-types.php:2085
 msgid "Product name"
-msgstr ""
-
-#: includes/admin/class-wc-admin-post-types.php:2088
-#: templates/cart/cart.php:136 templates/checkout/form-coupon.php:35
-msgid "Coupon code"
 msgstr ""
 
 #: includes/admin/class-wc-admin-post-types.php:2102
@@ -13397,23 +13361,6 @@ msgstr ""
 msgid "ZIP"
 msgstr ""
 
-#: includes/class-wc-coupon.php:783
-msgid "Coupon code applied successfully."
-msgstr ""
-
-#: includes/class-wc-coupon.php:786
-msgid "Coupon code removed successfully."
-msgstr ""
-
-#: includes/class-wc-coupon.php:804
-msgid "Coupon is not valid."
-msgstr ""
-
-#: includes/class-wc-coupon.php:807
-#, c-format
-msgid "Coupon \"%s\" does not exist!"
-msgstr ""
-
 #: includes/class-wc-coupon.php:810
 #, c-format
 msgid ""
@@ -13428,10 +13375,6 @@ msgid ""
 "your order."
 msgstr ""
 
-#: includes/class-wc-coupon.php:816
-msgid "Coupon code already applied!"
-msgstr ""
-
 #: includes/class-wc-coupon.php:819
 #, c-format
 msgid ""
@@ -13441,10 +13384,6 @@ msgstr ""
 
 #: includes/class-wc-coupon.php:822
 msgid "Coupon usage limit has been reached."
-msgstr ""
-
-#: includes/class-wc-coupon.php:825
-msgid "This coupon has expired."
 msgstr ""
 
 #: includes/class-wc-coupon.php:828
@@ -15807,16 +15746,8 @@ msgstr ""
 msgid "and"
 msgstr ""
 
-#: includes/wc-cart-functions.php:206
-msgid "Coupon:"
-msgstr ""
-
 #: includes/wc-cart-functions.php:231
 msgid "Free shipping coupon"
-msgstr ""
-
-#: includes/wc-cart-functions.php:236
-msgid "[Remove]"
 msgstr ""
 
 #: includes/wc-cart-functions.php:263 templates/cart/cart-totals.php:70
@@ -16532,10 +16463,6 @@ msgstr ""
 
 #: templates/cart/cart.php:58 templates/cart/mini-cart.php:48
 msgid "Remove this item"
-msgstr ""
-
-#: templates/cart/cart.php:136 templates/checkout/form-coupon.php:39
-msgid "Apply Coupon"
 msgstr ""
 
 #: templates/cart/cross-sells.php:48
@@ -17282,11 +17209,6 @@ msgctxt "Admin menu name"
 msgid "Shipping Classes"
 msgstr ""
 
-#: includes/class-wc-post-types.php:352
-msgctxt "Admin menu name"
-msgid "Coupons"
-msgstr ""
-
 #: includes/class-wc-post-types.php:390
 msgctxt "Admin menu name"
 msgid "Webhooks"
@@ -17599,6 +17521,84 @@ msgstr ""
 msgctxt "submit button"
 msgid "Search"
 msgstr ""
+
+#: includes/admin/class-wc-admin-help.php:125
+#: includes/admin/class-wc-admin-help.php:129
+#: includes/admin/settings/class-wc-settings-checkout.php:75
+#: includes/class-wc-post-types.php:350
+msgid "Coupons"
+msgstr "Промокоди"
+
+#: includes/admin/class-wc-admin-post-types.php:153
+#: includes/admin/class-wc-admin-post-types.php:156
+#: includes/admin/class-wc-admin-post-types.php:158
+msgid "Coupon updated."
+msgstr "Промокод оновлений"
+
+#: includes/admin/class-wc-admin-post-types.php:159
+msgid "Coupon saved."
+msgstr "Промокод збережений"
+
+#: includes/admin/class-wc-admin-post-types.php:160
+msgid "Coupon submitted."
+msgstr "Промокод підтверджений"
+
+#: includes/admin/class-wc-admin-post-types.php:249
+msgid "Coupon type"
+msgstr "Тип промокоду"
+
+#: includes/admin/class-wc-admin-post-types.php:250
+#: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:70
+#: includes/admin/reports/class-wc-report-sales-by-date.php:583
+msgid "Coupon amount"
+msgstr "Коефіцієнт"
+
+#: includes/admin/class-wc-admin-post-types.php:2088
+#: templates/cart/cart.php:136 templates/checkout/form-coupon.php:35
+msgid "Coupon code"
+msgstr "Промокод"
+
+#: includes/class-wc-coupon.php:783
+msgid "Coupon code applied successfully."
+msgstr "Прокомок успішно використано."
+
+#: includes/class-wc-coupon.php:786
+msgid "Coupon code removed successfully."
+msgstr "Промокод забрано успішно."
+
+#: includes/class-wc-coupon.php:804
+msgid "Coupon is not valid."
+msgstr "Промокод не дійсний."
+
+#: includes/class-wc-coupon.php:807
+#, c-format
+msgid "Coupon \"%s\" does not exist!"
+msgstr "Промокод \"%s\" не існує!"
+
+#: includes/class-wc-coupon.php:816
+msgid "Coupon code already applied!"
+msgstr "Введений промокод вже використовується!"
+
+#: includes/class-wc-coupon.php:825
+msgid "This coupon has expired."
+msgstr "Термін даного промокоду закінчився."
+
+#: includes/wc-cart-functions.php:206
+msgid "Coupon:"
+msgstr "Промокод:"
+
+#: includes/wc-cart-functions.php:236
+msgid "[Remove]"
+msgstr "[Забрати]"
+
+#: templates/cart/cart.php:136 templates/checkout/form-coupon.php:39
+msgid "Apply Coupon"
+msgstr "Використати промокод"
+
+#: includes/class-wc-post-types.php:352
+msgctxt "Admin menu name"
+msgid "Coupons"
+msgstr "Промокоди"
 
 #: includes/admin/class-wc-admin-post-types.php:679
 msgid "Tel:"

@@ -12,7 +12,7 @@
       else { bloginfo('name'); wp_title('|'); get_page_number(); }
     ?>
   </title>
- 
+  
   <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
   
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
