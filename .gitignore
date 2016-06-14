@@ -3,3 +3,6 @@ wp-admin
 sftp-config.json
 wp*
 xml*
+*licence.txt
+*readme.html
+*wp-config-sample.php
